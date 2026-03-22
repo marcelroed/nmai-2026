@@ -1,0 +1,119 @@
+[
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "duration_ms": 274.495,
+      "event": "request.end",
+      "response_headers": [
+        [
+          "content-length",
+          "2397"
+        ],
+        [
+          "content-type",
+          "text/html; charset=utf-8"
+        ],
+        [
+          "x-request-id",
+          "52149789-15b6-4ded-8c43-fccbbd7093f6"
+        ]
+      ],
+      "status_code": 200
+    },
+    "filename": "my_log.py",
+    "function": "__call__",
+    "level": "INFO",
+    "line": 402,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[52149] request.end",
+    "module": "my_log",
+    "pathname": "/app/src/tripletex/my_log.py",
+    "process": 170,
+    "process_name": "MainProcess",
+    "request_id": "52149789-15b6-4ded-8c43-fccbbd7093f6",
+    "request_method": "GET",
+    "request_path": "/logs",
+    "task_name": "Task-14",
+    "thread": 139975927042880,
+    "thread_name": "MainThread",
+    "timestamp": "2026-03-22T10:22:52",
+    "unique_request_id": "9d8a1f01-edf2-4d0d-b380-63f2d7b83330"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "body": {
+        "preview": "",
+        "size_bytes": 0
+      },
+      "client": {
+        "host": "169.254.169.126",
+        "port": 13302
+      },
+      "event": "request.start",
+      "headers": [
+        [
+          "host",
+          "tripletex-agent-1010470531441.europe-north1.run.app"
+        ],
+        [
+          "user-agent",
+          "curl/8.7.1"
+        ],
+        [
+          "accept",
+          "*/*"
+        ],
+        [
+          "x-cloud-trace-context",
+          "21b6c7aaede22d8619c6a724d71bc0a4/10163985644401949172;o=1"
+        ],
+        [
+          "x-forwarded-proto",
+          "https"
+        ],
+        [
+          "traceparent",
+          "00-21b6c7aaede22d8619c6a724d71bc0a4-8d0dbb17acbf79f4-01"
+        ],
+        [
+          "x-forwarded-for",
+          "171.64.77.69"
+        ],
+        [
+          "forwarded",
+          "for=\"171.64.77.69\";proto=https"
+        ]
+      ],
+      "http_version": "1.1",
+      "query_string": "",
+      "request_line": "GET /logs HTTP/1.1",
+      "scheme": "http",
+      "server": [
+        "169.254.169.1",
+        8080
+      ],
+      "url": "http://tripletex-agent-1010470531441.europe-north1.run.app/logs"
+    },
+    "filename": "my_log.py",
+    "function": "__call__",
+    "level": "INFO",
+    "line": 360,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[52149] request.start",
+    "module": "my_log",
+    "pathname": "/app/src/tripletex/my_log.py",
+    "process": 170,
+    "process_name": "MainProcess",
+    "request_id": "52149789-15b6-4ded-8c43-fccbbd7093f6",
+    "request_method": "GET",
+    "request_path": "/logs",
+    "task_name": "Task-14",
+    "thread": 139975927042880,
+    "thread_name": "MainThread",
+    "timestamp": "2026-03-22T10:22:52",
+    "unique_request_id": "9d8a1f01-edf2-4d0d-b380-63f2d7b83330"
+  }
+]

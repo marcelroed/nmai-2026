@@ -1,0 +1,2545 @@
+{
+  "request_id": "a852d92b-d52d-481f-8b50-d3ec753e5bf8",
+  "log_count": 83,
+  "request": {
+    "kind": "request_start",
+    "timestamp": "2026-03-21T17:42:04",
+    "level": "INFO",
+    "message": "request.start",
+    "exception": null,
+    "extra": {
+      "body": {
+        "preview": "{\"prompt\":\"Total costs increased significantly from January to February 2026. Analyze the general ledger and identify the three expense accounts with the largest increase in amount. Create an internal project for each of the three accounts using the account name. Also create an activity for each project.\",\"files\":[],\"tripletex_credentials\":{\"base_url\":\"https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2\",\"session_token\":\"Q79tlGxVnFamlOXv0RCY1U7eymDAmVWVEC8qJmchYkA\"}}",
+        "size_bytes": 463
+      },
+      "client": {
+        "host": "169.254.169.126",
+        "port": 24356
+      },
+      "event": "request.start",
+      "headers": [
+        [
+          "host",
+          "tripletex-agent-1010470531441.europe-north1.run.app"
+        ],
+        [
+          "accept",
+          "*/*"
+        ],
+        [
+          "user-agent",
+          "python-httpx/0.28.1"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "Bearer 9a2e0446-83e7-4103-afc2-a6ae0015b8e8"
+        ],
+        [
+          "content-length",
+          "463"
+        ],
+        [
+          "x-cloud-trace-context",
+          "8e5879320a4320c7f6aa4da4b76ddc51/12061610782535729952"
+        ],
+        [
+          "x-forwarded-proto",
+          "https"
+        ],
+        [
+          "traceparent",
+          "00-8e5879320a4320c7f6aa4da4b76ddc51-a763731a00104320-00"
+        ],
+        [
+          "x-forwarded-for",
+          "34.34.240.91"
+        ],
+        [
+          "forwarded",
+          "for=\"34.34.240.91\";proto=https"
+        ],
+        [
+          "accept-encoding",
+          "gzip, deflate"
+        ]
+      ],
+      "http_version": "1.1",
+      "query_string": "",
+      "request_line": "POST /solve HTTP/1.1",
+      "scheme": "http",
+      "server": [
+        "169.254.169.1",
+        8080
+      ],
+      "url": "http://tripletex-agent-1010470531441.europe-north1.run.app/solve"
+    }
+  },
+  "request_end": {
+    "kind": "request_end",
+    "timestamp": "2026-03-21T17:42:07",
+    "level": "INFO",
+    "message": "request.end",
+    "exception": null,
+    "extra": {
+      "duration_ms": 2702.487,
+      "event": "request.end",
+      "response_headers": [
+        [
+          "content-length",
+          "22"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "x-request-id",
+          "a852d92b-d52d-481f-8b50-d3ec753e5bf8"
+        ]
+      ],
+      "status_code": 200
+    }
+  },
+  "handler": {
+    "enter": {
+      "kind": "serve_handler_enter",
+      "timestamp": "2026-03-21T17:42:04",
+      "level": "DEBUG",
+      "message": "serve.handler.enter",
+      "exception": null,
+      "extra": {
+        "base_url": "https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2",
+        "file_count": 0,
+        "payload": "prompt='Total costs increased significantly from January to February 2026. Analyze the general ledger and identify the three expense accounts with the largest increase in amount. Create an internal project for each of the three accounts using the account name. Also create an activity for each project.' files=[] tripletex_credentials=TripletexCredentials(base_url='https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2', session_token='REDACTED')",
+        "previous_submission_id": "9a2e0446-83e7-4103-afc2-a6ae0015b8e8",
+        "prompt": "Total costs increased significantly from January to February 2026. Analyze the general ledger and identify the three expense accounts with the largest increase in amount. Create an internal project for each of the three accounts using the account name. Also create an activity for each project."
+      }
+    },
+    "before_return": {
+      "kind": "serve_handler_before_return",
+      "timestamp": "2026-03-21T17:42:07",
+      "level": "DEBUG",
+      "message": "serve.handler.before_return",
+      "exception": null,
+      "extra": {}
+    }
+  },
+  "submission_status": {
+    "getting": {
+      "kind": "getting_submission_status",
+      "timestamp": "2026-03-21T17:42:04",
+      "level": "INFO",
+      "message": "getting the submission status for nmai",
+      "exception": null,
+      "extra": {}
+    },
+    "got_submission_status": {
+      "kind": "got_submission_status",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "INFO",
+      "message": "got submission status for nmai",
+      "exception": null,
+      "extra": {
+        "response": [
+          {
+            "completed_at": null,
+            "duration_ms": null,
+            "id": "5f065c1e-e06e-4d12-b6ac-69b841053dc7",
+            "normalized_score": null,
+            "queued_at": "2026-03-21T17:41:44.594677+00:00",
+            "score_max": null,
+            "score_raw": null,
+            "status": "processing"
+          },
+          {
+            "completed_at": null,
+            "duration_ms": null,
+            "id": "9a2e0446-83e7-4103-afc2-a6ae0015b8e8",
+            "normalized_score": null,
+            "queued_at": "2026-03-21T17:41:38.909856+00:00",
+            "score_max": null,
+            "score_raw": null,
+            "status": "processing"
+          },
+          {
+            "completed_at": null,
+            "duration_ms": null,
+            "id": "a39d19ec-08c8-4658-b8bd-475c79d5d9e4",
+            "normalized_score": null,
+            "queued_at": "2026-03-21T17:41:34.114600+00:00",
+            "score_max": null,
+            "score_raw": null,
+            "status": "processing"
+          },
+          {
+            "completed_at": "2026-03-21T17:41:32.631807+00:00",
+            "duration_ms": 18776,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "3/4 checks failed."
+            },
+            "id": "ff83bc3c-1a0c-4533-9a15-f63dd4add9d7",
+            "normalized_score": 0.6,
+            "queued_at": "2026-03-21T17:41:13.799889+00:00",
+            "score_max": 10,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:41:31.628058+00:00",
+            "duration_ms": 24132,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: passed",
+                "Check 6: failed"
+              ],
+              "comment": "5/6 checks failed."
+            },
+            "id": "874fe62d-c4a4-44c7-974b-8e66dfdae24b",
+            "normalized_score": 0.6,
+            "queued_at": "2026-03-21T17:41:07.317129+00:00",
+            "score_max": 10,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:41:34.824711+00:00",
+            "duration_ms": 40225,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "07b8bc3f-a7aa-4295-a856-01b37d56d456",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:40:54.404594+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:41:11.011784+00:00",
+            "duration_ms": 35785,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed"
+              ],
+              "comment": "2/2 checks failed."
+            },
+            "id": "b22f2ad1-0855-46c3-93b3-7ba34b6f180a",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:40:35.012871+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:40:50.702361+00:00",
+            "duration_ms": 26668,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "3/4 checks failed."
+            },
+            "id": "d48526ec-ff95-4cbd-ad18-d3cacd21b51d",
+            "normalized_score": 0.6,
+            "queued_at": "2026-03-21T17:40:23.873590+00:00",
+            "score_max": 10,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:41:05.948164+00:00",
+            "duration_ms": 104928,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed",
+                "Check 8: failed",
+                "Check 9: failed",
+                "Check 10: failed",
+                "Check 11: failed",
+                "Check 12: failed",
+                "Check 13: failed",
+                "Check 14: failed",
+                "Check 15: failed"
+              ],
+              "comment": "15/15 checks failed."
+            },
+            "id": "d4b39011-0472-49d6-987d-dbd596ea3756",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:39:20.653230+00:00",
+            "score_max": 22,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:39:18.944822+00:00",
+            "duration_ms": 19048,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "fa46d1ad-f824-4813-af4d-64d5497df959",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:38:59.805272+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:40:30.809430+00:00",
+            "duration_ms": 103281,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "672ab45d-f4a9-4dc2-a2d8-7ef491cfceb8",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:38:47.459919+00:00",
+            "score_max": 7,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:40:19.537729+00:00",
+            "duration_ms": 120689,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "813f3a0a-c87a-4b77-afb8-a1ef5765f5e1",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:38:18.627961+00:00",
+            "score_max": 8,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:38:45.584695+00:00",
+            "duration_ms": 38173,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: passed",
+                "Check 6: failed"
+              ],
+              "comment": "5/6 checks failed."
+            },
+            "id": "c4aba21c-cab9-4e8a-85c8-29ef95f5f768",
+            "normalized_score": 0.6,
+            "queued_at": "2026-03-21T17:38:07.363765+00:00",
+            "score_max": 10,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:37:25.649764+00:00",
+            "duration_ms": 28845,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "6d761ffd-c27f-4831-aa1b-216645fa68c2",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:36:56.724847+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:38:56.425197+00:00",
+            "duration_ms": 126536,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "4/5 checks failed."
+            },
+            "id": "a0f5c686-fe2d-4979-b83e-99418ed10489",
+            "normalized_score": 0.25,
+            "queued_at": "2026-03-21T17:36:49.597350+00:00",
+            "score_max": 8,
+            "score_raw": 1,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:37:13.573329+00:00",
+            "duration_ms": 65447,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "27711bfb-3670-47dc-b48f-1d4e9e454657",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:36:08.012496+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:36:55.351032+00:00",
+            "duration_ms": 54289,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "75ec49c4-f0dc-4384-b580-f90de306f08e",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:36:00.743566+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:35:54.975895+00:00",
+            "duration_ms": 27588,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: passed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed"
+              ],
+              "comment": "5/7 checks failed."
+            },
+            "id": "2ac1427d-c305-4052-97dd-66a63ecbd475",
+            "normalized_score": 0.5455,
+            "queued_at": "2026-03-21T17:35:27.312843+00:00",
+            "score_max": 11,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:36:45.100173+00:00",
+            "duration_ms": 100745,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed"
+              ],
+              "comment": "7/7 checks failed."
+            },
+            "id": "0e0426a5-704e-455a-9925-5a937105c709",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:35:04.118269+00:00",
+            "score_max": 8,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:36:00.279699+00:00",
+            "duration_ms": 63216,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "db4fc345-2554-4480-906b-e68a0a588437",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:34:56.998909+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:35:21.056294+00:00",
+            "duration_ms": 115525,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "ee8a64e0-76a9-45c1-ab69-a55fe675923a",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:33:25.444611+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:34:53.650470+00:00",
+            "duration_ms": 126711,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "79e771f9-94d7-49d9-a005-10baaf3de90f",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:32:46.845662+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:34:49.474685+00:00",
+            "duration_ms": 128715,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed",
+                "Check 8: failed",
+                "Check 9: failed",
+                "Check 10: failed",
+                "Check 11: failed",
+                "Check 12: failed",
+                "Check 13: failed",
+                "Check 14: failed",
+                "Check 15: failed"
+              ],
+              "comment": "15/15 checks failed."
+            },
+            "id": "e6e04cf8-b086-4f88-8da6-d4cc7f2100ea",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:32:40.363326+00:00",
+            "score_max": 22,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:32:37.361481+00:00",
+            "duration_ms": 21993,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "f089cb42-30f3-49ed-805a-90036056ef91",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:32:15.215503+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:32:11.189985+00:00",
+            "duration_ms": 17878,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "a8aff9a2-91f9-427b-94b8-62bed1c3b5d1",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:31:53.133975+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:33:21.560491+00:00",
+            "duration_ms": 98979,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "02f2741d-a67c-4e3b-9a32-acf7aedb6dcf",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:31:42.486120+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:31:52.651751+00:00",
+            "duration_ms": 26525,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: passed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed"
+              ],
+              "comment": "5/7 checks failed."
+            },
+            "id": "292b9899-fa8a-4c6a-aadb-059e9cb523e4",
+            "normalized_score": 0.5455,
+            "queued_at": "2026-03-21T17:31:25.797872+00:00",
+            "score_max": 11,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:31:37.534484+00:00",
+            "duration_ms": 19427,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "82792f8b-def5-408f-811f-59bd8c6a3ff4",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:31:17.910119+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:32:41.624542+00:00",
+            "duration_ms": 90297,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed",
+                "Check 8: failed",
+                "Check 9: failed",
+                "Check 10: failed"
+              ],
+              "comment": "10/10 checks failed."
+            },
+            "id": "55617803-3568-4b94-bab0-926a851e57e7",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:31:11.264512+00:00",
+            "score_max": 14,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T16:57:15.322285+00:00",
+            "duration_ms": 32751,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "742c6844-571f-4e6d-b34b-d111c8f28085",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T16:56:42.419175+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T16:58:13.114196+00:00",
+            "duration_ms": 99351,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed",
+                "Check 8: failed",
+                "Check 9: failed",
+                "Check 10: failed"
+              ],
+              "comment": "10/10 checks failed."
+            },
+            "id": "d6b6c68c-72ec-4967-9a4c-45a74f7ae2f1",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T16:56:33.707794+00:00",
+            "score_max": 14,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T16:56:54.407122+00:00",
+            "duration_ms": 26376,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "3/4 checks failed."
+            },
+            "id": "8582be4a-5383-4dd4-b392-c8bde3a6afa5",
+            "normalized_score": 0.6,
+            "queued_at": "2026-03-21T16:56:27.526433+00:00",
+            "score_max": 10,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T16:21:10.175599+00:00",
+            "duration_ms": 24683,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: passed",
+                "Check 6: failed"
+              ],
+              "comment": "5/6 checks failed."
+            },
+            "id": "d5f8ad95-3440-40e5-b00e-7bada0b1d5ba",
+            "normalized_score": 0.6,
+            "queued_at": "2026-03-21T16:20:45.410984+00:00",
+            "score_max": 10,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T16:08:40.832675+00:00",
+            "duration_ms": 43958,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "23286c5e-4d0f-489a-ad5a-b2c172aa5aea",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T16:07:56.508850+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T16:02:28.206174+00:00",
+            "duration_ms": 34011,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "2ace9623-43f5-4ff9-b5a0-96aa8bfacf7e",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T16:01:53.538832+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T00:00:52.337115+00:00",
+            "duration_ms": 57330,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "0b9ba5b3-0004-4b3e-86e5-fb65350d56e9",
+            "normalized_score": 0,
+            "queued_at": "2026-03-20T23:59:54.939624+00:00",
+            "score_max": 8,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T00:00:28.583506+00:00",
+            "duration_ms": 34108,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "0632379d-c4f4-4d9a-83f0-c269f21e89ab",
+            "normalized_score": 0,
+            "queued_at": "2026-03-20T23:59:54.358138+00:00",
+            "score_max": 13,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T00:00:05.676018+00:00",
+            "duration_ms": 72723,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "5ef6562a-df03-420c-9f94-9411a4c3290e",
+            "normalized_score": 0,
+            "queued_at": "2026-03-20T23:58:52.883168+00:00",
+            "score_max": 8,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-20T23:59:35.082951+00:00",
+            "duration_ms": 59988,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "4/5 checks failed."
+            },
+            "id": "dd01045e-5c29-449e-97fa-8321520a5798",
+            "normalized_score": 0.25,
+            "queued_at": "2026-03-20T23:58:34.970801+00:00",
+            "score_max": 8,
+            "score_raw": 1,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-20T23:59:10.464037+00:00",
+            "duration_ms": 56231,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: passed",
+                "Check 3: passed",
+                "Check 4: passed"
+              ],
+              "comment": "4/4 checks passed."
+            },
+            "id": "fe8414fc-531e-44ba-a092-065675921691",
+            "normalized_score": 1,
+            "queued_at": "2026-03-20T23:58:14.139582+00:00",
+            "score_max": 7,
+            "score_raw": 7,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-20T23:58:52.045350+00:00",
+            "duration_ms": 57391,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed"
+              ],
+              "comment": "3/3 checks failed."
+            },
+            "id": "54901b74-a674-4108-b35f-76f996605d22",
+            "normalized_score": 0,
+            "queued_at": "2026-03-20T23:57:54.456474+00:00",
+            "score_max": 7,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-20T23:58:28.467037+00:00",
+            "duration_ms": 60630,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: failed",
+                "Check 3: failed"
+              ],
+              "comment": "2/3 checks failed."
+            },
+            "id": "be447473-5a39-4497-bd29-228bb9607c2b",
+            "normalized_score": 0.5,
+            "queued_at": "2026-03-20T23:57:27.516757+00:00",
+            "score_max": 8,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-20T23:58:05.223506+00:00",
+            "duration_ms": 56189,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: passed",
+                "Check 3: passed",
+                "Check 4: passed",
+                "Check 5: passed"
+              ],
+              "comment": "5/5 checks passed."
+            },
+            "id": "f166b7c1-8f3f-4e9c-b2ba-4c3b5249e268",
+            "normalized_score": 1,
+            "queued_at": "2026-03-20T23:57:08.905696+00:00",
+            "score_max": 7,
+            "score_raw": 7,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-20T23:57:49.893583+00:00",
+            "duration_ms": 71532,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "a22dd49c-a45b-4022-ba5b-fa95b7f3ee64",
+            "normalized_score": 0,
+            "queued_at": "2026-03-20T23:56:38.120005+00:00",
+            "score_max": 7,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-20T23:57:26.623148+00:00",
+            "duration_ms": 72233,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed"
+              ],
+              "comment": "3/3 checks failed."
+            },
+            "id": "acc9e6bf-52f9-4e3d-94b4-b8cd038d94eb",
+            "normalized_score": 0,
+            "queued_at": "2026-03-20T23:56:14.351299+00:00",
+            "score_max": 7,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-20T23:57:03.882678+00:00",
+            "duration_ms": 81706,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: passed",
+                "Check 3: passed",
+                "Check 4: passed",
+                "Check 5: failed"
+              ],
+              "comment": "1/5 checks failed."
+            },
+            "id": "f14ed0c2-bec4-4a4d-ae19-0464333bac13",
+            "normalized_score": 0.8571,
+            "queued_at": "2026-03-20T23:55:41.727482+00:00",
+            "score_max": 7,
+            "score_raw": 6,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-20T23:56:32.046450+00:00",
+            "duration_ms": 78307,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "f750522f-5e84-4498-b8c1-ff1c45c011a4",
+            "normalized_score": 0,
+            "queued_at": "2026-03-20T23:55:13.306923+00:00",
+            "score_max": 8,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-20T23:56:08.956647+00:00",
+            "duration_ms": 159128,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: passed",
+                "Check 3: passed"
+              ],
+              "comment": "3/3 checks passed."
+            },
+            "id": "bc9bd1e8-ae20-4c87-aac8-c8fc66c9d4c3",
+            "normalized_score": 4,
+            "queued_at": "2026-03-20T23:53:29.787515+00:00",
+            "score_max": 8,
+            "score_raw": 8,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-20T23:55:38.708853+00:00",
+            "duration_ms": 149635,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "19021853-8263-489e-a7bf-3e16582a66b2",
+            "normalized_score": 0,
+            "queued_at": "2026-03-20T23:53:08.909941+00:00",
+            "score_max": 7,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-20T23:55:11.901893+00:00",
+            "duration_ms": 150040,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: passed",
+                "Check 3: passed",
+                "Check 4: failed",
+                "Check 5: passed"
+              ],
+              "comment": "1/5 checks failed."
+            },
+            "id": "00862ec6-cf5b-4609-92a5-aa50ac6044fa",
+            "normalized_score": 0.8571,
+            "queued_at": "2026-03-20T23:52:41.830594+00:00",
+            "score_max": 7,
+            "score_raw": 6,
+            "status": "completed"
+          }
+        ]
+      }
+    },
+    "current_runs": [
+      {
+        "kind": "got_most_likely_current_run_id",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "INFO",
+        "message": "got the most likely current run id 5f065c1e-e06e-4d12-b6ac-69b841053dc7 (idx 0)",
+        "exception": null,
+        "extra": {
+          "data": {
+            "completed_at": null,
+            "duration_ms": null,
+            "id": "5f065c1e-e06e-4d12-b6ac-69b841053dc7",
+            "normalized_score": null,
+            "queued_at": "2026-03-21T17:41:44.594677+00:00",
+            "score_max": null,
+            "score_raw": null,
+            "status": "processing"
+          }
+        },
+        "submission_id": "5f065c1e-e06e-4d12-b6ac-69b841053dc7",
+        "idx": 0
+      }
+    ],
+    "failed": null
+  },
+  "tripletex_endpoints": [
+    {
+      "endpoint": "/balanceSheet",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /balanceSheet",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/balanceSheet"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /balanceSheet",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/balanceSheet",
+        "extra": {
+          "endpoint": "/balanceSheet",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/balanceSheet"
+        },
+        "endpoint": "/balanceSheet"
+      }
+    },
+    {
+      "endpoint": "/bank",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /bank",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/bank"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /bank",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/bank",
+        "extra": {
+          "endpoint": "/bank",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/bank"
+        },
+        "endpoint": "/bank"
+      }
+    },
+    {
+      "endpoint": "/bank/statement",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /bank/statement",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/bank/statement"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /bank/statement",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/bank/statement",
+        "extra": {
+          "endpoint": "/bank/statement",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/bank/statement"
+        },
+        "endpoint": "/bank/statement"
+      }
+    },
+    {
+      "endpoint": "/company",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /company",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/company"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /company",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/company",
+        "extra": {
+          "endpoint": "/company",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/company"
+        },
+        "endpoint": "/company"
+      }
+    },
+    {
+      "endpoint": "/company/settings/altinn",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /company/settings/altinn",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/company/settings/altinn"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /company/settings/altinn",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/company/settings/altinn",
+        "extra": {
+          "endpoint": "/company/settings/altinn",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/company/settings/altinn"
+        },
+        "endpoint": "/company/settings/altinn"
+      }
+    },
+    {
+      "endpoint": "/contact",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /contact",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/contact"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /contact",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/contact",
+        "extra": {
+          "endpoint": "/contact",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/contact"
+        },
+        "endpoint": "/contact"
+      }
+    },
+    {
+      "endpoint": "/country",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /country",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/country"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /country",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/country",
+        "extra": {
+          "endpoint": "/country",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/country"
+        },
+        "endpoint": "/country"
+      }
+    },
+    {
+      "endpoint": "/customer",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /customer",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/customer"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /customer",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/customer",
+        "extra": {
+          "endpoint": "/customer",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/customer"
+        },
+        "endpoint": "/customer"
+      }
+    },
+    {
+      "endpoint": "/customer/category",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /customer/category",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/customer/category"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /customer/category",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/customer/category",
+        "extra": {
+          "endpoint": "/customer/category",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/customer/category"
+        },
+        "endpoint": "/customer/category"
+      }
+    },
+    {
+      "endpoint": "/deliveryAddress",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /deliveryAddress",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/deliveryAddress"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /deliveryAddress",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/deliveryAddress",
+        "extra": {
+          "endpoint": "/deliveryAddress",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/deliveryAddress"
+        },
+        "endpoint": "/deliveryAddress"
+      }
+    },
+    {
+      "endpoint": "/department",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /department",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/department"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /department",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/department",
+        "extra": {
+          "endpoint": "/department",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/department"
+        },
+        "endpoint": "/department"
+      }
+    },
+    {
+      "endpoint": "/division",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /division",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/division"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /division",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/division",
+        "extra": {
+          "endpoint": "/division",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/division"
+        },
+        "endpoint": "/division"
+      }
+    },
+    {
+      "endpoint": "/employee",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /employee",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/employee"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /employee",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee",
+        "extra": {
+          "endpoint": "/employee",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee"
+        },
+        "endpoint": "/employee"
+      }
+    },
+    {
+      "endpoint": "/employee/category",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /employee/category",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/employee/category"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /employee/category",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/category",
+        "extra": {
+          "endpoint": "/employee/category",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/category"
+        },
+        "endpoint": "/employee/category"
+      }
+    },
+    {
+      "endpoint": "/employee/employment",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /employee/employment",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/employee/employment"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /employee/employment",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment",
+        "extra": {
+          "endpoint": "/employee/employment",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment"
+        },
+        "endpoint": "/employee/employment"
+      }
+    },
+    {
+      "endpoint": "/employee/employment/details",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /employee/employment/details",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/employee/employment/details"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /employee/employment/details",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment/details",
+        "extra": {
+          "endpoint": "/employee/employment/details",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment/details"
+        },
+        "endpoint": "/employee/employment/details"
+      }
+    },
+    {
+      "endpoint": "/employee/employment/employmentType",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "DEBUG",
+        "message": "getting data for /employee/employment/employmentType",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/employee/employment/employmentType"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /employee/employment/employmentType",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment/employmentType",
+        "extra": {
+          "endpoint": "/employee/employment/employmentType",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment/employmentType"
+        },
+        "endpoint": "/employee/employment/employmentType"
+      }
+    },
+    {
+      "endpoint": "/employee/employment/workingHoursScheme",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "DEBUG",
+        "message": "getting data for /employee/employment/workingHoursScheme",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/employee/employment/workingHoursScheme"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /employee/employment/workingHoursScheme",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment/workingHoursScheme",
+        "extra": {
+          "endpoint": "/employee/employment/workingHoursScheme",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment/workingHoursScheme"
+        },
+        "endpoint": "/employee/employment/workingHoursScheme"
+      }
+    },
+    {
+      "endpoint": "/employee/entitlement",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "DEBUG",
+        "message": "getting data for /employee/entitlement",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/employee/entitlement"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /employee/entitlement",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/entitlement",
+        "extra": {
+          "endpoint": "/employee/entitlement",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/entitlement"
+        },
+        "endpoint": "/employee/entitlement"
+      }
+    },
+    {
+      "endpoint": "/employee/nextOfKin",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "DEBUG",
+        "message": "getting data for /employee/nextOfKin",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/employee/nextOfKin"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /employee/nextOfKin",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/nextOfKin",
+        "extra": {
+          "endpoint": "/employee/nextOfKin",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/nextOfKin"
+        },
+        "endpoint": "/employee/nextOfKin"
+      }
+    },
+    {
+      "endpoint": "/employee/preferences",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /employee/preferences",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/employee/preferences"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /employee/preferences",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/preferences",
+        "extra": {
+          "endpoint": "/employee/preferences",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/preferences"
+        },
+        "endpoint": "/employee/preferences"
+      }
+    },
+    {
+      "endpoint": "/employee/standardTime",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "DEBUG",
+        "message": "getting data for /employee/standardTime",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/employee/standardTime"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /employee/standardTime",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/standardTime",
+        "extra": {
+          "endpoint": "/employee/standardTime",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/standardTime"
+        },
+        "endpoint": "/employee/standardTime"
+      }
+    },
+    {
+      "endpoint": "/inventory",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /inventory",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/inventory"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /inventory",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory",
+        "extra": {
+          "endpoint": "/inventory",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory"
+        },
+        "endpoint": "/inventory"
+      }
+    },
+    {
+      "endpoint": "/inventory/inventories",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /inventory/inventories",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/inventory/inventories"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /inventory/inventories",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/inventories",
+        "extra": {
+          "endpoint": "/inventory/inventories",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/inventories"
+        },
+        "endpoint": "/inventory/inventories"
+      }
+    },
+    {
+      "endpoint": "/inventory/location",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /inventory/location",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/inventory/location"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /inventory/location",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/location",
+        "extra": {
+          "endpoint": "/inventory/location",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/location"
+        },
+        "endpoint": "/inventory/location"
+      }
+    },
+    {
+      "endpoint": "/inventory/stocktaking",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /inventory/stocktaking",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/inventory/stocktaking"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /inventory/stocktaking",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/stocktaking",
+        "extra": {
+          "endpoint": "/inventory/stocktaking",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/stocktaking"
+        },
+        "endpoint": "/inventory/stocktaking"
+      }
+    },
+    {
+      "endpoint": "/inventory/stocktaking/productline",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /inventory/stocktaking/productline",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/inventory/stocktaking/productline"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /inventory/stocktaking/productline",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/stocktaking/productline",
+        "extra": {
+          "endpoint": "/inventory/stocktaking/productline",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/stocktaking/productline"
+        },
+        "endpoint": "/inventory/stocktaking/productline"
+      }
+    },
+    {
+      "endpoint": "/invoice",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /invoice",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/invoice"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /invoice",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/invoice",
+        "extra": {
+          "endpoint": "/invoice",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/invoice"
+        },
+        "endpoint": "/invoice"
+      }
+    },
+    {
+      "endpoint": "/ledger",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "DEBUG",
+        "message": "getting data for /ledger",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/ledger"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /ledger",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger",
+        "extra": {
+          "endpoint": "/ledger",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger"
+        },
+        "endpoint": "/ledger"
+      }
+    },
+    {
+      "endpoint": "/ledger/account",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "DEBUG",
+        "message": "getting data for /ledger/account",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/ledger/account"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /ledger/account",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/account",
+        "extra": {
+          "endpoint": "/ledger/account",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/account"
+        },
+        "endpoint": "/ledger/account"
+      }
+    },
+    {
+      "endpoint": "/ledger/accountingPeriod",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "DEBUG",
+        "message": "getting data for /ledger/accountingPeriod",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/ledger/accountingPeriod"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /ledger/accountingPeriod",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/accountingPeriod",
+        "extra": {
+          "endpoint": "/ledger/accountingPeriod",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/accountingPeriod"
+        },
+        "endpoint": "/ledger/accountingPeriod"
+      }
+    },
+    {
+      "endpoint": "/ledger/posting",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "DEBUG",
+        "message": "getting data for /ledger/posting",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/ledger/posting"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /ledger/posting",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/posting",
+        "extra": {
+          "endpoint": "/ledger/posting",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/posting"
+        },
+        "endpoint": "/ledger/posting"
+      }
+    },
+    {
+      "endpoint": "/ledger/voucher",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "DEBUG",
+        "message": "getting data for /ledger/voucher",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/ledger/voucher"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:07",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /ledger/voucher",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/voucher",
+        "extra": {
+          "endpoint": "/ledger/voucher",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/voucher"
+        },
+        "endpoint": "/ledger/voucher"
+      }
+    },
+    {
+      "endpoint": "/order",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /order",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/order"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /order",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/order",
+        "extra": {
+          "endpoint": "/order",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/order"
+        },
+        "endpoint": "/order"
+      }
+    },
+    {
+      "endpoint": "/product",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /product",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/product"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /product",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/product",
+        "extra": {
+          "endpoint": "/product",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/product"
+        },
+        "endpoint": "/product"
+      }
+    },
+    {
+      "endpoint": "/project",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /project",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/project"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /project",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/project",
+        "extra": {
+          "endpoint": "/project",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/project"
+        },
+        "endpoint": "/project"
+      }
+    },
+    {
+      "endpoint": "/salary/compilation",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /salary/compilation",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/salary/compilation"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /salary/compilation",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/salary/compilation",
+        "extra": {
+          "endpoint": "/salary/compilation",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/salary/compilation"
+        },
+        "endpoint": "/salary/compilation"
+      }
+    },
+    {
+      "endpoint": "/travelExpense",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "DEBUG",
+        "message": "getting data for /travelExpense",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/travelExpense"
+      },
+      "result": {
+        "kind": "failed_to_get_tripletex_data",
+        "timestamp": "2026-03-21T17:42:06",
+        "level": "ERROR",
+        "message": "failed to get tripletex data for /travelExpense",
+        "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/travelExpense",
+        "extra": {
+          "endpoint": "/travelExpense",
+          "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/travelExpense"
+        },
+        "endpoint": "/travelExpense"
+      }
+    }
+  ],
+  "startup": [],
+  "other_messages": [],
+  "errors": [
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /customer/category",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/customer/category",
+      "extra": {
+        "endpoint": "/customer/category",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/customer/category"
+      },
+      "endpoint": "/customer/category"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /company",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/company",
+      "extra": {
+        "endpoint": "/company",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/company"
+      },
+      "endpoint": "/company"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /travelExpense",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/travelExpense",
+      "extra": {
+        "endpoint": "/travelExpense",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/travelExpense"
+      },
+      "endpoint": "/travelExpense"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /salary/compilation",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/salary/compilation",
+      "extra": {
+        "endpoint": "/salary/compilation",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/salary/compilation"
+      },
+      "endpoint": "/salary/compilation"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /project",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/project",
+      "extra": {
+        "endpoint": "/project",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/project"
+      },
+      "endpoint": "/project"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /product",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/product",
+      "extra": {
+        "endpoint": "/product",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/product"
+      },
+      "endpoint": "/product"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /order",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/order",
+      "extra": {
+        "endpoint": "/order",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/order"
+      },
+      "endpoint": "/order"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /invoice",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/invoice",
+      "extra": {
+        "endpoint": "/invoice",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/invoice"
+      },
+      "endpoint": "/invoice"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /inventory/stocktaking/productline",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/stocktaking/productline",
+      "extra": {
+        "endpoint": "/inventory/stocktaking/productline",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/stocktaking/productline"
+      },
+      "endpoint": "/inventory/stocktaking/productline"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /inventory/stocktaking",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/stocktaking",
+      "extra": {
+        "endpoint": "/inventory/stocktaking",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/stocktaking"
+      },
+      "endpoint": "/inventory/stocktaking"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /inventory/location",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/location",
+      "extra": {
+        "endpoint": "/inventory/location",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/location"
+      },
+      "endpoint": "/inventory/location"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /inventory/inventories",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/inventories",
+      "extra": {
+        "endpoint": "/inventory/inventories",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory/inventories"
+      },
+      "endpoint": "/inventory/inventories"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /inventory",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory",
+      "extra": {
+        "endpoint": "/inventory",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/inventory"
+      },
+      "endpoint": "/inventory"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /employee/employment/details",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment/details",
+      "extra": {
+        "endpoint": "/employee/employment/details",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment/details"
+      },
+      "endpoint": "/employee/employment/details"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /employee/employment",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment",
+      "extra": {
+        "endpoint": "/employee/employment",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment"
+      },
+      "endpoint": "/employee/employment"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /employee/category",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/category",
+      "extra": {
+        "endpoint": "/employee/category",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/category"
+      },
+      "endpoint": "/employee/category"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /deliveryAddress",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/deliveryAddress",
+      "extra": {
+        "endpoint": "/deliveryAddress",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/deliveryAddress"
+      },
+      "endpoint": "/deliveryAddress"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /bank/statement",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/bank/statement",
+      "extra": {
+        "endpoint": "/bank/statement",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/bank/statement"
+      },
+      "endpoint": "/bank/statement"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /balanceSheet",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/balanceSheet",
+      "extra": {
+        "endpoint": "/balanceSheet",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/balanceSheet"
+      },
+      "endpoint": "/balanceSheet"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /bank",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/bank",
+      "extra": {
+        "endpoint": "/bank",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/bank"
+      },
+      "endpoint": "/bank"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /contact",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/contact",
+      "extra": {
+        "endpoint": "/contact",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/contact"
+      },
+      "endpoint": "/contact"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /company/settings/altinn",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/company/settings/altinn",
+      "extra": {
+        "endpoint": "/company/settings/altinn",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/company/settings/altinn"
+      },
+      "endpoint": "/company/settings/altinn"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /country",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/country",
+      "extra": {
+        "endpoint": "/country",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/country"
+      },
+      "endpoint": "/country"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /customer",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/customer",
+      "extra": {
+        "endpoint": "/customer",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/customer"
+      },
+      "endpoint": "/customer"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /department",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/department",
+      "extra": {
+        "endpoint": "/department",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/department"
+      },
+      "endpoint": "/department"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /division",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/division",
+      "extra": {
+        "endpoint": "/division",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/division"
+      },
+      "endpoint": "/division"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:06",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /employee",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee",
+      "extra": {
+        "endpoint": "/employee",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee"
+      },
+      "endpoint": "/employee"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:07",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /ledger/voucher",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/voucher",
+      "extra": {
+        "endpoint": "/ledger/voucher",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/voucher"
+      },
+      "endpoint": "/ledger/voucher"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:07",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /ledger/posting",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/posting",
+      "extra": {
+        "endpoint": "/ledger/posting",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/posting"
+      },
+      "endpoint": "/ledger/posting"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:07",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /ledger",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger",
+      "extra": {
+        "endpoint": "/ledger",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger"
+      },
+      "endpoint": "/ledger"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:07",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /ledger/accountingPeriod",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/accountingPeriod",
+      "extra": {
+        "endpoint": "/ledger/accountingPeriod",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/accountingPeriod"
+      },
+      "endpoint": "/ledger/accountingPeriod"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:07",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /ledger/account",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/account",
+      "extra": {
+        "endpoint": "/ledger/account",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/ledger/account"
+      },
+      "endpoint": "/ledger/account"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:07",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /employee/employment/workingHoursScheme",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment/workingHoursScheme",
+      "extra": {
+        "endpoint": "/employee/employment/workingHoursScheme",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment/workingHoursScheme"
+      },
+      "endpoint": "/employee/employment/workingHoursScheme"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:07",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /employee/employment/employmentType",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment/employmentType",
+      "extra": {
+        "endpoint": "/employee/employment/employmentType",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/employment/employmentType"
+      },
+      "endpoint": "/employee/employment/employmentType"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:07",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /employee/nextOfKin",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/nextOfKin",
+      "extra": {
+        "endpoint": "/employee/nextOfKin",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/nextOfKin"
+      },
+      "endpoint": "/employee/nextOfKin"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:07",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /employee/standardTime",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/standardTime",
+      "extra": {
+        "endpoint": "/employee/standardTime",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/standardTime"
+      },
+      "endpoint": "/employee/standardTime"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:07",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /employee/entitlement",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/entitlement",
+      "extra": {
+        "endpoint": "/employee/entitlement",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/entitlement"
+      },
+      "endpoint": "/employee/entitlement"
+    },
+    {
+      "kind": "failed_to_get_tripletex_data",
+      "timestamp": "2026-03-21T17:42:07",
+      "level": "ERROR",
+      "message": "failed to get tripletex data for /employee/preferences",
+      "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 85, in get_tripletex_data\n    r.raise_for_status()\n    ~~~~~~~~~~~~~~~~~~^^\n  File \"/app/.venv/lib/python3.14/site-packages/requests/models.py\", line 1026, in raise_for_status\n    raise HTTPError(http_error_msg, response=self)\nrequests.exceptions.HTTPError: 403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/preferences",
+      "extra": {
+        "endpoint": "/employee/preferences",
+        "error": "403 Client Error: Forbidden for url: https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2/employee/preferences"
+      },
+      "endpoint": "/employee/preferences"
+    }
+  ]
+}

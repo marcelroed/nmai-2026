@@ -1,0 +1,1 @@
+"""NorgesGruppen challenge package."""

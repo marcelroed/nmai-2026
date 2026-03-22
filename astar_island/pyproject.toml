@@ -1,0 +1,29 @@
+[project]
+name = "astar-island"
+version = "0.1.0"
+description = "Code workspace for the NM i AI Astar Island challenge"
+readme = "README.md"
+authors = [
+    { name = "Herman Brunborg", email = "herman@brunborg.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "furu>=0.0.21",
+    "ipython>=9.11.0",
+    "matplotlib>=3.10.8",
+    "numpy>=2.4.3",
+    "pydantic>=2.12.0",
+    "requests>=2.32.5",
+    "rich>=14.3.3",
+    "ruff>=0.15.7",
+    "scipy>=1.17.1",
+    "tqdm>=4.67.3",
+    "ty>=0.0.24",
+]
+
+[project.scripts]
+astar-island-tui = "astar_island.tui:main"
+
+[build-system]
+requires = ["uv_build>=0.10.7,<0.11.0"]
+build-backend = "uv_build"

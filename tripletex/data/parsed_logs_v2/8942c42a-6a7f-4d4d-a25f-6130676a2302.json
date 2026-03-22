@@ -1,0 +1,4512 @@
+[
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "duration_ms": 17907.96,
+      "event": "request.end",
+      "response_headers": [
+        [
+          "content-length",
+          "22"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "x-request-id",
+          "8942c42a-6a7f-4d4d-a25f-6130676a2302"
+        ]
+      ],
+      "status_code": 200
+    },
+    "filename": "my_log.py",
+    "function": "__call__",
+    "level": "INFO",
+    "line": 402,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] request.end",
+    "module": "my_log",
+    "pathname": "/app/src/tripletex/my_log.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "task_name": "Task-8",
+    "thread": 140404991062848,
+    "thread_name": "MainThread",
+    "timestamp": "2026-03-22T10:58:07",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "serve",
+    "level": "DEBUG",
+    "line": 417,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] serve.handler.before_return",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:58:07",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 403, in serve\n    parsed.solve(tripletex_client)\n    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^\n  File \"/app/src/tripletex/parsers/task9_multi_line_invoice.py\", line 59, in solve\n    customer = get_customer_by_org_number(\n        org_number=self.org_number, tripletex_client=tripletex_client\n    )\n  File \"/app/src/tripletex/herman_tasks/utils.py\", line 73, in get_customer_by_org_number\n    (customer,) = [\n    ^^^^^^^^^^^\nValueError: not enough values to unpack (expected 1, got 0)",
+    "extra": {
+      "error": "not enough values to unpack (expected 1, got 0)"
+    },
+    "filename": "main.py",
+    "function": "serve",
+    "level": "ERROR",
+    "line": 405,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] failed to run solve",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:57",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "api_call_id": "cef0cfb0",
+      "api_duration_ms": 464.74,
+      "api_endpoint": "/customer",
+      "api_event": "response",
+      "api_method": "GET",
+      "api_response_body": {
+        "count": 51,
+        "from": 0,
+        "fullResultSize": 51,
+        "values": [
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10001,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Fjorden AS (10001)",
+            "email": "post@acme.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108134948,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Fjorden AS",
+            "organizationNumber": "999888777",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "+47 22 11 33 44",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405121355,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405121355"
+            },
+            "postalAddress": {
+              "id": 405121356,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405121356"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108134948",
+            "version": 9,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10004,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Bergen Consulting AS (10004)",
+            "email": "post@bergenconsulting.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108142102,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Bergen Consulting AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405135663,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405135663"
+            },
+            "postalAddress": {
+              "id": 405135664,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405135664"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108142102",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10005,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Fjordtech AS (10005)",
+            "email": "kontakt@fjordtech.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108148995,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Fjordtech AS",
+            "organizationNumber": "912345678",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405149451,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405149451"
+            },
+            "postalAddress": {
+              "id": 405149452,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405149452"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108148995",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10006,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Nordfjord Regnskap AS (10006)",
+            "email": "post@nordfjord.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108156909,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Nordfjord Regnskap AS",
+            "organizationNumber": "998877665",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405165283,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405165283"
+            },
+            "postalAddress": {
+              "id": 405165284,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405165284"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108156909",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10007,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Ib\u00e9rica Solutions SL (10007)",
+            "email": "info@iberica.es",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108157290,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Ib\u00e9rica Solutions SL",
+            "organizationNumber": "887766554",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405166045,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405166045"
+            },
+            "postalAddress": {
+              "id": 405166046,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405166046"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108157290",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10008,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Arctic Data Solutions (10008)",
+            "email": "contact@arcticdata.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108157326,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Arctic Data Solutions",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405166117,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405166117"
+            },
+            "postalAddress": {
+              "id": 405166118,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405166118"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108157326",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10009,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Nordfjord Regnskap AS (10009)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108157486,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Nordfjord Regnskap AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405166437,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405166437"
+            },
+            "postalAddress": {
+              "id": 405166438,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405166438"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108157486",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10010,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "TestCo SARL (10010)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108161628,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "MANUAL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "TestCo SARL",
+            "organizationNumber": "112233445",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405174728,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405174728"
+            },
+            "postalAddress": {
+              "id": 405174729,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405174729"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108161628",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10011,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Testfirma AS (10011)",
+            "email": "test@testfirma.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108162374,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Testfirma AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405176221,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405176221"
+            },
+            "postalAddress": {
+              "id": 405176222,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405176222"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108162374",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10012,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Prairie SARL (10012)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108163008,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "MANUAL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Prairie SARL",
+            "organizationNumber": "975013723",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405177489,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405177489"
+            },
+            "postalAddress": {
+              "id": 405177490,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405177490"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108163008",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10013,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "TestCo GmbH (10013)",
+            "email": "invoice@testco.de",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108168043,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "TestCo GmbH",
+            "organizationNumber": "123456789",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405187571,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405187571"
+            },
+            "postalAddress": {
+              "id": 405187572,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405187572"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108168043",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10014,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Gr\u00fcnfeld GmbH (10014)",
+            "email": "invoice@gruenfeld.de",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108168731,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Gr\u00fcnfeld GmbH",
+            "organizationNumber": "974406322",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405188947,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405188947"
+            },
+            "postalAddress": {
+              "id": 405188948,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405188948"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108168731",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10015,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Havstad Elektro AS (10015)",
+            "email": "post@havstad.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108171502,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Havstad Elektro AS",
+            "organizationNumber": "887766443",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405194494,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405194494"
+            },
+            "postalAddress": {
+              "id": 405194495,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405194495"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108171502",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10016,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Havstad Elektro AS (10016)",
+            "email": "post@havstad-elektro.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108171842,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Havstad Elektro AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405195175,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405195175"
+            },
+            "postalAddress": {
+              "id": 405195176,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405195176"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108171842",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10017,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Porto Alegre Lda (10017)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108173283,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Porto Alegre Lda",
+            "organizationNumber": "884811686",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405198058,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405198058"
+            },
+            "postalAddress": {
+              "id": 405198059,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405198059"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108173283",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10018,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Porto Alegre Lda (10018)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108174147,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Porto Alegre Lda",
+            "organizationNumber": "884811686",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405199786,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405199786"
+            },
+            "postalAddress": {
+              "id": 405199787,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405199787"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108174147",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10019,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Porto Alegre Lda (10019)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108174867,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Porto Alegre Lda",
+            "organizationNumber": "884811686",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405201226,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405201226"
+            },
+            "postalAddress": {
+              "id": 405201227,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405201227"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108174867",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10020,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Fjelltopp Consulting AS (10020)",
+            "email": "post@fjelltopp.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108175254,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Fjelltopp Consulting AS",
+            "organizationNumber": "776655443",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405202000,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405202000"
+            },
+            "postalAddress": {
+              "id": 405202001,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405202001"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108175254",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10021,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Fjelltopp Consulting AS (10021)",
+            "email": "invoice@fjelltopp.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108175703,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Fjelltopp Consulting AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405202898,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405202898"
+            },
+            "postalAddress": {
+              "id": 405202899,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405202899"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108175703",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10022,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Fjelltopp Consulting AS (10022)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108175795,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Fjelltopp Consulting AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405203082,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405203082"
+            },
+            "postalAddress": {
+              "id": 405203083,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405203083"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108175795",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10023,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Nordlys Digital AS (10023)",
+            "email": "kontakt@nordlys.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108175839,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Nordlys Digital AS",
+            "organizationNumber": "112233445",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405203170,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405203170"
+            },
+            "postalAddress": {
+              "id": 405203171,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405203171"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108175839",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10024,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Vinstra Bygg AS (10024)",
+            "email": "post@vinstra.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108179427,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Vinstra Bygg AS",
+            "organizationNumber": "554433998",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405210346,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405210346"
+            },
+            "postalAddress": {
+              "id": 405210347,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405210347"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108179427",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10025,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Vinstra Bygg AS (10025)",
+            "email": "post@vinstrabygg.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108179807,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Vinstra Bygg AS",
+            "organizationNumber": "554433998",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405211106,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405211106"
+            },
+            "postalAddress": {
+              "id": 405211107,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405211107"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108179807",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10026,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Vinstra Bygg AS (10026)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108179880,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Vinstra Bygg AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405211252,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405211252"
+            },
+            "postalAddress": {
+              "id": 405211253,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405211253"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108179880",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10027,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Midnight Sun AS (10027)",
+            "email": "hello@midnightsun.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108179924,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Midnight Sun AS",
+            "organizationNumber": "998877001",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405211340,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405211340"
+            },
+            "postalAddress": {
+              "id": 405211341,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405211341"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108179924",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10028,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Luz do Sol Lda (10028)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108182588,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "MANUAL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Luz do Sol Lda",
+            "organizationNumber": "939210970",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405216670,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405216670"
+            },
+            "postalAddress": {
+              "id": 405216671,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405216671"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108182588",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10029,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Test Corp (10029)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108183424,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "MANUAL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Test Corp",
+            "organizationNumber": "112233445",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405218342,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405218342"
+            },
+            "postalAddress": {
+              "id": 405218343,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405218343"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108183424",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10030,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Solvik Transport AS (10030)",
+            "email": "post@solvik.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108184142,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Solvik Transport AS",
+            "organizationNumber": "889977553",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405219784,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405219784"
+            },
+            "postalAddress": {
+              "id": 405219785,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405219785"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108184142",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10031,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Solvik Transport AS (10031)",
+            "email": "post@solviktransport.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108184475,
+            "invoiceEmail": "faktura@solviktransport.no",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Solvik Transport AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405220450,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405220450"
+            },
+            "postalAddress": {
+              "id": 405220451,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405220451"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108184475",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10032,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Solvik Transport AS (10032)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108184684,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "MANUAL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Solvik Transport AS",
+            "organizationNumber": "889977553",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405220869,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405220869"
+            },
+            "postalAddress": {
+              "id": 405220870,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405220870"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108184684",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10033,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Solvik Transport AS (10033)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108184894,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Solvik Transport AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405221289,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405221289"
+            },
+            "postalAddress": {
+              "id": 405221290,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405221290"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108184894",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10034,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Berge Mekaniske AS (10034)",
+            "email": "post@bergemek.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108189583,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Berge Mekaniske AS",
+            "organizationNumber": "776655001",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405230679,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405230679"
+            },
+            "postalAddress": {
+              "id": 405230680,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405230680"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108189583",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10035,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Berge Mekaniske AS (10035)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108190002,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Berge Mekaniske AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "+47 55 11 22 33",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405231517,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405231517"
+            },
+            "postalAddress": {
+              "id": 405231518,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405231518"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108190002",
+            "version": 2,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10036,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Berge Mekaniske AS (10036)",
+            "email": "post@bergemekaniske.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108190386,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Berge Mekaniske AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405232285,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405232285"
+            },
+            "postalAddress": {
+              "id": 405232286,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405232286"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108190386",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10037,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Berge Mekaniske AS (10037)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108190576,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "MANUAL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Berge Mekaniske AS",
+            "organizationNumber": "776655001",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405232665,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405232665"
+            },
+            "postalAddress": {
+              "id": 405232666,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405232666"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108190576",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10038,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Berge Mekaniske AS (10038)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108190635,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Berge Mekaniske AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405232783,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405232783"
+            },
+            "postalAddress": {
+              "id": 405232784,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405232784"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108190635",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10039,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Olivares SL (10039)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108192473,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "MANUAL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Olivares SL",
+            "organizationNumber": "866946108",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405236459,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405236459"
+            },
+            "postalAddress": {
+              "id": 405236460,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405236460"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108192473",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10040,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Stavanger Tech AS (10040)",
+            "email": "info@stavtech.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108192720,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Stavanger Tech AS",
+            "organizationNumber": "443322110",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405236953,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405236953"
+            },
+            "postalAddress": {
+              "id": 405236954,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405236954"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108192720",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10041,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Nordvik AS (10041)",
+            "email": "post@nordvik.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108196574,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Nordvik AS",
+            "organizationNumber": "998877111",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405244653,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405244653"
+            },
+            "postalAddress": {
+              "id": 405244654,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405244654"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108196574",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10042,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Havet AS (10042)",
+            "email": "post@havet.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108210517,
+            "invoiceEmail": "post@havet.no",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Havet AS",
+            "organizationNumber": "998877000",
+            "overdueNoticeEmail": "post@havet.no",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405272529,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405272529"
+            },
+            "postalAddress": {
+              "id": 405272530,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405272530"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108210517",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10043,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Debug Customer AS (10043)",
+            "email": "post@debug.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108213528,
+            "invoiceEmail": "post@debug.no",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Debug Customer AS",
+            "organizationNumber": "333444555",
+            "overdueNoticeEmail": "post@debug.no",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405278555,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405278555"
+            },
+            "postalAddress": {
+              "id": 405278556,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405278556"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108213528",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10044,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Alt Supplier AS (10044/20014)",
+            "email": "faktura@alt.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108213756,
+            "invoiceEmail": "faktura@alt.no",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": true,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Alt Supplier AS",
+            "organizationNumber": "999000111",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405279011,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405279011"
+            },
+            "postalAddress": {
+              "id": 405279012,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405279012"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 20014,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108213756",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10045,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Stripped AS (10045)",
+            "email": "post@stripped.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108214800,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Stripped AS",
+            "organizationNumber": "444555666",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405281099,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405281099"
+            },
+            "postalAddress": {
+              "id": 405281100,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405281100"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108214800",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10046,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Fjorden AS (10046)",
+            "email": "post@fjorden.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108215325,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Fjorden AS",
+            "organizationNumber": "998877123",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405282149,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405282149"
+            },
+            "postalAddress": {
+              "id": 405282150,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405282150"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108215325",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10047,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Test Tier2 AS (10047)",
+            "email": "post@tier2.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108217530,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Test Tier2 AS",
+            "organizationNumber": "112233999",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405286559,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405286559"
+            },
+            "postalAddress": {
+              "id": 405286560,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405286560"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108217530",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10048,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Havbris AS (10048)",
+            "email": "post@havbris.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108254992,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Havbris AS",
+            "organizationNumber": "946293199",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405361246,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405361246"
+            },
+            "postalAddress": {
+              "id": 405361247,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405361247"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108254992",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10049,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Havbris AS (10049)",
+            "email": "post@havbris.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108255478,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Havbris AS",
+            "organizationNumber": "946293199",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405362203,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405362203"
+            },
+            "postalAddress": {
+              "id": 405362204,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405362204"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108255478",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10050,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Validator AS (10050)",
+            "email": "post@validator.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108278331,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Validator AS",
+            "organizationNumber": "999888777",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405407549,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405407549"
+            },
+            "postalAddress": {
+              "id": 405407550,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405407550"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108278331",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10051,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Validator AS (10051)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108278933,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Validator AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405408747,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405408747"
+            },
+            "postalAddress": {
+              "id": 405408748,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405408748"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108278933",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10052,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Run46 AS (10052)",
+            "email": "run46@test.no",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108284790,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Run46 AS",
+            "organizationNumber": "946293100",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405420393,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405420393"
+            },
+            "postalAddress": {
+              "id": 405420394,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405420394"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108284790",
+            "version": 1,
+            "website": ""
+          },
+          {
+            "accountManager": null,
+            "bankAccountPresentation": [],
+            "category1": null,
+            "category2": null,
+            "category3": null,
+            "currency": {
+              "id": 1,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/currency/1"
+            },
+            "customerNumber": 10053,
+            "deliveryAddress": null,
+            "department": null,
+            "description": "",
+            "discountPercentage": 0,
+            "displayName": "Run46 AS (10053)",
+            "email": "",
+            "emailAttachmentType": "ATTACHMENT",
+            "globalLocationNumber": 0,
+            "id": 108285994,
+            "invoiceEmail": "",
+            "invoiceSMSNotificationNumber": "",
+            "invoiceSendMethod": "EMAIL",
+            "invoiceSendSMSNotification": false,
+            "invoicesDueIn": 14,
+            "invoicesDueInType": "DAYS",
+            "isAutomaticNoticeOfDebtCollectionEnabled": false,
+            "isAutomaticReminderEnabled": false,
+            "isAutomaticSoftReminderEnabled": false,
+            "isCustomer": true,
+            "isFactoring": false,
+            "isInactive": false,
+            "isPrivateIndividual": false,
+            "isSupplier": false,
+            "language": "NO",
+            "ledgerAccount": {
+              "id": 424136319,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/ledger/account/424136319"
+            },
+            "name": "Run46 AS",
+            "organizationNumber": "",
+            "overdueNoticeEmail": "",
+            "phoneNumber": "",
+            "phoneNumberMobile": "",
+            "physicalAddress": {
+              "id": 405422787,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405422787"
+            },
+            "postalAddress": {
+              "id": 405422788,
+              "url": "kkpqfuj-amager.tripletex.dev/v2/address/405422788"
+            },
+            "singleCustomerInvoice": false,
+            "supplierNumber": 0,
+            "url": "kkpqfuj-amager.tripletex.dev/v2/customer/108285994",
+            "version": 1,
+            "website": ""
+          }
+        ],
+        "versionDigest": "'If-None-Match' header not specified"
+      },
+      "api_response_headers": {
+        "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0, post-check=0, pre-check=0",
+        "Connection": "keep-alive",
+        "Content-Encoding": "gzip",
+        "Content-Type": "application/json;charset=UTF-8",
+        "Date": "Sun, 22 Mar 2026 10:57:57 GMT",
+        "Pragma": "no-cache",
+        "Server": "tripletex.no",
+        "Set-Cookie": "JSESSIONID=3980CBDAF1C13D6253D09C474EC9B3E0; Path=/; Secure; HttpOnly; SameSite=None, tlx_locale=no_NO; Max-Age=3600; Expires=Sun, 22 Mar 2026 11:57:56 GMT; Path=/; Secure; SameSite=None",
+        "Strict-Transport-Security": "max-age=31536000;includeSubDomains;preload",
+        "Transfer-Encoding": "chunked",
+        "X-Content-Type-Options": "nosniff",
+        "X-Rate-Limit-Limit": "100",
+        "X-Rate-Limit-Remaining": "61",
+        "X-Rate-Limit-Reset": "3",
+        "vary": "accept-encoding",
+        "x-tlx-request-id": "35a6d70a-662b-48ec-885d-957fea4f1951"
+      },
+      "api_status_code": 200,
+      "api_status_reason": "",
+      "api_url": "https://kkpqfuj-amager.tripletex.dev/v2/customer"
+    },
+    "filename": "client.py",
+    "function": "_request",
+    "level": "INFO",
+    "line": 174,
+    "log_version": "4",
+    "logger": "logged_client",
+    "message": "[8942c] [cef0cfb0] <-- GET https://kkpqfuj-amager.tripletex.dev/v2/customer  200 () 464.7ms",
+    "module": "client",
+    "pathname": "/app/src/tripletex/client.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:57",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "api_call_id": "cef0cfb0",
+      "api_endpoint": "/customer",
+      "api_event": "request",
+      "api_method": "GET",
+      "api_request_body": null,
+      "api_request_headers": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate, zstd",
+        "Connection": "keep-alive",
+        "User-Agent": "python-requests/2.32.5"
+      },
+      "api_request_params": null,
+      "api_url": "https://kkpqfuj-amager.tripletex.dev/v2/customer"
+    },
+    "filename": "client.py",
+    "function": "_request",
+    "level": "INFO",
+    "line": 120,
+    "log_version": "4",
+    "logger": "logged_client",
+    "message": "[8942c] [cef0cfb0] --> GET https://kkpqfuj-amager.tripletex.dev/v2/customer",
+    "module": "client",
+    "pathname": "/app/src/tripletex/client.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:56",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "task9_multi_line_invoice.py",
+    "function": "solve",
+    "level": "INFO",
+    "line": 58,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] getting customer 900314183",
+    "module": "task9_multi_line_invoice",
+    "pathname": "/app/src/tripletex/parsers/task9_multi_line_invoice.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:56",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "task9_multi_line_invoice.py",
+    "function": "solve",
+    "level": "INFO",
+    "line": 57,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] doing task 9",
+    "module": "task9_multi_line_invoice",
+    "pathname": "/app/src/tripletex/parsers/task9_multi_line_invoice.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:56",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "parsed": "customer_name='Strandvik AS' org_number='900314183' product_lines=[ProductLine(product_name='Webdesign', product_number='9716', amount_excl_vat=13450.0, vat_rate=25.0), ProductLine(product_name='Skylagring', product_number='6906', amount_excl_vat=7700.0, vat_rate=15.0), ProductLine(product_name='Systemutvikling', product_number='2265', amount_excl_vat=18800.0, vat_rate=0.0)]",
+      "task": "Task 9"
+    },
+    "filename": "main.py",
+    "function": "serve",
+    "level": "INFO",
+    "line": 401,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] serve.handler.parsed_task",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:56",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "_client.py",
+    "function": "_send_single_request",
+    "level": "INFO",
+    "line": 1025,
+    "log_version": "4",
+    "logger": "httpx",
+    "message": "[8942c] HTTP Request: POST https://api.anthropic.com/v1/messages \"HTTP/1.1 200 OK\"",
+    "module": "_client",
+    "pathname": "/app/.venv/lib/python3.14/site-packages/httpx/_client.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:56",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "task": "Task 9"
+    },
+    "filename": "main.py",
+    "function": "serve",
+    "level": "INFO",
+    "line": 236,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] serve.handler.task Task 9",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:53",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "_client.py",
+    "function": "_send_single_request",
+    "level": "INFO",
+    "line": 1025,
+    "log_version": "4",
+    "logger": "httpx",
+    "message": "[8942c] HTTP Request: POST https://api.anthropic.com/v1/messages \"HTTP/1.1 200 OK\"",
+    "module": "_client",
+    "pathname": "/app/.venv/lib/python3.14/site-packages/httpx/_client.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:53",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "serve",
+    "level": "DEBUG",
+    "line": 232,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] serve.handler.going_to_main_run",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:51",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "data": {
+        "completed_at": "2026-03-22T10:07:31.960656+00:00",
+        "duration_ms": 126469,
+        "feedback": {
+          "checks": [
+            "Check 1: failed",
+            "Check 2: failed",
+            "Check 3: failed",
+            "Check 4: failed",
+            "Check 5: failed",
+            "Check 6: failed"
+          ],
+          "comment": "6/6 checks failed."
+        },
+        "id": "8cc6637e-acc0-412f-8ea7-c214baf72550",
+        "normalized_score": 0,
+        "queued_at": "2026-03-22T10:05:22.035235+00:00",
+        "score_max": 8,
+        "score_raw": 0,
+        "status": "completed"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_submission_status",
+    "level": "INFO",
+    "line": 144,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] got the most likely current run id 8cc6637e-acc0-412f-8ea7-c214baf72550 (idx 0)",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:50",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "response": [
+        {
+          "completed_at": "2026-03-22T10:07:31.960656+00:00",
+          "duration_ms": 126469,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "8cc6637e-acc0-412f-8ea7-c214baf72550",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T10:05:22.035235+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T10:04:05.744285+00:00",
+          "duration_ms": 126758,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "fb74bfe3-b26a-4ddb-9b20-61ea4634fdff",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T10:01:57.778171+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T10:04:24.847062+00:00",
+          "duration_ms": 300063,
+          "fail_reason": "endpoint_unreachable",
+          "feedback": {
+            "checks": [],
+            "comment": "0/0 checks passed."
+          },
+          "id": "fcebc80b-f0c7-4db3-8776-a42784d42c14",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T09:59:24.726075+00:00",
+          "score_max": 1,
+          "score_raw": 0,
+          "status": "failed"
+        },
+        {
+          "completed_at": "2026-03-22T09:56:44.046165+00:00",
+          "duration_ms": 300054,
+          "fail_reason": "endpoint_unreachable",
+          "feedback": {
+            "checks": [],
+            "comment": "0/0 checks passed."
+          },
+          "id": "5cffb2dc-d916-4942-8c33-062135c04939",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T09:51:39.983186+00:00",
+          "score_max": 1,
+          "score_raw": 0,
+          "status": "failed"
+        },
+        {
+          "completed_at": "2026-03-22T07:19:31.261875+00:00",
+          "duration_ms": 28488,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "3/4 checks failed."
+          },
+          "id": "f84395c4-65cd-45e9-8e6a-4a07c740342b",
+          "normalized_score": 0.5,
+          "queued_at": "2026-03-22T07:19:02.600957+00:00",
+          "score_max": 8,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:19:23.720502+00:00",
+          "duration_ms": 26514,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "fec57128-8c53-450a-beac-76e6d66ec9c4",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:18:56.944164+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:19:11.552774+00:00",
+          "duration_ms": 27549,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed"
+            ],
+            "comment": "2/3 checks failed."
+          },
+          "id": "b57f13cb-ae02-4910-be90-d849702f824d",
+          "normalized_score": 0.5,
+          "queued_at": "2026-03-22T07:18:43.949496+00:00",
+          "score_max": 8,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:18:56.741466+00:00",
+          "duration_ms": 24784,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "f68ba075-26df-4c0f-b667-2c0345a8d9cb",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:18:31.882835+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:18:49.724578+00:00",
+          "duration_ms": 25281,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "23c70db5-2f3d-4227-a754-ae4c3f1259bd",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:18:24.409557+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:18:35.767122+00:00",
+          "duration_ms": 27875,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "d7a3a28e-5f1d-47e7-ba0b-1f811d788e96",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:18:07.054701+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:18:30.081883+00:00",
+          "duration_ms": 29709,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "6b6e537c-7b0b-4662-9201-8351935b896d",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:18:00.260043+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:18:18.829880+00:00",
+          "duration_ms": 24473,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed"
+            ],
+            "comment": "7/7 checks failed."
+          },
+          "id": "091ff409-2e59-4450-b9c0-d551d5c88a06",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:17:54.013769+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:18:02.489622+00:00",
+          "duration_ms": 23928,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "b5d76f5c-fae0-4390-bfd8-e6cc8691f41c",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:17:38.525812+00:00",
+          "score_max": 6,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:17:56.954741+00:00",
+          "duration_ms": 27169,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "e0242d0d-05aa-4e5f-90cb-7efc2bb897b1",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:17:29.441574+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:17:51.094001+00:00",
+          "duration_ms": 28217,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "c63b97d3-d5ef-43c7-bd4b-f15527394137",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:17:22.770532+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:17:32.849613+00:00",
+          "duration_ms": 26283,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "71acb17e-ca89-44ba-a0dc-f13531962921",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:17:06.531422+00:00",
+          "score_max": 6,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:17:28.437791+00:00",
+          "duration_ms": 29892,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed"
+            ],
+            "comment": "2/3 checks failed."
+          },
+          "id": "a710ca12-079f-411c-9640-067c51263f8f",
+          "normalized_score": 0.5,
+          "queued_at": "2026-03-22T07:16:58.505022+00:00",
+          "score_max": 8,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:17:19.212592+00:00",
+          "duration_ms": 37564,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: passed",
+              "Check 6: failed"
+            ],
+            "comment": "5/6 checks failed."
+          },
+          "id": "ef76c986-3d7a-4f16-b517-db88f1a4fd2f",
+          "normalized_score": 0.6,
+          "queued_at": "2026-03-22T07:16:40.853324+00:00",
+          "score_max": 10,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:16:56.518789+00:00",
+          "duration_ms": 25788,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "3a90d906-a89b-4961-89be-005796d48d53",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:16:30.489288+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:16:35.180578+00:00",
+          "duration_ms": 25635,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "e76ea06a-dd3a-4733-9442-11882eace688",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:16:08.950059+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:16:28.612599+00:00",
+          "duration_ms": 32327,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "2ae43ee0-1ceb-461d-8753-fe8ab02a7aad",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:15:56.234868+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:17:04.322218+00:00",
+          "duration_ms": 74056,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "1dd732ac-b29d-402d-b3a0-fac82f6bbd4f",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:15:50.229052+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:15:49.665167+00:00",
+          "duration_ms": 24249,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed",
+              "Check 8: failed",
+              "Check 9: failed",
+              "Check 10: failed"
+            ],
+            "comment": "10/10 checks failed."
+          },
+          "id": "1fac5a63-73ea-4afe-b6d2-4adc965523fa",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:15:24.881140+00:00",
+          "score_max": 14,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:16:01.220064+00:00",
+          "duration_ms": 42688,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed"
+            ],
+            "comment": "2/2 checks failed."
+          },
+          "id": "0f9d42c2-f3ce-42b7-8fec-10a4cddbfb22",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:15:18.379668+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:15:43.904240+00:00",
+          "duration_ms": 32546,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "426027a0-9e6e-4d74-b2c6-bbbfa3c0b56c",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:15:11.142304+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:15:09.777813+00:00",
+          "duration_ms": 24281,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed",
+              "Check 8: failed",
+              "Check 9: failed",
+              "Check 10: failed",
+              "Check 11: failed",
+              "Check 12: failed",
+              "Check 13: failed",
+              "Check 14: failed",
+              "Check 15: failed"
+            ],
+            "comment": "15/15 checks failed."
+          },
+          "id": "dfd6c9d1-cba1-4fe5-ae5d-ff92ee25ac18",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:14:45.430705+00:00",
+          "score_max": 22,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:15:10.927579+00:00",
+          "duration_ms": 32860,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: passed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed"
+            ],
+            "comment": "5/7 checks failed."
+          },
+          "id": "1bcc7655-8001-47c5-84b5-f4a899884993",
+          "normalized_score": 0.5455,
+          "queued_at": "2026-03-22T07:14:37.870819+00:00",
+          "score_max": 11,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T07:15:08.341754+00:00",
+          "duration_ms": 36613,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "82e893f9-12e4-46af-8e3b-8fb46f3d9e0d",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T07:14:31.544427+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:51:58.758555+00:00",
+          "duration_ms": 27774,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed"
+            ],
+            "comment": "1/2 checks failed."
+          },
+          "id": "95c2701a-2a1b-4f14-8784-660333e6d6fc",
+          "normalized_score": 0.2857,
+          "queued_at": "2026-03-22T05:51:30.556884+00:00",
+          "score_max": 7,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:51:54.414150+00:00",
+          "duration_ms": 29049,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "3/4 checks failed."
+          },
+          "id": "aecef942-1073-4636-b079-24df52fcc2c4",
+          "normalized_score": 0.6,
+          "queued_at": "2026-03-22T05:51:24.968483+00:00",
+          "score_max": 10,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:51:29.994706+00:00",
+          "duration_ms": 23091,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed"
+            ],
+            "comment": "3/3 checks failed."
+          },
+          "id": "7d8c82fd-1c6e-43c1-8e36-ffa1153c3a54",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:51:06.421960+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:51:22.427187+00:00",
+          "duration_ms": 25129,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "3/4 checks failed."
+          },
+          "id": "788a3184-76c0-4c0e-9787-f3b23e259751",
+          "normalized_score": 0.5,
+          "queued_at": "2026-03-22T05:50:56.865485+00:00",
+          "score_max": 8,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:51:24.642052+00:00",
+          "duration_ms": 33360,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: passed",
+              "Check 6: failed"
+            ],
+            "comment": "5/6 checks failed."
+          },
+          "id": "81a7d3b4-486f-4222-ac04-e8e025c9058c",
+          "normalized_score": 0.6,
+          "queued_at": "2026-03-22T05:50:50.435787+00:00",
+          "score_max": 10,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:50:47.730427+00:00",
+          "duration_ms": 22513,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed",
+              "Check 8: failed",
+              "Check 9: failed",
+              "Check 10: failed",
+              "Check 11: failed",
+              "Check 12: failed",
+              "Check 13: failed",
+              "Check 14: failed",
+              "Check 15: failed"
+            ],
+            "comment": "15/15 checks failed."
+          },
+          "id": "2465e970-796d-4859-a2cc-41717aff7fad",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:50:24.859977+00:00",
+          "score_max": 22,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:51:02.481876+00:00",
+          "duration_ms": 41696,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed"
+            ],
+            "comment": "2/2 checks failed."
+          },
+          "id": "c1ea9d2c-26f8-4729-b6ed-e5217910c322",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:50:20.620698+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:50:56.131607+00:00",
+          "duration_ms": 40718,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed"
+            ],
+            "comment": "2/2 checks failed."
+          },
+          "id": "87156db4-b837-4d84-bb7e-d3a34b001055",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:50:15.368180+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:50:22.393588+00:00",
+          "duration_ms": 27253,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed"
+            ],
+            "comment": "1/2 checks failed."
+          },
+          "id": "d1ac28f6-c208-4d75-bb00-e01daaeeeecf",
+          "normalized_score": 0.2857,
+          "queued_at": "2026-03-22T05:49:54.700785+00:00",
+          "score_max": 7,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:50:14.921672+00:00",
+          "duration_ms": 25021,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "bb8f4010-0fd8-4655-bfbb-b039fe2e9c7f",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:49:49.628832+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:50:18.769074+00:00",
+          "duration_ms": 39506,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed"
+            ],
+            "comment": "2/2 checks failed."
+          },
+          "id": "11247d2a-8b23-420c-b650-3ab3b64255be",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:49:39.252100+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:49:45.086832+00:00",
+          "duration_ms": 19572,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: passed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed"
+            ],
+            "comment": "5/7 checks failed."
+          },
+          "id": "3198c8e9-1209-449d-b398-1ce2dee95110",
+          "normalized_score": 0.5455,
+          "queued_at": "2026-03-22T05:49:25.430791+00:00",
+          "score_max": 11,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:49:44.320880+00:00",
+          "duration_ms": 24512,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "67e7ae2c-c8d3-46fa-8b47-c813587dfe4e",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:49:19.739923+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:49:38.414088+00:00",
+          "duration_ms": 24429,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "e7c4f89a-98a9-41c7-b058-083aca753a0c",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:49:13.779440+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:41:42.901045+00:00",
+          "duration_ms": 74758,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "d9ec9a84-f6b2-49f4-8f2d-efe341dbf169",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:40:27.934558+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:22:46.522268+00:00",
+          "duration_ms": 9255,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "e4896249-c41b-4af8-94cc-68a0c63ed7a3",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:22:37.021735+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:22:36.559906+00:00",
+          "duration_ms": 5308,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "81ab2d9e-3a6a-4a29-8783-1f8124d8be7e",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:22:30.986223+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:22:30.526052+00:00",
+          "duration_ms": 4535,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed"
+            ],
+            "comment": "3/3 checks failed."
+          },
+          "id": "83b5641e-1f3a-4a9c-8727-e8ab5a3a9b5d",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:22:25.949615+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:22:23.432890+00:00",
+          "duration_ms": 1455,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "0b72849a-adde-4eae-8952-ffeb2409e5a4",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:22:21.918943+00:00",
+          "score_max": 13,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:22:25.669389+00:00",
+          "duration_ms": 9090,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "804b4c00-ae89-42b0-a1c8-697a53404656",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:22:16.474622+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:22:19.015330+00:00",
+          "duration_ms": 10460,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "3/4 checks failed."
+          },
+          "id": "fd9e8aa2-b8ba-4cb2-8ddd-3c4e93f05d93",
+          "normalized_score": 0.6,
+          "queued_at": "2026-03-22T05:22:08.288582+00:00",
+          "score_max": 10,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-22T05:22:09.322044+00:00",
+          "duration_ms": 6785,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "645326ed-bdf6-4cfc-96ee-e9690f47c14e",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:22:02.383599+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        }
+      ]
+    },
+    "filename": "main.py",
+    "function": "get_submission_status",
+    "level": "INFO",
+    "line": 134,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] got submission status for nmai",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:50",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_submission_status",
+    "level": "INFO",
+    "line": 128,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] getting the submission status for nmai",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:49",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "base_url": "https://kkpqfuj-amager.tripletex.dev/v2",
+      "file_count": 0,
+      "payload": "prompt='Opprett ein faktura til kunden Strandvik AS (org.nr 900314183) med tre produktlinjer: Webdesign (9716) til 13450 kr med 25 % MVA, Skylagring (6906) til 7700 kr med 15 % MVA (n\u00e6ringsmiddel), og Systemutvikling (2265) til 18800 kr med 0 % MVA (avgiftsfri).' files=[] tripletex_credentials=TripletexCredentials(base_url='https://kkpqfuj-amager.tripletex.dev/v2', auth=(0, 'eyJ0b2tlbklkIjoyMTQ3NjI4MzU5LCJ0b2tlbiI6IjAzZTU2N2FjLThhMGEtNDEyZS04NDVjLTI0MThkYzcxYzM0YiJ9'))",
+      "previous_submission_id": "fb74bfe3-b26a-4ddb-9b20-61ea4634fdff",
+      "prompt": "Opprett ein faktura til kunden Strandvik AS (org.nr 900314183) med tre produktlinjer: Webdesign (9716) til 13450 kr med 25 % MVA, Skylagring (6906) til 7700 kr med 15 % MVA (n\u00e6ringsmiddel), og Systemutvikling (2265) til 18800 kr med 0 % MVA (avgiftsfri)."
+    },
+    "filename": "main.py",
+    "function": "serve",
+    "level": "DEBUG",
+    "line": 216,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] serve.handler.enter",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:49",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "serve",
+    "level": "DEBUG",
+    "line": 214,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] DEBUG RUN!!!",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140404898920128,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T10:57:49",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "body": {
+        "preview": "{\"prompt\": \"Opprett ein faktura til kunden Strandvik AS (org.nr 900314183) med tre produktlinjer: Webdesign (9716) til 13450 kr med 25 % MVA, Skylagring (6906) til 7700 kr med 15 % MVA (n\\u00e6ringsmiddel), og Systemutvikling (2265) til 18800 kr med 0 % MVA (avgiftsfri).\", \"files\": [], \"tripletex_credentials\": {\"base_url\": \"https://kkpqfuj-amager.tripletex.dev/v2\", \"session_token\": \"eyJ0b2tlbklkIjoyMTQ3NjI4MzU5LCJ0b2tlbiI6IjAzZTU2N2FjLThhMGEtNDEyZS04NDVjLTI0MThkYzcxYzM0YiJ9\"}}",
+        "size_bytes": 481
+      },
+      "client": {
+        "host": "169.254.169.126",
+        "port": 30674
+      },
+      "event": "request.start",
+      "headers": [
+        [
+          "host",
+          "tripletex-agent-1010470531441.europe-north1.run.app"
+        ],
+        [
+          "content-length",
+          "481"
+        ],
+        [
+          "user-agent",
+          "Python-urllib/3.14"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "Bearer DEBUGfb74bfe3-b26a-4ddb-9b20-61ea4634fdff"
+        ],
+        [
+          "x-cloud-trace-context",
+          "015d2008e67f983d93404fdebe947240/16162069111283577355;o=1"
+        ],
+        [
+          "x-forwarded-proto",
+          "https"
+        ],
+        [
+          "traceparent",
+          "00-015d2008e67f983d93404fdebe947240-e04b3439f55ef20b-01"
+        ],
+        [
+          "x-forwarded-for",
+          "171.64.77.51"
+        ],
+        [
+          "forwarded",
+          "for=\"171.64.77.51\";proto=https"
+        ],
+        [
+          "accept-encoding",
+          "identity"
+        ]
+      ],
+      "http_version": "1.1",
+      "query_string": "",
+      "request_line": "POST /solve HTTP/1.1",
+      "scheme": "http",
+      "server": [
+        "169.254.169.1",
+        8080
+      ],
+      "url": "http://tripletex-agent-1010470531441.europe-north1.run.app/solve"
+    },
+    "filename": "my_log.py",
+    "function": "__call__",
+    "level": "INFO",
+    "line": 360,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[8942c] request.start",
+    "module": "my_log",
+    "pathname": "/app/src/tripletex/my_log.py",
+    "process": 33,
+    "process_name": "MainProcess",
+    "request_id": "8942c42a-6a7f-4d4d-a25f-6130676a2302",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "task_name": "Task-8",
+    "thread": 140404991062848,
+    "thread_name": "MainThread",
+    "timestamp": "2026-03-22T10:57:49",
+    "unique_request_id": "c2e29693-9df4-4e0d-b6e3-920d59b63aeb"
+  }
+]

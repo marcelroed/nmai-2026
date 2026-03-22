@@ -1,0 +1,37 @@
+[project]
+name = "norgesgruppen"
+version = "0.1.0"
+description = "Code workspace for the NM i AI NorgesGruppen challenge"
+readme = "README.md"
+authors = [{ name = "Herman Brunborg", email = "herman@brunborg.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "3lc>=2.22.0",
+    "google-cloud-storage>=3.10.0",
+    "ipdb>=0.13.13",
+    "ipython>=9.11.0",
+    "kornia>=0.8.2",
+    "nvidia-dali-cuda120>=2.0.0",
+    "onnx>=1.20.1",
+    "onnxruntime-gpu>=1.24.4",
+    "rfdetr[plus,onnx]>=1.5.2",
+    "sahi>=0.11.36",
+    "typer>=0.24.1",
+    "ultralytics>=8.3.0",
+    "wandb>=0.25.1",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.7,<0.11.0"]
+build-backend = "uv_build"
+
+[project.scripts]
+prepare = "norgesgruppen.prepare_model:_main"
+train = "norgesgruppen.train_rfdetr:_main"
+iterate = "norgesgruppen.iterate:_main"
+validate = "norgesgruppen.validate:app"
+prepare-submission = "norgesgruppen.prepare_submission:_main"
+collect-metrics = "norgesgruppen.collect_metrics:_main"
+cross-validate = "norgesgruppen.cross_validate:_main"
+train-yolo = "norgesgruppen.train_yolo:_main"
+prepare-yolo-submission = "norgesgruppen.prepare_yolo_submission:_main"

@@ -1,0 +1,69 @@
+ARBEIDSKONTRAKT
+Arbeidsgiver:
+
+Windmill Ltd
+
+Arbeidstaker:
+
+William Clark
+
+Fodselsdato:
+
+08.07.1986
+
+Personnummer:
+
+08078645254
+
+E-post:
+
+william.clark@example.org
+
+Bankkonto:
+
+55226841732
+
+Ansettelsesdetaljer
+Avdeling:
+
+Regnskap
+
+Stillingskode (STYRK):
+
+3323
+
+Ansettelsesform:
+
+Fast stilling
+
+Lonnstype:
+
+Fastlonn (manedlig)
+
+Stillingsprosent:
+
+100.0%
+
+Arslonn:
+
+510000 kr
+
+Tiltredelse:
+
+30.11.2026
+
+Arbeidsforholdet reguleres av gjeldende lover og regler, herunder arbeidsmiljoloven. Arbeidstaker er underlagt
+bedriftens personalhandbok og interne retningslinjer. Arbeidsstedet er ved bedriftens kontorer med mindre annet er
+avtalt skriftlig.
+Det gjelder en gjensidig provetid pa 6 maneder. I provetiden er den gjensidige oppsigelsesfristen 14 dager. Etter
+provetiden er oppsigelsesfristen 3 maneder regnet fra forste dag i maneden etter at oppsigelsen fant sted.
+Ferie og feriepenger folger ferieloven. Arbeidstaker har rett til 25 virkedagers ferie per kalender ar. Feriepenger
+utbetales i henhold til gjeldende regelverk.
+
+___________________________
+
+___________________________
+
+Arbeidsgiver
+
+Arbeidstaker

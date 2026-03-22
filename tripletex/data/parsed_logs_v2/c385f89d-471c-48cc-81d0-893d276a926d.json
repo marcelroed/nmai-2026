@@ -1,0 +1,3245 @@
+[
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "duration_ms": 115.658,
+      "event": "request.end",
+      "response_headers": [
+        [
+          "content-length",
+          "22"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "x-request-id",
+          "c385f89d-471c-48cc-81d0-893d276a926d"
+        ]
+      ],
+      "status_code": 200
+    },
+    "filename": "my_log.py",
+    "function": "__call__",
+    "level": "INFO",
+    "line": 397,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] request.end",
+    "module": "my_log",
+    "pathname": "/app/src/tripletex/my_log.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "task_name": "Task-14",
+    "thread": 140096875852608,
+    "thread_name": "MainThread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "serve",
+    "level": "DEBUG",
+    "line": 199,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] serve.handler.before_return",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 103, in get_tripletex_data_w_params\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/ledger/voucher",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'",
+      "params": {
+        "dateFrom": "1970-01-01",
+        "dateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "ERROR",
+    "line": 112,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params failed to get tripletex data for /ledger/voucher",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "endpoint": "/ledger/voucher",
+      "params": {
+        "dateFrom": "1970-01-01",
+        "dateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "DEBUG",
+    "line": 97,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params data for /ledger/voucher",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 103, in get_tripletex_data_w_params\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/ledger/posting",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'",
+      "params": {
+        "dateFrom": "1970-01-01",
+        "dateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "ERROR",
+    "line": 112,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params failed to get tripletex data for /ledger/posting",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "endpoint": "/ledger/posting",
+      "params": {
+        "dateFrom": "1970-01-01",
+        "dateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "DEBUG",
+    "line": 97,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params data for /ledger/posting",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 103, in get_tripletex_data_w_params\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/ledger",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'",
+      "params": {
+        "dateFrom": "1970-01-01",
+        "dateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "ERROR",
+    "line": 112,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params failed to get tripletex data for /ledger",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "endpoint": "/ledger",
+      "params": {
+        "dateFrom": "1970-01-01",
+        "dateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "DEBUG",
+    "line": 97,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params data for /ledger",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 103, in get_tripletex_data_w_params\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/order",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'",
+      "params": {
+        "orderDateFrom": "1970-01-01",
+        "orderDateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "ERROR",
+    "line": 112,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params failed to get tripletex data for /order",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "endpoint": "/order",
+      "params": {
+        "orderDateFrom": "1970-01-01",
+        "orderDateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "DEBUG",
+    "line": 97,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params data for /order",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 103, in get_tripletex_data_w_params\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/inventory/inventories",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'",
+      "params": {
+        "dateFrom": "1970-01-01",
+        "dateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "ERROR",
+    "line": 112,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params failed to get tripletex data for /inventory/inventories",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "endpoint": "/inventory/inventories",
+      "params": {
+        "dateFrom": "1970-01-01",
+        "dateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "DEBUG",
+    "line": 97,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params data for /inventory/inventories",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 103, in get_tripletex_data_w_params\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/balanceSheet",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'",
+      "params": {
+        "dateFrom": "1970-01-01",
+        "dateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "ERROR",
+    "line": 112,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params failed to get tripletex data for /balanceSheet",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "endpoint": "/balanceSheet",
+      "params": {
+        "dateFrom": "1970-01-01",
+        "dateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "DEBUG",
+    "line": 97,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params data for /balanceSheet",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 103, in get_tripletex_data_w_params\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/invoice",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'",
+      "params": {
+        "invoiceDateFrom": "1970-01-01",
+        "invoiceDateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "ERROR",
+    "line": 112,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params failed to get tripletex data for /invoice",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "endpoint": "/invoice",
+      "params": {
+        "invoiceDateFrom": "1970-01-01",
+        "invoiceDateTo": "2027-12-31"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data_w_params",
+    "level": "DEBUG",
+    "line": 97,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] w/params data for /invoice",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/travelExpense/rate",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /travelExpense/rate",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /travelExpense/rate",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/travelExpense/paymentType",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /travelExpense/paymentType",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /travelExpense/paymentType",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/travelExpense/costCategory",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /travelExpense/costCategory",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /travelExpense/costCategory",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/salary/payslip",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /salary/payslip",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /salary/payslip",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/salary/type",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /salary/type",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /salary/type",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "ledger/vatType",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for ledger/vatType",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for ledger/vatType",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/supplier",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /supplier",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /supplier",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/ledger/accountingPeriod",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /ledger/accountingPeriod",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /ledger/accountingPeriod",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/ledger/account",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /ledger/account",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /ledger/account",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/employee/employment/workingHoursScheme",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /employee/employment/workingHoursScheme",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /employee/employment/workingHoursScheme",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/employee/employment/employmentType",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /employee/employment/employmentType",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /employee/employment/employmentType",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/employee/nextOfKin",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /employee/nextOfKin",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /employee/nextOfKin",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/employee/standardTime",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /employee/standardTime",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /employee/standardTime",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/employee/entitlement",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /employee/entitlement",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /employee/entitlement",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/employee/preferences",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /employee/preferences",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /employee/preferences",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/customer/category",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /customer/category",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /customer/category",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/travelExpense",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /travelExpense",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /travelExpense",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/project",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /project",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /project",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/product",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /product",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /product",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/inventory/stocktaking",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /inventory/stocktaking",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /inventory/stocktaking",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/inventory",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /inventory",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /inventory",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/employee/employment/details",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /employee/employment/details",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /employee/employment/details",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/employee/employment",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /employee/employment",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /employee/employment",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/employee/category",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /employee/category",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /employee/category",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/deliveryAddress",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /deliveryAddress",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /deliveryAddress",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/bank/statement",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /bank/statement",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /bank/statement",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/bank",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /bank",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /bank",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/contact",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /contact",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /contact",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/company/settings/altinn",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /company/settings/altinn",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /company/settings/altinn",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/country",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /country",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /country",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/customer",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /customer",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /customer",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/department",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /department",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /department",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/division",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /division",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /division",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "exception": "Traceback (most recent call last):\n  File \"/app/src/tripletex/main.py\", line 79, in get_tripletex_data\n    auth=(0, tripletex_credentials.session_token),\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/app/.venv/lib/python3.14/site-packages/pydantic/main.py\", line 1026, in __getattr__\n    raise AttributeError(f'{type(self).__name__!r} object has no attribute {item!r}')\nAttributeError: 'TripletexCredentials' object has no attribute 'session_token'",
+    "extra": {
+      "endpoint": "/employee",
+      "error": "'TripletexCredentials' object has no attribute 'session_token'"
+    },
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "ERROR",
+    "line": 87,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] failed to get tripletex data for /employee",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_tripletex_data",
+    "level": "DEBUG",
+    "line": 76,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting data for /employee",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "data": {
+        "completed_at": null,
+        "duration_ms": null,
+        "id": "66866a19-378a-4030-9911-0770f1f2f110",
+        "normalized_score": null,
+        "queued_at": "2026-03-22T05:20:50.981531+00:00",
+        "score_max": null,
+        "score_raw": null,
+        "status": "processing"
+      }
+    },
+    "filename": "main.py",
+    "function": "get_submission_status",
+    "level": "INFO",
+    "line": 62,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] got the most likely current run id 66866a19-378a-4030-9911-0770f1f2f110 (idx 1)",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "response": [
+        {
+          "completed_at": null,
+          "duration_ms": null,
+          "id": "9a46b976-227f-4284-aa07-e0dcdecc2f93",
+          "normalized_score": null,
+          "queued_at": "2026-03-22T05:20:56.611695+00:00",
+          "score_max": null,
+          "score_raw": null,
+          "status": "processing"
+        },
+        {
+          "completed_at": null,
+          "duration_ms": null,
+          "id": "66866a19-378a-4030-9911-0770f1f2f110",
+          "normalized_score": null,
+          "queued_at": "2026-03-22T05:20:50.981531+00:00",
+          "score_max": null,
+          "score_raw": null,
+          "status": "processing"
+        },
+        {
+          "completed_at": "2026-03-22T05:20:51.547714+00:00",
+          "duration_ms": 7205,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "b9372852-3bab-4c24-899b-91659ba1736a",
+          "normalized_score": 0,
+          "queued_at": "2026-03-22T05:20:44.010817+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T23:00:21.634700+00:00",
+          "duration_ms": 22262,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed"
+            ],
+            "comment": "7/7 checks failed."
+          },
+          "id": "851156e3-1f1c-44ec-884f-db984f0c103b",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:59:47.921307+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T23:00:28.363980+00:00",
+          "duration_ms": 28991,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "a61e5519-c93d-4f11-a4fa-3ebeb5e0d7b0",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:59:42.346561+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T23:01:21.148464+00:00",
+          "duration_ms": 82794,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "7345c260-e494-433c-ae73-8f966c869abb",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:59:19.048415+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:59:46.381529+00:00",
+          "duration_ms": 31595,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "4/5 checks failed."
+          },
+          "id": "2b3d9654-be95-4ac6-8a46-20007db84065",
+          "normalized_score": 0.25,
+          "queued_at": "2026-03-21T22:59:11.981235+00:00",
+          "score_max": 8,
+          "score_raw": 1,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:59:32.472873+00:00",
+          "duration_ms": 22983,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "293195df-93bf-444a-8ecf-dbbe0672b658",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:59:07.190401+00:00",
+          "score_max": 6,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:59:11.121297+00:00",
+          "duration_ms": 21896,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "7a6ac8d4-173f-401c-ab17-bf01ec6db9c4",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:58:44.894740+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:59:02.891030+00:00",
+          "duration_ms": 22893,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "6d4614a2-cb2a-4bd6-9bb8-a8ff70c36898",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:58:39.351429+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:58:33.702012+00:00",
+          "duration_ms": 30547,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "3/4 checks failed."
+          },
+          "id": "ef618da2-eae7-4f83-8a9d-8fbb0f8ef1dc",
+          "normalized_score": 0.5,
+          "queued_at": "2026-03-21T22:58:02.533835+00:00",
+          "score_max": 8,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:59:15.016440+00:00",
+          "duration_ms": 96123,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed"
+            ],
+            "comment": "1/2 checks failed."
+          },
+          "id": "ddf05c0d-5f5f-4e98-a13c-bee4e15a2242",
+          "normalized_score": 0.2857,
+          "queued_at": "2026-03-21T22:57:37.753677+00:00",
+          "score_max": 7,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:57:58.589434+00:00",
+          "duration_ms": 28482,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "9b428ba2-8c0f-47a1-a826-f417ca99d7a0",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:57:29.133969+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:57:29.441778+00:00",
+          "duration_ms": 24434,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed"
+            ],
+            "comment": "7/7 checks failed."
+          },
+          "id": "2aa54f40-5d58-443e-88cb-99f362fec7c4",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:57:04.385972+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:58:41.453018+00:00",
+          "duration_ms": 110277,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "f49ea0f0-3028-4d4e-8655-388dc7d0bad3",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:56:50.650416+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:57:20.176768+00:00",
+          "duration_ms": 41978,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: passed",
+              "Check 6: failed"
+            ],
+            "comment": "5/6 checks failed."
+          },
+          "id": "beb19c22-43b6-463e-8f0d-945f530464f3",
+          "normalized_score": 0.6,
+          "queued_at": "2026-03-21T22:56:36.577599+00:00",
+          "score_max": 10,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:56:58.503736+00:00",
+          "duration_ms": 123206,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "67b5dcf6-0604-4e4c-827d-7ed05b16b6ad",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:54:54.955328+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:56:48.375161+00:00",
+          "duration_ms": 120710,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "b86ba277-c8fd-4d74-9252-e15477e0e6eb",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:54:47.381466+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:56:32.772603+00:00",
+          "duration_ms": 110403,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed"
+            ],
+            "comment": "3/3 checks failed."
+          },
+          "id": "80c7896e-647a-4d19-a75d-5f019342da85",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:54:42.299744+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:54:31.170988+00:00",
+          "duration_ms": 28605,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "3/4 checks failed."
+          },
+          "id": "80b53eb3-3c10-4fa4-bdaa-20e16517c48c",
+          "normalized_score": 0.5,
+          "queued_at": "2026-03-21T22:54:02.460148+00:00",
+          "score_max": 8,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:53:59.484334+00:00",
+          "duration_ms": 28399,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "84c123d0-86ea-4fda-9675-960c483e8f09",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:53:30.852362+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:54:50.219014+00:00",
+          "duration_ms": 91756,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed"
+            ],
+            "comment": "7/7 checks failed."
+          },
+          "id": "b6116f16-f635-4470-b379-1344efc9f8cb",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:53:17.844173+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:54:38.328644+00:00",
+          "duration_ms": 88890,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "3d725ea3-ffbf-48dd-869f-4eab10658f9c",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:53:09.109645+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:53:27.781054+00:00",
+          "duration_ms": 26457,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "68573cfd-ccc4-4eca-b407-f4806a6cb999",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:53:00.802800+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:53:10.971707+00:00",
+          "duration_ms": 96865,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "d35de04d-6b95-4268-a9f0-7b35a04ca16e",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:51:33.547717+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:53:01.465547+00:00",
+          "duration_ms": 95379,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed"
+            ],
+            "comment": "3/3 checks failed."
+          },
+          "id": "76b02db8-4726-4ef6-af98-d926f06a5c41",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:51:25.949503+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:52:56.319399+00:00",
+          "duration_ms": 101158,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed"
+            ],
+            "comment": "2/3 checks failed."
+          },
+          "id": "da5f3672-b8af-4fc1-9fbc-30a362455fd5",
+          "normalized_score": 0.5,
+          "queued_at": "2026-03-21T22:51:15.103270+00:00",
+          "score_max": 8,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:51:25.576728+00:00",
+          "duration_ms": 24577,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "6b564a9c-7b7c-4ce1-a20f-1cded66238c5",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:51:00.020134+00:00",
+          "score_max": 6,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:51:09.064972+00:00",
+          "duration_ms": 25999,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "4/5 checks failed."
+          },
+          "id": "d86bd144-a6fd-45b1-85fd-b6d5480a0baf",
+          "normalized_score": 0.25,
+          "queued_at": "2026-03-21T22:50:42.982325+00:00",
+          "score_max": 8,
+          "score_raw": 1,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:50:50.006585+00:00",
+          "duration_ms": 117493,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed"
+            ],
+            "comment": "2/3 checks failed."
+          },
+          "id": "f78fb913-8cc6-444a-bc7a-891f5607ce1c",
+          "normalized_score": 0.5,
+          "queued_at": "2026-03-21T22:48:28.623044+00:00",
+          "score_max": 8,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:50:53.237735+00:00",
+          "duration_ms": 121940,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "08632fc2-c937-4016-8213-0c777ab1df5a",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:48:21.576133+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:50:39.378452+00:00",
+          "duration_ms": 112880,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "1adf20e6-1d5a-42f6-bc64-ac33e625da53",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:48:13.059918+00:00",
+          "score_max": 13,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:48:23.913005+00:00",
+          "duration_ms": 117347,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed"
+            ],
+            "comment": "1/2 checks failed."
+          },
+          "id": "fba2c7d0-9828-4701-ab35-033aaebc3b33",
+          "normalized_score": 0.2857,
+          "queued_at": "2026-03-21T22:46:25.468540+00:00",
+          "score_max": 7,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:48:09.779128+00:00",
+          "duration_ms": 112367,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "de9bd928-4220-450a-ba7c-827a82b941c1",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:46:17.072182+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:48:11.720980+00:00",
+          "duration_ms": 121781,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "73c0dfd0-b23a-481d-908c-174a2bad8434",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:46:09.841888+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:46:08.021445+00:00",
+          "duration_ms": 55183,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "a14f36a3-f900-44dc-9717-ceb18d5d5467",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:45:12.815703+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:46:17.884605+00:00",
+          "duration_ms": 97132,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "5e56f765-af20-4dba-8c9c-b6c6ff77ece8",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:44:40.531887+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:46:15.081421+00:00",
+          "duration_ms": 99386,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "4c8a61e0-2626-4513-93ca-ba4496f6dbaf",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:44:35.407187+00:00",
+          "score_max": 7,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:44:39.059923+00:00",
+          "duration_ms": 18849,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "4/4 checks failed."
+          },
+          "id": "e6d8e103-f876-4645-907f-55d68b45b430",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:44:19.892169+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:44:32.847813+00:00",
+          "duration_ms": 22534,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "fdf246e3-155a-4978-99e4-f102df09ef3b",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:44:10.256775+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:44:13.885651+00:00",
+          "duration_ms": 22290,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "44451c54-b693-4faa-b3d2-578c9bfbfdce",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:43:51.544171+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:45:09.408764+00:00",
+          "duration_ms": 83159,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed"
+            ],
+            "comment": "7/7 checks failed."
+          },
+          "id": "2dfb7f60-227b-4c38-9e67-9f06dbddae8d",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:43:46.183377+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:44:08.042847+00:00",
+          "duration_ms": 31820,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed"
+            ],
+            "comment": "6/6 checks failed."
+          },
+          "id": "6a6fb65c-2923-4cca-9c65-a0118c119f53",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:43:36.106462+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:43:42.975519+00:00",
+          "duration_ms": 20919,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed",
+              "Check 8: failed",
+              "Check 9: failed",
+              "Check 10: failed"
+            ],
+            "comment": "10/10 checks failed."
+          },
+          "id": "5748f222-0764-4020-8096-05d7df2688dc",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:43:21.762665+00:00",
+          "score_max": 14,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:43:33.857817+00:00",
+          "duration_ms": 21700,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "27bc60dc-a4b6-4ec9-9a48-e041ab62d27d",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:43:12.094880+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:43:10.197079+00:00",
+          "duration_ms": 19514,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "dceb4345-6476-4e81-966e-494d1843abfb",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:42:50.509707+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:43:06.194217+00:00",
+          "duration_ms": 28863,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: passed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed"
+            ],
+            "comment": "5/7 checks failed."
+          },
+          "id": "e8aaf0eb-f286-48d8-8418-2ea73bc3c4c0",
+          "normalized_score": 0.5455,
+          "queued_at": "2026-03-21T22:42:36.584684+00:00",
+          "score_max": 11,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:43:44.873428+00:00",
+          "duration_ms": 81960,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed",
+              "Check 6: failed",
+              "Check 7: failed"
+            ],
+            "comment": "7/7 checks failed."
+          },
+          "id": "9b462111-8a00-4739-a6a7-f22c16fac644",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:42:22.676487+00:00",
+          "score_max": 8,
+          "score_raw": 0,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:42:20.811603+00:00",
+          "duration_ms": 21963,
+          "feedback": {
+            "checks": [
+              "Check 1: passed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed"
+            ],
+            "comment": "3/4 checks failed."
+          },
+          "id": "5196c942-2474-4c26-afe8-e2a1d7e29cdb",
+          "normalized_score": 0.5,
+          "queued_at": "2026-03-21T22:41:58.676388+00:00",
+          "score_max": 8,
+          "score_raw": 2,
+          "status": "completed"
+        },
+        {
+          "completed_at": "2026-03-21T22:41:52.707859+00:00",
+          "duration_ms": 55029,
+          "feedback": {
+            "checks": [
+              "Check 1: failed",
+              "Check 2: failed",
+              "Check 3: failed",
+              "Check 4: failed",
+              "Check 5: failed"
+            ],
+            "comment": "5/5 checks failed."
+          },
+          "id": "9e54d55d-fa5c-4035-a1df-473f7b154420",
+          "normalized_score": 0,
+          "queued_at": "2026-03-21T22:40:57.658078+00:00",
+          "score_max": 10,
+          "score_raw": 0,
+          "status": "completed"
+        }
+      ]
+    },
+    "filename": "main.py",
+    "function": "get_submission_status",
+    "level": "INFO",
+    "line": 52,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] got submission status for nmai",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:59",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "filename": "main.py",
+    "function": "get_submission_status",
+    "level": "INFO",
+    "line": 46,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] getting the submission status for nmai",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:58",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "base_url": "https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2",
+      "file_count": 0,
+      "payload": "prompt='Sett fastpris 478900 kr p\u00e5 prosjektet \"Automatiseringsprosjekt\" for Strandvik AS (org.nr 858540402). Prosjektleiar er Bj\u00f8rn Aasen (bjrn.aasen@example.org). Fakturer kunden for 25 % av fastprisen som ei delbetaling.' files=[] tripletex_credentials=TripletexCredentials(base_url='https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2', auth=(0, '5rdcgOWDvhG0xl_AFpjxc0KXmq17TDFS3Wh6R_mBDjI'))",
+      "previous_submission_id": "b9372852-3bab-4c24-899b-91659ba1736a",
+      "prompt": "Sett fastpris 478900 kr p\u00e5 prosjektet \"Automatiseringsprosjekt\" for Strandvik AS (org.nr 858540402). Prosjektleiar er Bj\u00f8rn Aasen (bjrn.aasen@example.org). Fakturer kunden for 25 % av fastprisen som ei delbetaling."
+    },
+    "filename": "main.py",
+    "function": "serve",
+    "level": "DEBUG",
+    "line": 125,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] serve.handler.enter",
+    "module": "main",
+    "pathname": "/app/src/tripletex/main.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "thread": 140096732919488,
+    "thread_name": "AnyIO worker thread",
+    "timestamp": "2026-03-22T05:20:58",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "body": {
+        "preview": "{\"prompt\":\"Sett fastpris 478900 kr p\u00e5 prosjektet \\\"Automatiseringsprosjekt\\\" for Strandvik AS (org.nr 858540402). Prosjektleiar er Bj\u00f8rn Aasen (bjrn.aasen@example.org). Fakturer kunden for 25 % av fastprisen som ei delbetaling.\",\"files\":[],\"tripletex_credentials\":{\"base_url\":\"https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2\",\"session_token\":\"5rdcgOWDvhG0xl_AFpjxc0KXmq17TDFS3Wh6R_mBDjI\"}}",
+        "size_bytes": 387
+      },
+      "client": {
+        "host": "169.254.169.126",
+        "port": 49036
+      },
+      "event": "request.start",
+      "headers": [
+        [
+          "host",
+          "tripletex-agent-1010470531441.europe-north1.run.app"
+        ],
+        [
+          "accept",
+          "*/*"
+        ],
+        [
+          "user-agent",
+          "python-httpx/0.28.1"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "Bearer b9372852-3bab-4c24-899b-91659ba1736a"
+        ],
+        [
+          "content-length",
+          "387"
+        ],
+        [
+          "x-cloud-trace-context",
+          "4cda6b8a880a251a1501d325e13a2c72/9886289145320996980"
+        ],
+        [
+          "x-forwarded-proto",
+          "https"
+        ],
+        [
+          "traceparent",
+          "00-4cda6b8a880a251a1501d325e13a2c72-893327990da88074-00"
+        ],
+        [
+          "x-forwarded-for",
+          "34.34.240.90"
+        ],
+        [
+          "forwarded",
+          "for=\"34.34.240.90\";proto=https"
+        ],
+        [
+          "accept-encoding",
+          "gzip, deflate"
+        ]
+      ],
+      "http_version": "1.1",
+      "query_string": "",
+      "request_line": "POST /solve HTTP/1.1",
+      "scheme": "http",
+      "server": [
+        "169.254.169.1",
+        8080
+      ],
+      "url": "http://tripletex-agent-1010470531441.europe-north1.run.app/solve"
+    },
+    "filename": "my_log.py",
+    "function": "__call__",
+    "level": "INFO",
+    "line": 355,
+    "log_version": "3",
+    "logger": "app",
+    "message": "[c385f] request.start",
+    "module": "my_log",
+    "pathname": "/app/src/tripletex/my_log.py",
+    "process": 8,
+    "process_name": "MainProcess",
+    "request_id": "c385f89d-471c-48cc-81d0-893d276a926d",
+    "request_method": "POST",
+    "request_path": "/solve",
+    "task_name": "Task-14",
+    "thread": 140096875852608,
+    "thread_name": "MainThread",
+    "timestamp": "2026-03-22T05:20:58",
+    "unique_request_id": "98308a8f-dac7-445f-996a-750168a80052"
+  }
+]

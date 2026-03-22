@@ -1,0 +1,147 @@
+[
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "duration_ms": 235.052,
+      "event": "request.end",
+      "response_headers": [
+        [
+          "content-length",
+          "3560723"
+        ],
+        [
+          "content-type",
+          "text/html; charset=utf-8"
+        ],
+        [
+          "x-request-id",
+          "6648ad13-e919-47af-95c5-3d978b6e65be"
+        ]
+      ],
+      "status_code": 200
+    },
+    "filename": "my_log.py",
+    "function": "__call__",
+    "level": "INFO",
+    "line": 402,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[6648a] request.end",
+    "module": "my_log",
+    "pathname": "/app/src/tripletex/my_log.py",
+    "process": 85,
+    "process_name": "MainProcess",
+    "request_id": "6648ad13-e919-47af-95c5-3d978b6e65be",
+    "request_method": "GET",
+    "request_path": "/logs",
+    "task_name": "Task-18",
+    "thread": 139629993526080,
+    "thread_name": "MainThread",
+    "timestamp": "2026-03-22T10:15:31",
+    "unique_request_id": "4223c39f-4a68-4d5a-8177-ac8cb820042b"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "body": {
+        "preview": "",
+        "size_bytes": 0
+      },
+      "client": {
+        "host": "169.254.169.126",
+        "port": 5578
+      },
+      "event": "request.start",
+      "headers": [
+        [
+          "host",
+          "tripletex-agent-1010470531441.europe-north1.run.app"
+        ],
+        [
+          "sec-fetch-dest",
+          "document"
+        ],
+        [
+          "user-agent",
+          "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/26.2 Safari/605.1.15"
+        ],
+        [
+          "accept",
+          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8"
+        ],
+        [
+          "referer",
+          "https://tripletex-agent-1010470531441.europe-north1.run.app/logs"
+        ],
+        [
+          "sec-fetch-site",
+          "same-origin"
+        ],
+        [
+          "sec-fetch-mode",
+          "navigate"
+        ],
+        [
+          "accept-language",
+          "en-US,en;q=0.9"
+        ],
+        [
+          "priority",
+          "u=0, i"
+        ],
+        [
+          "x-cloud-trace-context",
+          "dfb0853e4f7d58f5d755555b85eb4159/8892900721390178732"
+        ],
+        [
+          "x-forwarded-proto",
+          "https"
+        ],
+        [
+          "traceparent",
+          "00-dfb0853e4f7d58f5d755555b85eb4159-7b69ee16e946d1ac-00"
+        ],
+        [
+          "x-forwarded-for",
+          "171.64.77.44"
+        ],
+        [
+          "forwarded",
+          "for=\"171.64.77.44\";proto=https"
+        ],
+        [
+          "accept-encoding",
+          "gzip, deflate, br"
+        ]
+      ],
+      "http_version": "1.1",
+      "query_string": "request=2084785d-0c82-4bbc-9df9-431eeda31d53",
+      "request_line": "GET /logs?request=2084785d-0c82-4bbc-9df9-431eeda31d53 HTTP/1.1",
+      "scheme": "http",
+      "server": [
+        "169.254.169.1",
+        8080
+      ],
+      "url": "http://tripletex-agent-1010470531441.europe-north1.run.app/logs?request=2084785d-0c82-4bbc-9df9-431eeda31d53"
+    },
+    "filename": "my_log.py",
+    "function": "__call__",
+    "level": "INFO",
+    "line": 360,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[6648a] request.start",
+    "module": "my_log",
+    "pathname": "/app/src/tripletex/my_log.py",
+    "process": 85,
+    "process_name": "MainProcess",
+    "request_id": "6648ad13-e919-47af-95c5-3d978b6e65be",
+    "request_method": "GET",
+    "request_path": "/logs",
+    "task_name": "Task-18",
+    "thread": 139629993526080,
+    "thread_name": "MainThread",
+    "timestamp": "2026-03-22T10:15:31",
+    "unique_request_id": "4223c39f-4a68-4d5a-8177-ac8cb820042b"
+  }
+]

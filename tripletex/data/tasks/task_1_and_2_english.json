@@ -1,0 +1,223 @@
+{
+  "TASK 01 - TIER 1: Create employee": [
+    "Create an employee named Test Worker with email test.worker.validator@example.org. He should be an account administrator.",
+    "We have a new employee named Jules Richard, born August 2, 1986. Please create him as an employee with the email jules.richard@example.org and start date July 28, 2026.",
+    "Create an employee named TestRun46 Worker, email testrun46@example.org. He should be an account administrator.",
+    "We have a new employee named Rita Almeida, born December 29, 1995. Create her as an employee with the email rita.almeida@example.org and start date June 7, 2026.",
+    "We have a new employee named Miguel Sánchez, born April 20, 1991. Create him as an employee with the email miguel.sanchez@example.org and start date August 12, 2026.",
+    "We have a new employee named Run46 Test, born April 20, 1991. Create him as an employee with the email run46test@example.org and start date August 12, 2026.",
+    "We have a new employee named Validator Test, born March 15, 1990. Please create them as an employee with email validator.test@example.org and start date June 1, 2027.",
+    "We have a new employee named Sophia Hoffmann, born January 7, 1995. Please create her as an employee with the email sophia.hoffmann@example.org and start date June 3, 2026."
+  ],
+  "TASK 02 - TIER 1: Create customer with org no.": [
+    "Create the customer Río Verde SL with organization number 919234830. The address is Solveien 5, 4006 Stavanger. Email: post@rio.no.",
+    "Create the customer Rio Azul Lda with organization number 865253443. The address is Havnegata 16, 4006 Stavanger. Email: post@rio.no.",
+    "Create the customer Sonnental GmbH with organization number 929940016. The address is Solveien 21, 9008 Tromsø. Email: post@sonnental.no.",
+    "Create the customer Sonnental GmbH with organization number 929940016. The address is Solveien 21, 9008 Tromsø. Email: post@sonnental.no.",
+    "Create the customer Bergvik AS with organization number 914572479. The address is Solveien 74, 7010 Trondheim. Email: post@bergvik.no.",
+    "Create the customer Fjordkraft AS with organization number 843216285. The address is Fjordveien 129, 2317 Hamar. Email: post@fjordkraft.no.",
+    "Create the customer Run46 AS with organization number 946293100. The address is Testveien 5, 0001 Oslo. Email: run46@test.no.",
+    "Create the customer Validator AS with organization number 999888777. The address is Testveien 1, 0001 Oslo. Email: post@validator.no."
+  ],
+  "TASK 03 - TIER 1: Create product with VAT": [
+    "Create the product \"Network service\" with product number 6866. The price is 19100 NOK excluding VAT, using the standard rate of 25%.",
+    "Create the product \"Maintenance\" with product number 1327. The price is 3700 NOK excluding VAT, with the standard rate of 25%.",
+    "Create the product \"Cloud storage\" with product number 9433. The price is 7550 NOK excluding VAT, with the standard rate of 25%.",
+    "Create the product \"Textbook\" with product number 2237. The price is 5650 NOK excluding VAT, with the VAT rate of 0% for books.",
+    "Create the product \"Run46Prod\" with product number 4646. The price is 999 NOK excluding VAT, and the VAT rate is 25%.",
+    "Create the product \"ValidatorProd\" with product number 9999. The price is 500 NOK excluding VAT, and the VAT rate is 25%. The product is active."
+  ],
+  "TASK 04 - TIER 1: Create supplier": [
+    "Register the supplier Luz do Sol Lda with organization number 894596554. Email: faktura@luzdosollda.no.",
+    "Register the supplier Silveroak Ltd with organization number 943413231. Email: faktura@silveroakltd.no.",
+    "Register the supplier Dalheim AS with organization number 892196753. Email: faktura@dalheim.no.",
+    "Register the supplier Havbris AS with organization number 840570169. Email: faktura@havbris.no.",
+    "Register the supplier Run46Supplier AS with organization number 464646464. Email: faktura@run46supp.no.",
+    "Register the supplier Tindra AS with organization number 888286195. Email: faktura@tindra.no.",
+    "Register the supplier ValidatorSupplier AS with organization number 111222333. Email: faktura@validatorsupplier.no."
+  ],
+  "TASK 05 - TIER 1: Create departments": [
+    "Create three departments in Tripletex: \"HR\", \"IT\", and \"Production\".",
+    "Create three departments in Tripletex: \"Production\", \"Customer Service\", and \"Finance\".",
+    "Create three departments in Tripletex: \"Run46A\", \"Run46B\", and \"Run46C\".",
+    "Create three departments in Tripletex: \"ValidDept1\", \"ValidDept2\", and \"ValidDept3\".",
+    "Create three departments in Tripletex: \"Finance\", \"Purchasing\", and \"Accounting\".",
+    "Create three departments in Tripletex: \"HR\", \"Warehouse\", and \"Purchasing\".",
+    "Create three departments in Tripletex: \"Development\", \"Purchasing\", and \"Finance\".",
+    "Create three departments in Tripletex: \"Development\", \"Operations\", and \"HR\"."
+  ],
+  "TASK 06 - TIER 1: Create simple invoice": [
+    "Create and send an invoice to the customer Montaña SL (org. no. 831306742) for 48600 NOK excluding VAT. The invoice is for Software License.",
+    "Create and send an invoice to the customer Northwave Ltd (org no. 812924257) for 21050 NOK excluding VAT. The invoice is for Consulting Hours.",
+    "Create and send an invoice to the customer Bergwerk GmbH (org. no. 868341580) for 18200 NOK excluding VAT. The invoice is for Analysis Report.",
+    "Create and send an invoice to the customer Waldstein GmbH (org. no. 925346519) for 25100 NOK excluding VAT. The invoice is for System Development.",
+    "Create and send an invoice to the customer Polaris AS (org. no. 963373937) for 32600 NOK excluding VAT. The invoice is for Web Design.",
+    "Create and send an invoice to the customer Run46 AS (org. no. 946293100) for 8000 NOK excluding VAT. The invoice is for Consulting.",
+    "Create and send an invoice to the customer Validator AS (org. no. 999888777) for 10000 NOK excluding VAT. The invoice is for Test Services."
+  ],
+  "TASK 07 - TIER 1: Register outgoing payment": [
+    "The customer Costa Brava SL (org. no. 923798498) has an outstanding invoice of 47900 NOK excluding VAT for \"Consulting Hours\". Register the full payment of this invoice.",
+    "The customer Lysgård AS (org. no. 850823049) has an outstanding invoice of 49700 NOK excluding VAT for \"Training\". Register full payment on this invoice.",
+    "The customer Run46 AS (org. no. 946293100) has an outstanding invoice of 8000 NOK excluding VAT for \"Consulting\". Register full payment on this invoice.",
+    "The customer Validator AS (org. no. 999888777) has an outstanding invoice of 10000 NOK excluding VAT for \"Test Services\". Register full payment on this invoice.",
+    "The customer Cascade SARL (org. no. 839016778) has an outstanding invoice of 45450 NOK excluding VAT for \"Web Design\". Register the full payment of this invoice.",
+    "The customer Océan SARL (org. no. 924390735) has an outstanding invoice of 39300 NOK excluding VAT for \"Maintenance\". Register the full payment of this invoice.",
+    "The customer Rio Azul Lda (org. no. 932217643) has an outstanding invoice of 44100 NOK excluding VAT for \"Training Session\". Register the full payment of this invoice."
+  ],
+  "TASK 08 - TIER 1: Create project linked to customer": [
+    "Create the project \"Coastal Analysis\" linked to the customer Costa Brava SL (org. no. 921937946). The project manager is Isabel González (isabel.gonzalez@example.org).",
+    "Create the project \"Integration Northwave\" linked to the customer Northwave Ltd (org no. 950072652). The project manager is James Johnson (james.johnson@example.org).",
+    "Create the project \"Run46 Project\" linked to the customer Run46 AS. The project manager is TestRun46 Worker (testrun46@example.org).",
+    "Create the project \"Upgrade Windmill\" linked to the customer Windmill Ltd (org no. 971465336). The project manager is Alice Smith (alice.smith@example.org).",
+    "Create the project \"Upgrade Windmill\" linked to the customer Windmill Ltd (org no. 978017681). The project manager is Grace Lewis (grace.lewis@example.org).",
+    "Create the project \"Validator Project\" linked to the customer Validator AS. The project manager is Test Worker (test.worker.validator@example.org).",
+    "Create the project \"Mountain Integration\" linked to the customer Montagne SARL (org. no. 975615766). The project manager is Jules Robert (jules.robert@example.org).",
+    "Create the project \"Migration Eichenhof\" linked to the customer Eichenhof GmbH (org. no. 953914123). The project manager is Hannah Weber (hannah.weber@example.org)."
+  ],
+  "TASK 09 - TIER 2: Invoice with multiple product lines and different VAT": [
+    "Create an invoice for the customer Northwave Ltd (org no. 826467258) with three product lines: System Development (7334) at 11950 NOK with 25% VAT, Training Session (4161) at 2450 NOK with 15% VAT (food), and Web Design (7904) at 15500 NOK with 0% VAT (exempt).",
+    "Create an invoice for the customer Northwave Ltd (org no. 826467258) with three product lines: System Development (7334) at 11950 NOK with 25% VAT, Training Session (4161) at 2450 NOK with 15% VAT (food), and Web Design (7904) at 15500 NOK with 0% VAT (exempt).",
+    "Create an invoice for the customer Oakwood Ltd (org no. 820641566) with three product lines: Analysis Report (7049) at 12250 NOK with 25% VAT, Cloud Storage (5725) at 3750 NOK with 15% VAT (food), and Consulting Hours (9683) at 10750 NOK with 0% VAT (exempt).",
+    "Create an invoice for the customer Oakwood Ltd (org no. 909722500) with three product lines: Analysis Report (9796) at 27700 NOK with 25% VAT, Maintenance (2145) at 12700 NOK with 15% VAT (food), and System Development (5995) at 7050 NOK with 0% VAT (exempt).",
+    "Create an invoice for the customer Ridgepoint Ltd (org no. 970844708) with three product lines: Software License (3957) at 3650 NOK with 25% VAT, Maintenance (8149) at 11000 NOK with 15% VAT (food), and Web Design (8092) at 17700 NOK with 0% VAT (exempt).",
+    "Create an invoice for the customer Windmill Ltd (org no. 994973150) with three product lines: System Development (6517) at 22950 NOK with 25% VAT, Maintenance (5339) at 8900 NOK with 15% VAT (food), and Consulting Hours (8246) at 10450 NOK with 0% VAT (exempt).",
+    "Create an invoice for the customer Floresta Lda (org. no. 944182802) with three product lines: Analysis Report (2039) at 19600 NOK with 25% VAT, Web Design (3304) at 12450 NOK with 15% VAT (food), and Software License (1599) at 9150 NOK with 0% VAT (exempt).",
+    "Create an invoice for the customer Flussgold GmbH (org. no. 848305030) with three product lines: Analysis Report (6976) at 1500 NOK with 25% VAT, System Development (1899) at 1200 NOK with 15% VAT (food), and Consulting Hours (6565) at 1400 NOK with 0% VAT (exempt).",
+    "Create an invoice for the customer Run46 AS (org. no. 946293100) with two product lines: Consulting (1001) at 5000 NOK with 25% VAT and Food (1002) at 3000 NOK with 15% VAT.",
+    "Create an invoice for the customer Silberberg GmbH (org. no. 977792827) with three product lines: Maintenance (8747) at 16950 NOK with 25% VAT, Software License (8391) at 3250 NOK with 15% VAT (food), and Network Service (4819) at 5550 NOK with 0% VAT (exempt).",
+    "Create an invoice for the customer Validator AS (org. no. 999888777) with two product lines: Consulting (1001) at 5000 NOK with 25% VAT and Support (1002) at 3000 NOK with 15% VAT.",
+    "Create an invoice for the customer Havbris AS (org. no. 927318113) with three product lines: Maintenance (3372) at 15700 NOK with 25% VAT, Software License (6488) at 14600 NOK with 15% VAT (food), and Consulting Hours (4810) at 5950 NOK with 0% VAT (exempt)."
+  ],
+  "TASK 10 - TIER 2: Order to invoice to payment": [
+    "Create an order for the customer Validator AS (org. no. 999888777) with the product Consulting Service at 15000 NOK. Convert the order to an invoice and register full payment.",
+    "Create an order for the customer Viento SL (org. no. 924480505) with the products Training Session (8488) at 5700 NOK and Consulting Hours (3787) at 14750 NOK. Convert the order to an invoice and register full payment.",
+    "Create an order for the customer Greenfield Ltd (org no. 914083478) with the products Web Design (8474) at 23450 NOK and Software License (3064) at 7800 NOK. Convert the order to an invoice and register full payment.",
+    "Create an order for the customer Northwave Ltd (org no. 997677889) with the products Cloud Storage (4257) at 27150 NOK and System Development (7968) at 10100 NOK. Convert the order to an invoice and register full payment.",
+    "Create an order for the customer Solmar Lda (org. no. 867069526) with the products Training Session (4466) at 35600 NOK and Software License (3717) at 3250 NOK. Convert the order to an invoice and register full payment.",
+    "Create an order for the customer Colline SARL (org. no. 841589033) with the products Cloud Storage (2289) at 24050 NOK and Data Consulting (1470) at 5000 NOK. Convert the order to an invoice and register full payment.",
+    "Create an order for the customer Grünfeld GmbH (org. no. 920238882) with the products Data Consulting (5628) at 23000 NOK and Cloud Storage (1573) at 16550 NOK. Convert the order to an invoice and register full payment.",
+    "Create an order for the customer Bølgekraft AS (org. no. 908252764) with the products Network Service (6065) at 25500 NOK and System Development (2511) at 23550 NOK. Convert the order to an invoice and register full payment.",
+    "Create an order for the customer Nordlys AS (org. no. 951788031) with the products Data Consulting (9057) at 36900 NOK and Software License (4573) at 19450 NOK. Convert the order to an invoice and register full payment.",
+    "Create an order for the customer Run46 AS (org. no. 946293100) with the products Consulting Hours (1874) at 12000 NOK and Analysis (9344) at 8000 NOK. Convert the order to an invoice and register full payment.",
+    "Create an order for the customer Sjøbris AS (org. no. 935269911) with the products Training (8065) at 24550 NOK and Analysis Report (9994) at 6850 NOK. Convert the order to an invoice and register full payment.",
+    "Create an order for the customer Vestfjord AS (org. no. 960144015) with the products Consulting Hours (1874) at 34750 NOK and Network Service (9344) at 14350 NOK. Convert the order to an invoice and register full payment."
+  ],
+  "TASK 11 - TIER 2: Register supplier invoice": [
+    "We have received invoice INV-2026-8702 from the supplier Sierra SL (org. no. 933305228) for 6850 NOK including VAT. The amount relates to office services (account 6590). Register the supplier invoice with the correct input VAT (25%).",
+    "We have received invoice INV-2026-9187 from the supplier Montaña SL (org. no. 884646979) for 19500 NOK including VAT. The amount relates to office services (account 7300). Register the supplier invoice with the correct input VAT (25%).",
+    "We have received invoice INV-TEST-001 from the supplier ValidatorSupplier AS (org. no. 111222333) for 25000 NOK including VAT. The amount relates to office services (account 7100). Register the supplier invoice with the correct input VAT (25%).",
+    "We have received invoice INV-2026-5683 from the supplier Lumière SARL (org. no. 904564184) for 75500 NOK including VAT. The amount relates to office services (account 7140). Register the supplier invoice with the correct input VAT (25%).",
+    "We have received invoice INV-2026-6556 from the supplier Solmar Lda (org. no. 974178680) for 50750 NOK including VAT. The amount relates to office services (account 6500). Register the supplier invoice with the correct input VAT (25%).",
+    "We have received invoice INV-2026-9382 from the supplier Stormberg AS (org. no. 877462137) for 61600 NOK including VAT. The amount relates to office services (account 6340). Register the supplier invoice with the correct input VAT (25%).",
+    "We have received invoice INV-RUN46 from the supplier Run46Supplier AS (org. no. 464646464) for 50000 NOK including VAT. The amount relates to office services (account 7100). Register the supplier invoice with the correct input VAT (25%).",
+    "We have received invoice INV-2026-3205 from the supplier Ironbridge Ltd (org no. 828254375) for 24500 NOK including VAT. The amount relates to office services (account 6590). Register the supplier invoice with the correct input VAT (25%).",
+    "We have received invoice INV-2026-3749 from the supplier Ridgepoint Ltd (org no. 902484981) for 65850 NOK including VAT. The amount relates to office services (account 6590). Register the supplier invoice with the correct input VAT (25%).",
+    "We have received invoice INV-2026-2118 from the supplier Brückentor GmbH (org. no. 981448294) for 70400 NOK including VAT. The amount relates to office services (account 6590). Register the supplier invoice with the correct input VAT (25%).",
+    "We have received invoice INV-2026-7156 from the supplier Windkraft GmbH (org. no. 961246954) for 35350 NOK including VAT. The amount relates to office services (account 6860). Register the supplier invoice with the correct input VAT (25%)."
+  ],
+  "TASK 12 - TIER 2: Payroll run with bonus": [
+    "Run the payroll for Fernando García (fernando.garcia@example.org) for this month. The base salary is 55350 NOK. Add a one-time bonus of 14600 NOK in addition to the base salary.",
+    "Run the payroll for Fernando Sánchez (fernando.sanchez@example.org) for this month. The base salary is 42350 NOK. Add a one-time bonus of 12850 NOK in addition to the base salary.",
+    "Run the payroll for Test Worker (test.worker.validator@example.org) for this month. The base salary is 30000 NOK. Add a one-time bonus of 5000 NOK.",
+    "Run the payroll for Test Worker (test.worker.validator@example.org) for this month. The base salary is 30000 NOK. Add a one-time bonus of 5000 NOK.",
+    "Run the payroll for Louis Bernard (louis.bernard@example.org) for this month. The base salary is 55600 NOK. Add a one-time bonus of 9750 NOK in addition to the base salary.",
+    "Run the payroll for Louis Richard (louis.richard@example.org) for this month. The base salary is 36600 NOK. Add a one-time bonus of 19050 NOK in addition to the base salary.",
+    "Run the payroll for Run46 Test (run46test@example.org) for this month. The base salary is 40000 NOK. Add a one-time bonus of 10000 NOK in addition to the base salary.",
+    "Run the payroll for Erik Larsen (erik.larsen@example.org) for this month. The base salary is 49100 NOK. Add a one-time bonus of 11200 NOK in addition to the base salary. If the payroll API is not working, you can use manual vouchers on payroll accounts (5000 series) to record the payroll cost.",
+    "Run the payroll for Jonas Hansen (jonas.hansen@example.org) for this month. The base salary is 40000 NOK. Add a one-time bonus of 10600 NOK in addition to the base salary. If the payroll API is not working, you can use manual vouchers on payroll accounts (5000 series) to record the payroll cost.",
+    "Run the payroll for Validator Test (validator.test@example.org) this month. The base salary is 35000 NOK. Add a one-time bonus of 8000 NOK.",
+    "Run the payroll for Validator Test (validator.test@example.org) this month. The base salary is 35000 NOK. Add a one-time bonus of 8000 NOK.",
+    "Run the payroll for Eirik Brekke (eirik.brekke@example.org) for this month. The base salary is 41050 NOK. Add a one-time bonus of 9800 NOK in addition to the base salary.",
+    "Run the payroll for Lucas Martins (lucas.martins@example.org) for this month. The base salary is 39000 NOK. Add a one-time bonus of 10500 NOK in addition to the base salary.",
+    "Run the payroll for Sofia Sousa (sofia.sousa@example.org) for this month. The base salary is 30200 NOK. Add a one-time bonus of 13750 NOK in addition to the base salary.",
+    "Run the payroll for Sofia Sousa (sofia.sousa@example.org) for this month. The base salary is 30200 NOK. Add a one-time bonus of 13750 NOK in addition to the base salary."
+  ],
+  "TASK 13 - TIER 2: Register travel expense with outlays": [
+    "Register a travel expense for Arthur Robert (arthur.robert@example.org) for \"Client visit Kristiansand\". The trip lasted 5 days with per diem (daily rate 800 NOK). Expenses: flight ticket 3850 NOK and taxi 650 NOK.",
+    "Register a travel expense for Maximilian Becker (maximilian.becker@example.org) for \"Conference Bodø\". The trip lasted 2 days with per diem (daily rate 800 NOK). Expenses: flight ticket 2050 NOK and taxi 300 NOK.",
+    "Register a travel expense for Maximilian Becker (maximilian.becker@example.org) for \"Conference Bodø\". The trip lasted 2 days with per diem (daily rate 800 NOK). Expenses: flight ticket 2050 NOK and taxi 300 NOK.",
+    "Register a travel expense for Noah Weber (noah.weber@example.org) for \"Client visit Oslo\". The trip lasted 3 days with per diem (daily rate 800 NOK). Expenses: flight ticket 4150 NOK and taxi 650 NOK.",
+    "Register a travel expense for Paul Hoffmann (paul.hoffmann@example.org) for \"Client visit Oslo\". The trip lasted 4 days with per diem (daily rate 800 NOK). Expenses: flight ticket 5200 NOK and taxi 450 NOK.",
+    "Register a travel expense for Rafael Sousa (rafael.sousa@example.org) for \"Client visit Tromsø\". The trip lasted 5 days with per diem (daily rate 800 NOK). Expenses: flight ticket 6000 NOK and taxi 750 NOK.",
+    "Register a travel expense for Charlotte Smith (charlotte.smith@example.org) for \"Conference Tromsø\". The trip lasted 2 days with per diem (daily rate 800 NOK). Expenses: flight ticket 6400 NOK and taxi 600 NOK.",
+    "Register a travel expense for Test Worker (test.worker.validator@example.org) for \"Client visit Bergen\". The trip lasted 2 days with per diem (daily rate 800 NOK). Expenses: flight ticket 3000 NOK and taxi 500 NOK.",
+    "Register a travel expense for Test Worker (test.worker.validator@example.org) for \"Client visit Stavanger\". The trip lasted 2 days with per diem (daily rate 800 NOK). Expenses: flight ticket 4000 NOK and taxi 600 NOK.",
+    "Register a travel expense for TestRun46 Worker (testrun46@example.org) for \"Client visit Bergen\". The trip lasted 2 days. Expenses: flight ticket 3000 NOK and taxi 500 NOK.",
+    "Register a travel expense for William Wilson (william.wilson@example.org) for \"Client visit Trondheim\". The trip lasted 2 days with per diem (daily rate 800 NOK). Expenses: flight ticket 7600 NOK and taxi 700 NOK.",
+    "Register a travel expense for Magnus Haugen (magnus.haugen@example.org) for \"Client visit Bergen\". The trip lasted 4 days with per diem (daily rate 800 NOK). Expenses: flight ticket 5050 NOK and taxi 750 NOK."
+  ],
+  "TASK 14 - TIER 2: Credit invoice (credit note)": [
+    "The customer Eichenhof GmbH (org. no. 820205790) has complained about the invoice for \"Cloud Storage\" (44400 NOK excl. VAT). Issue a full credit note that reverses the entire invoice.",
+    "The customer Elvdal AS (org. no. 812449982) has complained about the invoice for \"Data Consulting\" (45300 NOK excl. VAT). Issue a full credit note that reverses the entire invoice.",
+    "The customer Havbris AS (org. no. 995581094) has complained about the invoice for \"Software License\" (34650 NOK excl. VAT). Issue a full credit note that reverses the entire invoice.",
+    "The customer Nordhav AS (org. no. 996887898) has complained about the invoice for \"Maintenance\" (19200 NOK excl. VAT). Issue a full credit note that reverses the entire invoice.",
+    "The customer Run46 AS has complained about the invoice. Issue a full credit note that reverses the entire invoice.",
+    "The customer Tindra AS (org. no. 904261157) has complained about the invoice for \"Network Service\" (25150 NOK excl. VAT). Issue a full credit note that reverses the entire invoice.",
+    "The customer Validator AS has complained about the invoice. Issue a full credit note that reverses the entire invoice.",
+    "The customer Colline SARL (org. no. 879581265) has complained about the invoice for \"Data Consulting\" (23750 NOK excl. VAT). Issue a full credit note that reverses the entire invoice.",
+    "The customer Océan SARL (org. no. 910441930) has complained about the invoice for \"Analysis Report\" (6150 NOK excl. VAT). Issue a full credit note that reverses the entire invoice.",
+    "The customer Estrela Lda (org. no. 890872492) complained about the invoice for \"Data Consulting\" (12000 NOK excl. VAT). Issue a full credit note that reverses the entire invoice.",
+    "The customer Oakwood Ltd (org no. 950705337) has complained about the invoice for \"Training Session\" (26700 NOK excl. VAT). Issue a full credit note that reverses the entire invoice."
+  ],
+  "TASK 15 - TIER 2: Set fixed price and invoice project": [
+    "Set a fixed price of 362300 NOK on the project \"Cloud Migration\" for Cascata Lda (org. no. 829637286). The project manager is Beatriz Rodrigues (beatriz.rodrigues@example.org). Invoice the customer 33% of the fixed price as a milestone payment.",
+    "Set a fixed price of 200000 NOK on the project \"Run46 Fixed\" for Run46 AS (org. no. 946293100). The project manager is TestRun46 Worker (testrun46@example.org). Invoice the customer 50% of the fixed price as a milestone payment.",
+    "Set a fixed price of 261700 NOK on the project \"CRM Integration\" for Luna SL (org. no. 847950021). The project manager is Andrés López (andres.lopez@example.org). Invoice the customer 75% of the fixed price as a partial payment.",
+    "Set a fixed price of 125550 NOK on the project \"Infrastructure Upgrade\" for Soleil SARL (org. no. 931336738). The project manager is Nathan Thomas (nathan.thomas@example.org). Invoice the customer 25% of the fixed price as a milestone payment.",
+    "Set a fixed price of 170650 NOK on the project \"Automation Project\" for Rivière SARL (org. no. 852968737). The project manager is Nathan Martin (nathan.martin@example.org). Invoice the customer 25% of the fixed price as a milestone payment.",
+    "Set a fixed price of 342600 NOK on the project \"Data Security\" for Forêt SARL (org. no. 855570742). The project manager is Lucas Leroy (lucas.leroy@example.org). Invoice the customer 75% of the fixed price as a milestone payment.",
+    "Set a fixed price of 365350 NOK on the project \"CRM Integration\" for Colline SARL (org. no. 894562234). The project manager is Adam Thomas (adam.thomas@example.org). Invoice the customer 75% of the fixed price as a milestone payment.",
+    "Set a fixed price of 292550 NOK for the project \"E-Commerce Development\" for Brückentor GmbH (org. no. 800357314). The project manager is Felix Fischer (felix.fischer@example.org). Invoice the customer 33% of the fixed price as a milestone payment.",
+    "Set a fixed price of 206950 NOK on the project \"Data Security\" for Tindra AS (org. no. 833180568). The project manager is Karin Bakken (karin.bakken@example.org). Invoice the customer 33% of the fixed price as a partial payment."
+  ],
+  "TASK 16 - TIER 2: Time tracking and invoicing": [
+    "Log 15 hours for Nathan Bernard (nathan.bernard@example.org) on the activity \"Development\" in the project \"App Development\" for Colline SARL (org. no. 815345991). Hourly rate: 1000 NOK/h. Generate a project invoice to the customer based on the logged hours.",
+    "Log 16 hours for Camille Dubois (camille.dubois@example.org) on the activity \"Design\" in the project \"System Upgrade\" for Océan SARL (org. no. 953748460). Hourly rate: 1300 NOK/h. Generate a project invoice to the customer based on the logged hours.",
+    "Log 8 hours for TestRun46 Worker (testrun46@example.org) on the activity \"Consulting\" in the project \"Run46 Hours\" for Run46 AS (org. no. 946293100). Hourly rate: 1200 NOK/h. Generate an invoice.",
+    "Log 18 hours for Mia Meyer (mia.meyer@example.org) on the activity \"Testing\" in the project \"Security Audit\" for Nordlicht GmbH (org. no. 934651995). Hourly rate: 1400 NOK/h. Generate a project invoice to the customer based on the logged hours.",
+    "Log 29 hours for Ella Williams (ella.williams@example.org) on the activity \"Testing\" in the project \"Platform Integration\" for Windmill Ltd (org no. 839360274). Hourly rate: 1350 NOK/h. Generate a project invoice to the customer based on the logged hours.",
+    "Log 34 hours for Charlotte Williams (charlotte.williams@example.org) on the activity \"Analysis\" in the project \"Security Audit\" for Windmill Ltd (org no. 851492623). Hourly rate: 1300 NOK/h. Generate a project invoice to the customer based on the logged hours.",
+    "Log 23 hours for Tiago Santos (tiago.santos@example.org) on the activity \"Analysis\" in the project \"Platform Integration\" for Floresta Lda (org. no. 889395338). Hourly rate: 1050 NOK/h. Generate a project invoice to the customer based on the logged hours.",
+    "Log 39 hours for Miguel Sánchez (miguel.sanchez@example.org) on the activity \"Analysis\" in the project \"Data Migration\" for Montaña SL (org. no. 802639244). Hourly rate: 1000 NOK/h. Generate a project invoice to the customer based on the logged hours.",
+    "Log 28 hours for Bjørn Kvamme (bjrn.kvamme@example.org) on the activity \"Analysis\" in the project \"Data Migration\" for Fjelltopp AS (org. no. 986191127). Hourly rate: 1200 NOK/h. Generate a project invoice to the customer based on the logged hours.",
+    "Log 28 hours for Bjørn Kvamme (bjrn.kvamme@example.org) on the activity \"Analysis\" in the project \"Data Migration\" for Fjelltopp AS (org. no. 986191127). Hourly rate: 1200 NOK/h. Generate a project invoice to the customer based on the logged hours.",
+    "Log 7 hours for Tor Johansen (tor.johansen@example.org) on the activity \"Design\" in the project \"Platform Integration\" for Tindra AS (org. no. 877235882). Hourly rate: 1650 NOK/h. Generate a project invoice to the customer based on the logged hours."
+  ],
+  "TASK 17 - TIER 2: Create custom dimension and post voucher": [
+    "Create a custom accounting dimension \"Project Type\" with the values \"External\" and \"Development\". Then post a voucher on account 7300 for 29950 NOK, linked to the dimension value \"External\".",
+    "Create a custom accounting dimension \"Product Line\" with the values \"Standard\" and \"Basic\". Then post a voucher on account 7100 for 43400 NOK, linked to the dimension value \"Standard\".",
+    "Create a custom accounting dimension \"Product Line\" with the values \"Basic\" and \"Advanced\". Then post a voucher on account 6300 for 22550 NOK, linked to the dimension value \"Advanced\".",
+    "Create a custom accounting dimension \"Cost Center\" with the values \"IT\" and \"Purchasing\". Then post a voucher on account 7000 for 19450 NOK, linked to the dimension value \"IT\".",
+    "Create a custom accounting dimension \"Cost Center\" with the values \"Marketing\" and \"Operations\". Then post a voucher on account 6340 for 43650 NOK, linked to the dimension value \"Marketing\".",
+    "Create a custom accounting dimension \"Product Line\" with the values \"Basic\" and \"Standard\". Then post a voucher on account 6540 for 25900 NOK, linked to the dimension value \"Basic\".",
+    "Create a custom accounting dimension \"Product Line\" with the values \"Basic\" and \"Standard\". Then post a voucher on account 6540 for 25900 NOK, linked to the dimension value \"Basic\".",
+    "Create a custom accounting dimension \"Product Line\" with the values \"Basic\" and \"Advanced\". Then post a voucher on account 6340 for 15000 NOK, linked to the dimension value \"Advanced\".",
+    "Create a custom accounting dimension \"Cost Center\" with the values \"Purchasing\" and \"Logistics\". Then post a voucher on account 6590 for 34250 NOK, linked to the dimension value \"Purchasing\".",
+    "Create a custom accounting dimension \"Product Line\" with the values \"Standard\" and \"Advanced\". Then post a voucher on account 7000 for 12700 NOK, linked to the dimension value \"Standard\".",
+    "Create a custom accounting dimension \"Run46Dim\" with the values \"X\" and \"Y\". Then post a voucher on account 6340 for 7000 NOK, linked to the dimension value \"X\".",
+    "Create a custom accounting dimension \"TestDim\" with the values \"A\" and \"B\". Then post a voucher on account 6340 for 5000 NOK, linked to the dimension value \"A\"."
+  ],
+  "TASK 18 - TIER 2: Reverse payment (bank return)": [
+    "The payment from Dalheim AS (org. no. 979527578) for the invoice \"System Development\" (14550 NOK excl. VAT) was returned by the bank. Reverse the payment so the invoice shows the outstanding amount again.",
+    "The payment from Grünfeld GmbH (org. no. 808603152) for the invoice \"Network Service\" (44300 NOK excl. VAT) was returned by the bank. Reverse the payment so the invoice shows the outstanding amount again.",
+    "The payment from Dorada SL (org. no. 849807021) for the invoice \"Maintenance\" (8900 NOK excl. VAT) was returned by the bank. Reverse the payment so the invoice shows the outstanding amount again.",
+    "The payment from Olivares SL (org. no. 921296819) for the invoice \"Cloud Storage\" (46300 NOK excl. VAT) was returned by the bank. Reverse the payment so the invoice shows the outstanding amount again.",
+    "The customer Run46 AS (org. no. 946293100) has paid an invoice, but the payment was returned by the bank. Reverse the payment.",
+    "The customer Validator AS (org. no. 999888777) has paid an invoice, but the payment was returned by the bank. Reverse the payment.",
+    "The customer Validator AS (org. no. 999888777) has an outstanding invoice. The payment was returned by the bank. Reverse the payment so the invoice shows the outstanding amount again.",
+    "The payment from Colline SARL (org. no. 804499180) for the invoice \"Consulting Hours\" (8850 NOK excl. VAT) was returned by the bank. Reverse the payment so the invoice shows the outstanding amount again.",
+    "The payment from Lumière SARL (org. no. 937075405) for the invoice \"Data Consulting\" (39100 NOK excl. VAT) was returned by the bank. Reverse the payment so the invoice shows the outstanding amount again.",
+    "The payment from Blueshore Ltd (org no. 989902121) for the invoice \"Software License\" (39700 NOK excl. VAT) was returned by the bank. Reverse the payment so the invoice shows the outstanding amount again.",
+    "The payment from Ironbridge Ltd (org no. 966448148) for the invoice \"System Development\" (45800 NOK excl. VAT) was returned by the bank. Reverse the payment so the invoice shows the outstanding amount again."
+  ],
+  "Surprising": {
+    "Task 2": [
+      "Update the customer Run46 AS with phone number +47 11 22 33 44.",
+      "Update the customer Validator AS with phone number +47 99 88 77 66."
+    ],
+    "Task 3": [
+      "Delete the product Run46Prod.",
+      "Delete the product ValidatorProd."
+    ]
+  }
+}

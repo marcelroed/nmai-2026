@@ -1,0 +1,272 @@
+[
+  {
+    "request_id": "776ad3dd-17c7-449e-84f6-9550e0316252",
+    "filename": "files/arbeidskontrakt_en_01.pdf",
+    "basename": "arbeidskontrakt_en_01.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "18eebecbe8e1c5ca1818ba3d621d89804d69bbbb65bb46b297aa737a1bd00f4b",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/arbeidskontrakt_en_01.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/arbeidskontrakt_en_01.txt"
+  },
+  {
+    "request_id": "7700a34b-f5e0-49a5-babc-c810de1bed49",
+    "filename": "files/arbeidskontrakt_en_08.pdf",
+    "basename": "arbeidskontrakt_en_08.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "48e5a19b27c8c986a0826dc768ac13e063e346469818ff7d6bd4d0a2a3e31be7",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/arbeidskontrakt_en_08.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/arbeidskontrakt_en_08.txt"
+  },
+  {
+    "request_id": "32a7c291-a768-421e-8011-3c450dbb265b",
+    "filename": "files/arbeidskontrakt_fr_03.pdf",
+    "basename": "arbeidskontrakt_fr_03.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "23bff8b2b467d41e97324a2d2a9086886befa1f416f407aae0edddd89329cb6c",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/arbeidskontrakt_fr_03.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/arbeidskontrakt_fr_03.txt"
+  },
+  {
+    "request_id": "14c5c47f-b49c-4651-aefa-a86bb34f0270",
+    "filename": "files/arbeidskontrakt_fr_06.pdf",
+    "basename": "arbeidskontrakt_fr_06.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "c1cce770572d6b411431384ed623b63b984a8036e8b79e5630ba3fa3fdd16ee5",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/arbeidskontrakt_fr_06.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/arbeidskontrakt_fr_06.txt"
+  },
+  {
+    "request_id": "457c2276-a7d9-45af-a6fb-0762091f5db0",
+    "filename": "files/arbeidskontrakt_nn_05.pdf",
+    "basename": "arbeidskontrakt_nn_05.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "91fa98e0811eac9034289f4c223b27fdd79d6e5e9e25a7f64a07358a05930f4b",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/arbeidskontrakt_nn_05.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/arbeidskontrakt_nn_05.txt"
+  },
+  {
+    "request_id": "4c4cb1bf-e121-4bce-8ce2-69cbfad27cb0",
+    "filename": "files/arbeidskontrakt_pt_02.pdf",
+    "basename": "arbeidskontrakt_pt_02.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "d014aa1806ce23b422588c2510a604d95a07b25d47f45fe7b3de93125322057d",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/arbeidskontrakt_pt_02.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/arbeidskontrakt_pt_02.txt"
+  },
+  {
+    "request_id": "46ddd8ad-0bd2-4adf-a992-a7836e97cd9a",
+    "filename": "files/bankutskrift_de_08.csv",
+    "basename": "bankutskrift_de_08.csv",
+    "mime_type": "text/csv",
+    "sha256": "463db7b1c0a65aa133c4c8170ac376f04d83f59c6a3e13f455e2ef2256d7bbd0",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/bankutskrift_de_08.csv",
+    "parsed_path": null
+  },
+  {
+    "request_id": "c6cd3de3-db6b-4ad4-8a3d-dfe295a8f976",
+    "filename": "files/bankutskrift_en_05.csv",
+    "basename": "bankutskrift_en_05.csv",
+    "mime_type": "text/csv",
+    "sha256": "0d13fe41f693d3b831c9e59de6bb30213de57c0091b7d01b2de07024f2e4865f",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/bankutskrift_en_05.csv",
+    "parsed_path": null
+  },
+  {
+    "request_id": "db0d650b-928d-4e51-a794-cb56c19fed60",
+    "filename": "files/bankutskrift_en_06.csv",
+    "basename": "bankutskrift_en_06.csv",
+    "mime_type": "text/csv",
+    "sha256": "e549dff8de54781ae61f30366feddb036b166e63cceddf462496e09d53469e3c",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/bankutskrift_en_06.csv",
+    "parsed_path": null
+  },
+  {
+    "request_id": "7eb63733-49f4-42e2-a3de-918794b498e2",
+    "filename": "files/bankutskrift_es_08.csv",
+    "basename": "bankutskrift_es_08.csv",
+    "mime_type": "text/csv",
+    "sha256": "8c247b376e54cc126d4f190f99c92b8f3c9f160f315f8db31e9e1aa4a3ec2bd8",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/bankutskrift_es_08.csv",
+    "parsed_path": null
+  },
+  {
+    "request_id": "b16e3b31-0c97-4ffe-9f34-9c4ade3b7047",
+    "filename": "files/bankutskrift_fr_03.csv",
+    "basename": "bankutskrift_fr_03.csv",
+    "mime_type": "text/csv",
+    "sha256": "e437b39580bc6fd77852fc79f670786515e5fa3be175783acf4f89f116e80b6b",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/bankutskrift_fr_03.csv",
+    "parsed_path": null
+  },
+  {
+    "request_id": "11a49b5a-37c2-4803-a272-c713d0d87714",
+    "filename": "files/bankutskrift_pt_04.csv",
+    "basename": "bankutskrift_pt_04.csv",
+    "mime_type": "text/csv",
+    "sha256": "cda64ec8283c143af312810ea3cd33b37c59318bfaeaefce1f42953acc06791c",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/bankutskrift_pt_04.csv",
+    "parsed_path": null
+  },
+  {
+    "request_id": "d0334a51-ecc6-4761-8942-d66cdd633294",
+    "filename": "files/kvittering_de_06.pdf",
+    "basename": "kvittering_de_06.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "2566ba96ddcdff3372810ebbc58dd8a4b1be2b69ecde9106b75ecc923ebe12e4",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/kvittering_de_06.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/kvittering_de_06.txt"
+  },
+  {
+    "request_id": "632c1599-d6a3-47e8-aeab-34d6b3d5d995",
+    "filename": "files/kvittering_en_03.pdf",
+    "basename": "kvittering_en_03.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "9ad723b826caeb499ff940d44ea993cc09d2ea62b92cad048b9f3d4290f77163",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/kvittering_en_03.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/kvittering_en_03.txt"
+  },
+  {
+    "request_id": "d0574f6f-b2e2-4fe4-9dc5-7382674c0406",
+    "filename": "files/kvittering_es_03.pdf",
+    "basename": "kvittering_es_03.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "b8704ffa031d1732ec9b701659338a8fce5d1209573e24b788b38538537b7398",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/kvittering_es_03.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/kvittering_es_03.txt"
+  },
+  {
+    "request_id": "bfc21925-2a30-463c-9bf1-74172204c59b",
+    "filename": "files/kvittering_fr_08.pdf",
+    "basename": "kvittering_fr_08.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "d3769f6c771362445bdb3051d7cb86dc71204ca9a8cb833c5ee81ae54e1484c9",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/kvittering_fr_08.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/kvittering_fr_08.txt"
+  },
+  {
+    "request_id": "a65c8095-5d5e-4cc9-9bf0-25a860899187",
+    "filename": "files/kvittering_nn_03.pdf",
+    "basename": "kvittering_nn_03.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "6dc9ae9eea14b58c17b1ae00b75beac32bdbfcdb6addabb3bc2d185d633c6fba",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/kvittering_nn_03.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/kvittering_nn_03.txt"
+  },
+  {
+    "request_id": "245f6977-e73a-42d6-87e7-793b6872f4c4",
+    "filename": "files/kvittering_nn_06.pdf",
+    "basename": "kvittering_nn_06.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "8469b4f7de863d2f21214d54224db93127dc64a089e4448fc81d3c04d631d518",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/kvittering_nn_06.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/kvittering_nn_06.txt"
+  },
+  {
+    "request_id": "88201bc7-e4c8-4e36-9988-a7c16361096e",
+    "filename": "files/kvittering_pt_05.pdf",
+    "basename": "kvittering_pt_05.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "05df3b42cf87da5c62f9e6d8079b09f7a5275e5535dde931c63a61d640611408",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/kvittering_pt_05.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/kvittering_pt_05.txt"
+  },
+  {
+    "request_id": "d8e3d4df-14c5-4438-85a6-4a2912e8e911",
+    "filename": "files/kvittering_pt_08.pdf",
+    "basename": "kvittering_pt_08.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "21de6cc9dd9d7cc859e50686ab495ab3228574748947f3915956c7f11dd68e72",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/kvittering_pt_08.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/kvittering_pt_08.txt"
+  },
+  {
+    "request_id": "c3d2348c-94ba-42a0-b642-e93ae002a5f6",
+    "filename": "files/leverandorfaktura_fr_03.pdf",
+    "basename": "leverandorfaktura_fr_03.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "1b35ac534674f4de5dd5970ad8333fa09267fe9dcea8e9c973e55720102e1a33",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/leverandorfaktura_fr_03.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/leverandorfaktura_fr_03.txt"
+  },
+  {
+    "request_id": "e27c5a99-8311-4f0c-864e-cdfb23c452f9",
+    "filename": "files/leverandorfaktura_fr_08.pdf",
+    "basename": "leverandorfaktura_fr_08.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "971efb864700ac719a336cb8d4fdce375ff594b091e661b991570821b67b5051",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/leverandorfaktura_fr_08.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/leverandorfaktura_fr_08.txt"
+  },
+  {
+    "request_id": "f43efe13-cfca-468b-90bb-699c90728ead",
+    "filename": "files/leverandorfaktura_nb_05.pdf",
+    "basename": "leverandorfaktura_nb_05.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "b543cad0ea85fe0a36a37dbc53c46fd43124dfb2da84d6e9dddff1883ce50c27",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/leverandorfaktura_nb_05.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/leverandorfaktura_nb_05.txt"
+  },
+  {
+    "request_id": "1d18f275-57d9-40cc-8299-49978d5e2386",
+    "filename": "files/leverandorfaktura_nb_08.pdf",
+    "basename": "leverandorfaktura_nb_08.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "3c0ee4025f367e3db9f7c4390cead027ce6b14f465720c77e06664be074d6104",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/leverandorfaktura_nb_08.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/leverandorfaktura_nb_08.txt"
+  },
+  {
+    "request_id": "9e1c522b-844d-40d5-9612-558fd5d077e4",
+    "filename": "files/tilbudsbrev_de_06.pdf",
+    "basename": "tilbudsbrev_de_06.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "161863e7a30c6649a63b5a78121bc83577bbb79e60bf1ffb7e4bd3ac68e0f08d",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/tilbudsbrev_de_06.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/tilbudsbrev_de_06.txt"
+  },
+  {
+    "request_id": "7dcbd3e6-7419-4a7b-8a76-0b78281df307",
+    "filename": "files/tilbudsbrev_es_03.pdf",
+    "basename": "tilbudsbrev_es_03.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "706baa8fa8415200770259e11ef2d38fa2a13e8333a51b98b4d8c737e4677ac7",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/tilbudsbrev_es_03.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/tilbudsbrev_es_03.txt"
+  },
+  {
+    "request_id": "96ec07fc-7831-4d20-8540-980db4366927",
+    "filename": "files/tilbudsbrev_nb_01.pdf",
+    "basename": "tilbudsbrev_nb_01.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "22c0aae954d74248d11f97039968b5088728b048cf6f757b9523ef6302b7f9e4",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/tilbudsbrev_nb_01.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/tilbudsbrev_nb_01.txt"
+  },
+  {
+    "request_id": "b96b6e5e-51e8-481b-aa8d-af233833b939",
+    "filename": "files/tilbudsbrev_nb_05.pdf",
+    "basename": "tilbudsbrev_nb_05.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "2ac4316d8f4d48b07afeb6b3e99e89ec53f4ca2aae0795e56dbfd1c21bfd72fa",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/tilbudsbrev_nb_05.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/tilbudsbrev_nb_05.txt"
+  },
+  {
+    "request_id": "8bb251c7-5334-4289-a441-a1d8186f6b0e",
+    "filename": "files/tilbudsbrev_nn_06.pdf",
+    "basename": "tilbudsbrev_nn_06.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "201019883abe622a51174b70366d49866b83b37bd6d5194a92bf3af371eda420",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/tilbudsbrev_nn_06.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/tilbudsbrev_nn_06.txt"
+  },
+  {
+    "request_id": "ee4e63bb-e0b5-4751-a9a6-09715c84eb87",
+    "filename": "files/tilbudsbrev_pt_08.pdf",
+    "basename": "tilbudsbrev_pt_08.pdf",
+    "mime_type": "application/pdf",
+    "sha256": "03f2c4da47584030ddb611e6bef6c1b99311b0d12fa9fd13cfd2e6c82e743f49",
+    "raw_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/raw/tilbudsbrev_pt_08.pdf",
+    "parsed_path": "/Users/herman/.t3/worktrees/tripletex/t3code-628d177c/tripletex/data/files/parsed/tilbudsbrev_pt_08.txt"
+  }
+]

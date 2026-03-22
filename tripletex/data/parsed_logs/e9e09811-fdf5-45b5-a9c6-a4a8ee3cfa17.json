@@ -1,0 +1,1308 @@
+{
+  "request_id": "e9e09811-fdf5-45b5-a9c6-a4a8ee3cfa17",
+  "log_count": 12,
+  "request": {
+    "kind": "request_start",
+    "timestamp": "2026-03-21T18:15:39",
+    "level": "INFO",
+    "message": "request.start",
+    "exception": null,
+    "extra": {
+      "body": {
+        "preview": "{\"prompt\":\"Crea un pedido para el cliente Río Verde SL (org. nº 951612936) con los productos Informe de análisis (4430) a 20900 NOK y Sesión de formación (7773) a 18350 NOK. Convierte el pedido en factura y registra el pago completo.\",\"files\":[],\"tripletex_credentials\":{\"base_url\":\"https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2\",\"session_token\":\"4RvgKZ3l7l5TW7fL6Q2FRtsvFPeifyctA9vwgMfXEvc\"}}",
+        "size_bytes": 396
+      },
+      "client": {
+        "host": "169.254.169.126",
+        "port": 32480
+      },
+      "event": "request.start",
+      "headers": [
+        [
+          "host",
+          "tripletex-agent-1010470531441.europe-north1.run.app"
+        ],
+        [
+          "accept",
+          "*/*"
+        ],
+        [
+          "user-agent",
+          "python-httpx/0.28.1"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "authorization",
+          "Bearer 37ed26ef-c331-4e2c-bcb8-719bba142d0d"
+        ],
+        [
+          "content-length",
+          "396"
+        ],
+        [
+          "x-cloud-trace-context",
+          "045f4539dc513d426b51518b5c9d5669/7507545277585793723;o=1"
+        ],
+        [
+          "x-forwarded-proto",
+          "https"
+        ],
+        [
+          "traceparent",
+          "00-045f4539dc513d426b51518b5c9d5669-683028a73da9a2bb-01"
+        ],
+        [
+          "x-forwarded-for",
+          "34.34.240.91"
+        ],
+        [
+          "forwarded",
+          "for=\"34.34.240.91\";proto=https"
+        ],
+        [
+          "accept-encoding",
+          "gzip, deflate"
+        ]
+      ],
+      "http_version": "1.1",
+      "query_string": "",
+      "request_line": "POST /solve HTTP/1.1",
+      "scheme": "http",
+      "server": [
+        "169.254.169.1",
+        8080
+      ],
+      "url": "http://tripletex-agent-1010470531441.europe-north1.run.app/solve"
+    }
+  },
+  "request_end": null,
+  "handler": {
+    "enter": {
+      "kind": "serve_handler_enter",
+      "timestamp": "2026-03-21T18:15:39",
+      "level": "DEBUG",
+      "message": "serve.handler.enter",
+      "exception": null,
+      "extra": {
+        "base_url": "https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2",
+        "file_count": 0,
+        "payload": "prompt='Crea un pedido para el cliente Río Verde SL (org. nº 951612936) con los productos Informe de análisis (4430) a 20900 NOK y Sesión de formación (7773) a 18350 NOK. Convierte el pedido en factura y registra el pago completo.' files=[] tripletex_credentials=TripletexCredentials(base_url='https://tx-proxy-jwanbnu3pq-lz.a.run.app/v2', session_token='REDACTED')",
+        "previous_submission_id": "37ed26ef-c331-4e2c-bcb8-719bba142d0d",
+        "prompt": "Crea un pedido para el cliente Río Verde SL (org. nº 951612936) con los productos Informe de análisis (4430) a 20900 NOK y Sesión de formación (7773) a 18350 NOK. Convierte el pedido en factura y registra el pago completo."
+      }
+    },
+    "before_return": null
+  },
+  "submission_status": {
+    "getting": {
+      "kind": "getting_submission_status",
+      "timestamp": "2026-03-21T18:15:39",
+      "level": "INFO",
+      "message": "getting the submission status for nmai",
+      "exception": null,
+      "extra": {}
+    },
+    "got_submission_status": {
+      "kind": "got_submission_status",
+      "timestamp": "2026-03-21T18:15:39",
+      "level": "INFO",
+      "message": "got submission status for nmai",
+      "exception": null,
+      "extra": {
+        "response": [
+          {
+            "completed_at": null,
+            "duration_ms": null,
+            "id": "b9f4025d-349d-48ce-a214-195fa8136bc9",
+            "normalized_score": null,
+            "queued_at": "2026-03-21T18:15:38.772465+00:00",
+            "score_max": null,
+            "score_raw": null,
+            "status": "processing"
+          },
+          {
+            "completed_at": null,
+            "duration_ms": null,
+            "id": "37ed26ef-c331-4e2c-bcb8-719bba142d0d",
+            "normalized_score": null,
+            "queued_at": "2026-03-21T18:15:33.646595+00:00",
+            "score_max": null,
+            "score_raw": null,
+            "status": "processing"
+          },
+          {
+            "completed_at": "2026-03-21T18:15:31.005927+00:00",
+            "duration_ms": 70700,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "d341dc9f-335b-462e-8530-28a608bb5bad",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:14:19.982138+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": null,
+            "duration_ms": null,
+            "id": "64a974f2-03c9-4185-9206-e9bab8d746da",
+            "normalized_score": null,
+            "queued_at": "2026-03-21T18:14:09.476770+00:00",
+            "score_max": null,
+            "score_raw": null,
+            "status": "processing"
+          },
+          {
+            "completed_at": "2026-03-21T18:14:16.162576+00:00",
+            "duration_ms": 24635,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "2f82b717-c530-4ed3-95cf-b487c26bf2e9",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:13:51.430773+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:15:36.387047+00:00",
+            "duration_ms": 115693,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "4a2a710a-3eb2-4bac-bf91-c390a6d7390b",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:13:40.562234+00:00",
+            "score_max": 8,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:14:07.402725+00:00",
+            "duration_ms": 107203,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "bced4b29-95b8-4405-b717-61acefab3048",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:12:20.103426+00:00",
+            "score_max": 8,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:13:47.331541+00:00",
+            "duration_ms": 107299,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed"
+              ],
+              "comment": "3/3 checks failed."
+            },
+            "id": "9bc26a41-a931-4530-a3a1-49c9d349781d",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:11:59.762726+00:00",
+            "score_max": 7,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:12:19.109620+00:00",
+            "duration_ms": 29900,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "3/4 checks failed."
+            },
+            "id": "9c41d9a1-d8e0-497e-830b-b5a5f18023a4",
+            "normalized_score": 0.6,
+            "queued_at": "2026-03-21T18:11:49.178988+00:00",
+            "score_max": 10,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:13:32.862131+00:00",
+            "duration_ms": 110464,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "dfc836b0-5179-41c3-8e64-94243f6d2098",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:11:42.026029+00:00",
+            "score_max": 8,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:11:48.354696+00:00",
+            "duration_ms": 25211,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "3/4 checks failed."
+            },
+            "id": "8443bb2d-8a05-4d8d-a0c6-060e81790913",
+            "normalized_score": 0.6,
+            "queued_at": "2026-03-21T18:11:22.953369+00:00",
+            "score_max": 10,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:11:35.608092+00:00",
+            "duration_ms": 19289,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "3326f503-5533-4d1b-8699-52180735f437",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:11:16.137783+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:11:20.598529+00:00",
+            "duration_ms": 46397,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "b57b5283-3ffd-4094-bfad-c75d12f25acf",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:10:34.031902+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:11:14.589237+00:00",
+            "duration_ms": 48105,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "52d64d5d-9f2b-4f6e-b524-58b27e1a12c8",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:10:26.275791+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:11:57.462803+00:00",
+            "duration_ms": 97716,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "3d27e227-bb9c-4fbe-9ec5-a8dd7f380bb0",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:10:19.400690+00:00",
+            "score_max": 7,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:10:23.021133+00:00",
+            "duration_ms": 100451,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "3/4 checks failed."
+            },
+            "id": "71d3ae68-8588-4fb0-aff7-f991753cbeaa",
+            "normalized_score": 0.5,
+            "queued_at": "2026-03-21T18:08:42.538415+00:00",
+            "score_max": 8,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:10:17.705796+00:00",
+            "duration_ms": 100258,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "30475c8b-7113-4172-a3c7-02622dae5cc5",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:08:37.259706+00:00",
+            "score_max": 7,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:10:13.261446+00:00",
+            "duration_ms": 104752,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "640f93c9-df12-420f-9cec-53786da13c5b",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:08:28.393464+00:00",
+            "score_max": 8,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:08:26.649142+00:00",
+            "duration_ms": 18184,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "bb04aa53-baea-4447-9c03-2e10eb9fb6bd",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:08:08.412484+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:08:22.151669+00:00",
+            "duration_ms": 18373,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "63a09805-01be-4d06-a1d1-fc15fadeda64",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:08:03.769063+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:08:19.813839+00:00",
+            "duration_ms": 98241,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed"
+              ],
+              "comment": "7/7 checks failed."
+            },
+            "id": "56eaaed1-ac2f-4691-825b-c1249783af79",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:06:41.486867+00:00",
+            "score_max": 8,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:08:02.086396+00:00",
+            "duration_ms": 105915,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed",
+                "Check 8: failed",
+                "Check 9: failed",
+                "Check 10: failed",
+                "Check 11: failed",
+                "Check 12: failed",
+                "Check 13: failed",
+                "Check 14: failed",
+                "Check 15: failed"
+              ],
+              "comment": "15/15 checks failed."
+            },
+            "id": "fbfdda9d-6183-4197-9fc0-f45f366665cd",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:06:14.907666+00:00",
+            "score_max": 22,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:08:04.540173+00:00",
+            "duration_ms": 114386,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed",
+                "Check 8: failed",
+                "Check 9: failed",
+                "Check 10: failed"
+              ],
+              "comment": "10/10 checks failed."
+            },
+            "id": "dde79043-d668-44d6-96ba-7fc51d050854",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:06:09.105916+00:00",
+            "score_max": 14,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:05:56.015696+00:00",
+            "duration_ms": 31991,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "e58837de-14ab-4230-9f38-e5eef156761e",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:05:23.943167+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:06:35.575322+00:00",
+            "duration_ms": 123064,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "0a3f0e22-edf7-4cb8-8f0f-c0b2c42385a2",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:04:32.345798+00:00",
+            "score_max": 7,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:05:58.777890+00:00",
+            "duration_ms": 108305,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "a7bd0155-c365-43ec-9264-ad7f2553dcf4",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:04:10.252707+00:00",
+            "score_max": 6,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:04:06.337011+00:00",
+            "duration_ms": 21199,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "94d3a056-f85c-41e0-9f37-03ef68301076",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:03:44.940264+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:05:13.573800+00:00",
+            "duration_ms": 106186,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed",
+                "Check 8: failed",
+                "Check 9: failed",
+                "Check 10: failed"
+              ],
+              "comment": "10/10 checks failed."
+            },
+            "id": "9a0034a3-b583-402d-8ef9-811085ffb8d9",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:03:27.222692+00:00",
+            "score_max": 14,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:03:39.561332+00:00",
+            "duration_ms": 38246,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "71f25532-6ce3-4e2c-9d9a-abc18449c286",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:03:01.105239+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:03:20.278794+00:00",
+            "duration_ms": 25511,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "3/4 checks failed."
+            },
+            "id": "9a832b92-fd0a-4e8b-bef1-071b48f4ce67",
+            "normalized_score": 0.6,
+            "queued_at": "2026-03-21T18:02:54.195115+00:00",
+            "score_max": 10,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:04:24.087807+00:00",
+            "duration_ms": 99080,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed",
+                "Check 8: failed",
+                "Check 9: failed",
+                "Check 10: failed",
+                "Check 11: failed",
+                "Check 12: failed",
+                "Check 13: failed",
+                "Check 14: failed",
+                "Check 15: failed"
+              ],
+              "comment": "15/15 checks failed."
+            },
+            "id": "3e47a88c-e390-40a8-a333-01bdc0752784",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:02:44.939795+00:00",
+            "score_max": 22,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:02:59.328300+00:00",
+            "duration_ms": 22082,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: passed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed"
+              ],
+              "comment": "5/7 checks failed."
+            },
+            "id": "55fa873e-126a-4ac5-ba36-d9061a313136",
+            "normalized_score": 0.5455,
+            "queued_at": "2026-03-21T18:02:37.198316+00:00",
+            "score_max": 11,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:02:46.838925+00:00",
+            "duration_ms": 88442,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "15f9b005-3570-41e6-9c47-a72b944424c3",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:01:18.304871+00:00",
+            "score_max": 13,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:02:39.534480+00:00",
+            "duration_ms": 88171,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "87d41faf-2b70-4e8d-8ffb-a6814c6c9876",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:01:11.343165+00:00",
+            "score_max": 6,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:02:34.239504+00:00",
+            "duration_ms": 92601,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed"
+              ],
+              "comment": "3/3 checks failed."
+            },
+            "id": "5d13e391-5727-4826-a379-4d40d89a0ccf",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:01:01.484584+00:00",
+            "score_max": 7,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:00:59.332575+00:00",
+            "duration_ms": 36232,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed"
+              ],
+              "comment": "2/2 checks failed."
+            },
+            "id": "c4b14e84-4f5b-4694-b838-c7a07d6a65d7",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T18:00:22.644610+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:01:12.876425+00:00",
+            "duration_ms": 93748,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "fed04a4c-618b-46c2-9996-33e13942753c",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:59:39.118150+00:00",
+            "score_max": 7,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:00:14.738548+00:00",
+            "duration_ms": 48498,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed"
+              ],
+              "comment": "2/2 checks failed."
+            },
+            "id": "a0a8e72d-f276-46ad-a717-db2f42b1fe37",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:59:26.183041+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T18:00:58.036821+00:00",
+            "duration_ms": 98959,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "fd5025ec-a45d-4c31-814e-effdbb473703",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:59:19.026985+00:00",
+            "score_max": 6,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:59:08.111170+00:00",
+            "duration_ms": 25332,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "ce50a9d8-ae8a-43cb-9f0d-ab8d376405b4",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:58:42.694428+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:58:40.302369+00:00",
+            "duration_ms": 24607,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "b2b46745-67da-4fc0-b9ad-4a173fa16943",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:58:15.409924+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:59:34.800068+00:00",
+            "duration_ms": 88494,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "b63064ee-21cd-4edb-838b-e4241716f0d6",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:58:06.295497+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:59:07.635905+00:00",
+            "duration_ms": 90022,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "a149e121-f69e-47e7-b5ab-6c7347cb0b56",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:57:37.378295+00:00",
+            "score_max": 8,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:58:01.838696+00:00",
+            "duration_ms": 57311,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed"
+              ],
+              "comment": "6/6 checks failed."
+            },
+            "id": "0f9c76b8-0ea2-48e7-bafa-c3c69bc2c2dc",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:57:04.417134+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:58:12.385554+00:00",
+            "duration_ms": 94085,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed"
+              ],
+              "comment": "5/5 checks failed."
+            },
+            "id": "90f9001c-1991-4732-b3ad-2295ada1df1c",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:56:38.251444+00:00",
+            "score_max": 8,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:57:01.782083+00:00",
+            "duration_ms": 28105,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: passed",
+                "Check 3: failed",
+                "Check 4: failed",
+                "Check 5: failed",
+                "Check 6: failed",
+                "Check 7: failed"
+              ],
+              "comment": "5/7 checks failed."
+            },
+            "id": "758c25db-3281-48d0-ae0d-99c0418b589e",
+            "normalized_score": 0.5455,
+            "queued_at": "2026-03-21T17:56:33.344492+00:00",
+            "score_max": 11,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:56:28.326441+00:00",
+            "duration_ms": 21599,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "3/4 checks failed."
+            },
+            "id": "47c15f6b-7468-4e52-8115-a53723d31f05",
+            "normalized_score": 0.6,
+            "queued_at": "2026-03-21T17:56:06.558395+00:00",
+            "score_max": 10,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:56:31.191476+00:00",
+            "duration_ms": 36310,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed"
+              ],
+              "comment": "2/2 checks failed."
+            },
+            "id": "e6bf32a9-23c1-4f21-8861-39970971f035",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:55:54.782297+00:00",
+            "score_max": 10,
+            "score_raw": 0,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:57:31.385830+00:00",
+            "duration_ms": 103053,
+            "feedback": {
+              "checks": [
+                "Check 1: passed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "3/4 checks failed."
+            },
+            "id": "a8590dad-fb29-46eb-a412-589793e9158e",
+            "normalized_score": 0.5,
+            "queued_at": "2026-03-21T17:55:48.193856+00:00",
+            "score_max": 8,
+            "score_raw": 2,
+            "status": "completed"
+          },
+          {
+            "completed_at": "2026-03-21T17:55:59.973523+00:00",
+            "duration_ms": 95979,
+            "feedback": {
+              "checks": [
+                "Check 1: failed",
+                "Check 2: failed",
+                "Check 3: failed",
+                "Check 4: failed"
+              ],
+              "comment": "4/4 checks failed."
+            },
+            "id": "36e71066-c860-4dd3-a319-3c5f07ea8210",
+            "normalized_score": 0,
+            "queued_at": "2026-03-21T17:54:23.859360+00:00",
+            "score_max": 6,
+            "score_raw": 0,
+            "status": "completed"
+          }
+        ]
+      }
+    },
+    "current_runs": [
+      {
+        "kind": "got_most_likely_current_run_id",
+        "timestamp": "2026-03-21T18:15:39",
+        "level": "INFO",
+        "message": "got the most likely current run id b9f4025d-349d-48ce-a214-195fa8136bc9 (idx 0)",
+        "exception": null,
+        "extra": {
+          "data": {
+            "completed_at": null,
+            "duration_ms": null,
+            "id": "b9f4025d-349d-48ce-a214-195fa8136bc9",
+            "normalized_score": null,
+            "queued_at": "2026-03-21T18:15:38.772465+00:00",
+            "score_max": null,
+            "score_raw": null,
+            "status": "processing"
+          }
+        },
+        "submission_id": "b9f4025d-349d-48ce-a214-195fa8136bc9",
+        "idx": 0
+      }
+    ],
+    "failed": null
+  },
+  "tripletex_endpoints": [
+    {
+      "endpoint": "/customer",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T18:15:51",
+        "level": "DEBUG",
+        "message": "getting data for /customer",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/customer"
+      },
+      "result": null
+    },
+    {
+      "endpoint": "/department",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T18:15:46",
+        "level": "DEBUG",
+        "message": "getting data for /department",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/department"
+      },
+      "result": {
+        "kind": "got_tripletex_data",
+        "timestamp": "2026-03-21T18:15:51",
+        "level": "INFO",
+        "message": "got tripletex data for /department",
+        "exception": null,
+        "extra": {
+          "endpoint": "/department",
+          "data": {
+            "count": 1,
+            "from": 0,
+            "fullResultSize": 1,
+            "values": [
+              {
+                "businessActivityTypeId": 0,
+                "departmentManager": null,
+                "departmentNumber": "",
+                "displayName": "Avdeling",
+                "id": 738521,
+                "isInactive": false,
+                "name": "Avdeling",
+                "url": "kkpqfuj-amager.tripletex.dev/v2/department/738521",
+                "version": 0
+              }
+            ],
+            "versionDigest": "'If-None-Match' header not specified"
+          }
+        },
+        "endpoint": "/department"
+      }
+    },
+    {
+      "endpoint": "/division",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T18:15:43",
+        "level": "DEBUG",
+        "message": "getting data for /division",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/division"
+      },
+      "result": {
+        "kind": "got_tripletex_data",
+        "timestamp": "2026-03-21T18:15:46",
+        "level": "INFO",
+        "message": "got tripletex data for /division",
+        "exception": null,
+        "extra": {
+          "endpoint": "/division",
+          "data": {
+            "count": 0,
+            "from": 0,
+            "fullResultSize": 0,
+            "values": [],
+            "versionDigest": "'If-None-Match' header not specified"
+          }
+        },
+        "endpoint": "/division"
+      }
+    },
+    {
+      "endpoint": "/employee",
+      "getting": {
+        "kind": "getting_tripletex_data",
+        "timestamp": "2026-03-21T18:15:39",
+        "level": "DEBUG",
+        "message": "getting data for /employee",
+        "exception": null,
+        "extra": {},
+        "endpoint": "/employee"
+      },
+      "result": {
+        "kind": "got_tripletex_data",
+        "timestamp": "2026-03-21T18:15:43",
+        "level": "INFO",
+        "message": "got tripletex data for /employee",
+        "exception": null,
+        "extra": {
+          "endpoint": "/employee",
+          "data": {
+            "count": 1,
+            "from": 0,
+            "fullResultSize": 1,
+            "values": [
+              {
+                "address": null,
+                "allowInformationRegistration": true,
+                "bankAccountNumber": "",
+                "bic": "",
+                "comments": "",
+                "companyId": 107914911,
+                "creditorBankCountryId": 0,
+                "dateOfBirth": null,
+                "department": {
+                  "id": 738521,
+                  "url": "kkpqfuj-amager.tripletex.dev/v2/department/738521"
+                },
+                "displayName": "Admin NM",
+                "dnumber": "",
+                "email": "nmiai-pool@test.no",
+                "employeeCategory": null,
+                "employeeNumber": "",
+                "employments": [
+                  {
+                    "id": 2642436,
+                    "url": "kkpqfuj-amager.tripletex.dev/v2/employee/employment/2642436"
+                  }
+                ],
+                "firstName": "Admin",
+                "holidayAllowanceEarned": {
+                  "amount": 0,
+                  "amountExtraHolidayWeek": 0,
+                  "basis": 0,
+                  "year": 0
+                },
+                "iban": "",
+                "id": 18252050,
+                "internationalId": {
+                  "country": null,
+                  "intAmeldingType": null,
+                  "number": ""
+                },
+                "isAuthProjectOverviewURL": true,
+                "isContact": false,
+                "isProxy": false,
+                "lastName": "NM",
+                "nationalIdentityNumber": "",
+                "phoneNumberHome": "",
+                "phoneNumberMobile": "",
+                "phoneNumberMobileCountry": {
+                  "id": 161,
+                  "url": "kkpqfuj-amager.tripletex.dev/v2/country/161"
+                },
+                "phoneNumberWork": "",
+                "pictureId": 0,
+                "url": "kkpqfuj-amager.tripletex.dev/v2/employee/18252050",
+                "userType": null,
+                "usesAbroadPayment": false,
+                "version": 1,
+                "vismaConnect2FAactive": false
+              }
+            ],
+            "versionDigest": "Checksum not yet supported for this endpoint"
+          }
+        },
+        "endpoint": "/employee"
+      }
+    }
+  ],
+  "startup": [],
+  "other_messages": [],
+  "errors": []
+}

@@ -1,0 +1,25 @@
+
+data/*
+!data/dataset
+data/dataset/*
+!data/dataset/train
+data/dataset/train/*
+!data/dataset/train/_annotations*.json
+# files which crash ssh
+# model weights
+output*
+predictions
+predictions.json
+preds
+*.pth
+.pytest_cache
+submission/onnx_export
+submission/package
+submission.zip
+test-pred-boxes.json
+/train
+# training output
+# transient table data
+.venv
+# wandb
+wandb

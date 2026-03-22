@@ -1,0 +1,31 @@
+[project]
+name = "tripletex"
+version = "0.1.0"
+description = "Code workspace for the NM i AI Tripletex challenge"
+readme = "README.md"
+authors = [
+    { name = "Herman Brunborg", email = "herman@brunborg.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "anthropic>=0.86.0",
+    "fastapi>=0.135.1",
+    "ipython>=9.11.0",
+    "polars>=1.39.3",
+    "pydantic[email]>=2.12.5",
+    "pypdf>=6.1.0",
+    "requests>=2.32.5",
+    "rich>=14.3.3",
+    "tqdm>=4.67.3",
+    "uvicorn>=0.42.0",
+    "google-cloud-storage>=3.0.0",
+]
+
+[build-system]
+requires = ["uv_build>=0.10.7,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.2",
+]

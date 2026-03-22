@@ -1,0 +1,12 @@
+Dato;Forklaring;Inn;Ut;Saldo
+2026-01-16;Innbetaling fra Taylor Ltd / Faktura 1001;5156.25;;105156.25
+2026-01-18;Innbetaling fra Wilson Ltd / Faktura 1002;21875.00;;127031.25
+2026-01-20;Innbetaling fra Taylor Ltd / Faktura 1003;18625.00;;145656.25
+2026-01-22;Innbetaling fra Lewis Ltd / Faktura 1004;27812.50;;173468.75
+2026-01-23;Innbetaling fra Brown Ltd / Faktura 1005;12250.00;;185718.75
+2026-01-24;Betaling Supplier Taylor Ltd;;-10850.00;174868.75
+2026-01-27;Betaling Supplier Taylor Ltd;;-10350.00;164518.75
+2026-01-29;Betaling Supplier Smith Ltd;;-6200.00;158318.75
+2026-01-30;Renteinntekter;;-1495.08;156823.67
+2026-01-31;Skattetrekk;;-1819.20;155004.47
+2026-02-02;Skattetrekk;1947.28;;156951.75

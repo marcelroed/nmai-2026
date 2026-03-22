@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Simulation Tick — astar_island</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: 'SF Mono', 'Fira Code', monospace;
+  background: #0d1117;
+  color: #c9d1d9;
+  padding: 32px 40px;
+  line-height: 1.55;
+  font-size: 13px;
+}
+
+h1 { font-size: 1.3rem; color: #f0f6fc; margin-bottom: 4px; }
+.subtitle { color: #8b949e; font-size: 0.82rem; margin-bottom: 28px; }
+
+/* ── Legend ── */
+.legend {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding: 10px 16px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+.legend-item { display: flex; align-items: center; gap: 6px; font-size: 0.75rem; }
+.pip {
+  width: 11px; height: 11px; border-radius: 3px; flex-shrink: 0;
+}
+.pip-inferred  { background: #e3b341; }
+.pip-observed  { background: #58a6ff; }
+.pip-hardcoded { background: #6e7681; border: 1px solid #484f58; }
+.pip-discovery { background: #3fb950; }
+
+/* ── Phase card ── */
+.phase-card {
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+.phase-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 12px 18px;
+  border-bottom: 1px solid #30363d;
+}
+.phase-num {
+  width: 28px; height: 28px;
+  border-radius: 6px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.75rem; font-weight: 700;
+  flex-shrink: 0;
+}
+.phase-title { font-size: 1rem; font-weight: 700; }
+.phase-file  { margin-left: auto; font-size: 0.7rem; color: #484f58; }
+
+.phase-body {
+  padding: 16px 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.phase-body.single { grid-template-columns: 1fr; }
+.phase-body.thirds { grid-template-columns: 1fr 1fr 1fr; }
+
+/* ── Colors per phase ── */
+.ph-food    { border-left: 3px solid #3fb950; background: #0a1a0e; }
+.ph-pop     { border-left: 3px solid #58a6ff; background: #0d1a2e; }
+.ph-growth  { border-left: 3px solid #56d364; background: #091509; }
+.ph-conflict{ border-left: 3px solid #f85149; background: #1f0808; }
+.ph-trade   { border-left: 3px solid #bc8cff; background: #120b24; }
+.ph-winter  { border-left: 3px solid #79c0ff; background: #0a1520; }
+.ph-env     { border-left: 3px solid #e3b341; background: #1a1200; }
+
+.ph-food     .phase-num { background: #0d3018; color: #3fb950; }
+.ph-pop      .phase-num { background: #0d2040; color: #58a6ff; }
+.ph-growth   .phase-num { background: #0a2010; color: #56d364; }
+.ph-conflict .phase-num { background: #2c0a0a; color: #f85149; }
+.ph-trade    .phase-num { background: #1a0e30; color: #bc8cff; }
+.ph-winter   .phase-num { background: #0a1828; color: #79c0ff; }
+.ph-env      .phase-num { background: #221800; color: #e3b341; }
+
+/* ── Content blocks ── */
+.block { margin-bottom: 10px; }
+.block:last-child { margin-bottom: 0; }
+
+.block-label {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #484f58;
+  margin-bottom: 5px;
+}
+
+.formula {
+  padding: 8px 12px;
+  background: #0d1117;
+  border-radius: 5px;
+  border: 1px solid #21262d;
+  font-size: 0.8rem;
+  line-height: 1.7;
+}
+
+.conditions {
+  padding: 8px 12px;
+  background: #0d1117;
+  border-radius: 5px;
+  border: 1px solid #21262d;
+  font-size: 0.78rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.note {
+  font-size: 0.73rem;
+  color: #6e7681;
+  line-height: 1.5;
+}
+
+/* ── Variable annotations ── */
+.p  { color: #e3b341; }          /* inferred param */
+.s  { color: #58a6ff; }          /* live settlement stat */
+.k  { color: #6e7681; }          /* hardcoded constant */
+.d  { color: #3fb950; }          /* discovery / notable finding */
+.t  { color: #f0a050; }          /* terrain count (observed from grid) */
+
+/* ── Discovery callout ── */
+.discovery {
+  padding: 8px 12px;
+  background: #0a1a0e;
+  border-radius: 5px;
+  border: 1px solid #238636;
+  font-size: 0.75rem;
+  color: #3fb950;
+  line-height: 1.5;
+}
+.discovery::before {
+  content: '✦ ';
+  color: #3fb950;
+}
+
+/* ── Variable table ── */
+.var-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.73rem;
+}
+.var-table td {
+  padding: 4px 8px;
+  border-bottom: 1px solid #21262d;
+  vertical-align: top;
+}
+.var-table tr:last-child td { border-bottom: none; }
+.var-table td:first-child { white-space: nowrap; }
+.var-table td:last-child  { color: #6e7681; }
+
+/* ── Ruin outcomes table ── */
+.outcome-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.73rem;
+}
+.outcome-table td, .outcome-table th {
+  padding: 4px 10px;
+  border-bottom: 1px solid #21262d;
+}
+.outcome-table th {
+  color: #484f58;
+  font-weight: normal;
+  font-size: 0.66rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.outcome-table tr:last-child td { border-bottom: none; }
+
+/* ── Tick loop diagram ── */
+.tick-loop {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 16px;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  margin-bottom: 28px;
+  font-size: 0.78rem;
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+.tick-step {
+  padding: 5px 11px;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+.tick-arr { color: #484f58; }
+.ts-food    { background: #0a1a0e; color: #3fb950; border: 1px solid #238636; }
+.ts-pop     { background: #0d1a2e; color: #58a6ff; border: 1px solid #1f6feb; }
+.ts-growth  { background: #091509; color: #56d364; border: 1px solid #2ea043; }
+.ts-conflict{ background: #1f0808; color: #f85149; border: 1px solid #da3633; }
+.ts-trade   { background: #120b24; color: #bc8cff; border: 1px solid #8957e5; }
+.ts-winter  { background: #0a1520; color: #79c0ff; border: 1px solid #388bfd; }
+.ts-env     { background: #1a1200; color: #e3b341; border: 1px solid #d29922; }
+.tick-loop-label { color: #484f58; font-size: 0.68rem; margin-right: 4px; }
+.tick-repeat { color: #484f58; font-size: 0.75rem; margin-left: 6px; }
+
+hr { border: none; border-top: 1px solid #21262d; margin: 24px 0; }
+</style>
+</head>
+<body>
+
+<h1>Simulation Tick</h1>
+<p class="subtitle">astar_island · Rust simulator · 50 steps per run · 7 phases per step</p>
+
+<!-- LEGEND -->
+<div class="legend">
+  <span style="font-size:0.7rem;color:#484f58;">variable types:</span>
+  <div class="legend-item"><div class="pip pip-inferred"></div><span class="p">inferred param</span> — learned by evolution strategy (53 total)</div>
+  <div class="legend-item"><div class="pip pip-observed"></div><span class="s">settlement stat</span> — live state, known from replay or sampled from priors</div>
+  <div class="legend-item"><div class="pip pip-hardcoded"></div><span class="k">hardcoded constant</span> — fixed in code, not tunable</div>
+  <div class="legend-item"><div class="pip pip-discovery"></div><span class="d">discovery</span> — insight from regression/analysis of replay data</div>
+</div>
+
+<!-- TICK LOOP -->
+<div class="tick-loop">
+  <span class="tick-loop-label">for _ in 0..50:</span>
+  <div class="tick-step ts-food">1 food</div>
+  <span class="tick-arr">→</span>
+  <div class="tick-step ts-pop">2 pop &amp; defense</div>
+  <span class="tick-arr">→</span>
+  <div class="tick-step ts-growth">3 growth</div>
+  <span class="tick-arr">→</span>
+  <div class="tick-step ts-conflict">4 conflict</div>
+  <span class="tick-arr">→</span>
+  <div class="tick-step ts-trade">5 trade</div>
+  <span class="tick-arr">→</span>
+  <div class="tick-step ts-winter">6 winter</div>
+  <span class="tick-arr">→</span>
+  <div class="tick-step ts-env">7 environment</div>
+  <span class="tick-repeat">× 50 steps</span>
+</div>
+
+<!-- ══════════════════════════════════════════ PHASE 1: FOOD -->
+<div class="phase-card ph-food">
+  <div class="phase-header">
+    <div class="phase-num">1</div>
+    <div class="phase-title" style="color:#3fb950;">Food Production</div>
+    <div class="phase-file">phases/food.rs</div>
+  </div>
+  <div class="phase-body">
+    <div>
+      <div class="block">
+        <div class="block-label">formula — applied to every alive settlement</div>
+        <div class="formula">
+          Δfood = <span class="p">food_plains</span> × <span class="t">n_plains</span> × (<span class="k">1</span> − <span class="s">food</span>)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + <span class="p">food_forest</span> × <span class="t">n_forest</span> × (<span class="k">1</span> − <span class="s">food</span>)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + <span class="p">food_mountain</span> × <span class="t">n_mountain</span> × (<span class="k">1</span> − <span class="s">food</span>)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + <span class="p">food_settlement</span> × <span class="t">n_settlement</span> × (<span class="k">1</span> − <span class="s">food</span>)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + <span class="p">food_ocean</span> × <span class="t">n_ocean</span> × (<span class="k">1</span> − <span class="s">food</span>)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + <span class="p">food_feedback</span> × <span class="s">food</span> × (<span class="k">1</span> − <span class="s">food</span>)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + <span class="p">food_pop_coeff</span> × <span class="s">population</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; + <span class="p">tech_food_coeff</span> × <span class="s">tech_level</span> × (<span class="k">1</span> − <span class="s">food</span>)<br>
+          <br>
+          food ← clamp(<span class="s">food</span> + Δfood, <span class="k">0</span>, <span class="k">0.998</span>)
+        </div>
+      </div>
+      <div class="block">
+        <div class="note"><span class="t">n_plains/forest/mountain/settlement/ocean</span> = count of that terrain type among the 4-connected (cardinal) neighbours. Empty+Plains count as plains; Settlement+Port+Ruin count as settlement. The <span class="k">(1 − food)</span> factor creates logistic saturation: terrain production slows as food approaches capacity. Population drains food linearly (no saturation). Tech level provides additional food production via the logistic term.</div>
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="block-label">priors (from fixed-effects regression on replay data, R²≈0.97)</div>
+        <div class="formula">
+          <span class="p">food_pop_coeff</span>   = <span class="d">−0.113</span> &nbsp;<span style="color:#484f58;">(linear pop drain)</span><br>
+          <span class="p">food_feedback</span>    = <span class="d">+0.91</span> &nbsp;<span style="color:#484f58;">(coeff on food×(1−food))</span><br>
+          <span class="p">food_plains</span>      = <span class="d">+0.043</span> &nbsp;<span style="color:#484f58;">(coeff on n_pl×(1−food))</span><br>
+          <span class="p">food_forest</span>      = <span class="d">+0.074</span> &nbsp;<span style="color:#484f58;">(forest ≈ 1.7× plains; coeff on n_fo×(1−food))</span><br>
+          <span class="p">food_mountain</span>    = <span class="d">0.0</span> &nbsp;<span style="color:#484f58;">(negligible)</span><br>
+          <span class="p">food_settlement</span>  = <span class="d">−0.017</span> &nbsp;<span style="color:#484f58;">(crowding penalty; coeff on n_st×(1−food))</span><br>
+          <span class="p">food_ocean</span>       = <span class="d">0.01</span> &nbsp;<span style="color:#484f58;">(coastal fishing; coeff on n_oc×(1−food))</span><br>
+          <span class="p">tech_food_coeff</span>  = <span class="d">0.05</span> &nbsp;<span style="color:#484f58;">(tech-gated food boost; coeff on tech×(1−food))</span>
+        </div>
+      </div>
+      <div class="block">
+        <div class="discovery">Fixed-effects regression on 126k replay observations proves the logistic form: terrain×(1−food) creates self-limiting growth that saturates as food→1. The food×(1−food) feedback term amplifies mid-range production (peak at food=0.5). Population drains food linearly — it does NOT scale with (1−food). Mountain and ocean adjacency have no measurable effect. Weather is i.i.d. per step, independent across seeds, approximately uniform (kurtosis≈1.9 &lt; 3), std≈0.03–0.05.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ PHASE 2: POP, DEFENSE, PORTS, LONGSHIPS -->
+<div class="phase-card ph-pop">
+  <div class="phase-header">
+    <div class="phase-num">2</div>
+    <div class="phase-title" style="color:#58a6ff;">Population, Defense, Ports &amp; Longships</div>
+    <div class="phase-file">phases/pop_defense.rs</div>
+  </div>
+  <div class="phase-body">
+    <div>
+      <div class="block">
+        <div class="block-label">population — logistic growth + wealth boost</div>
+        <div class="formula">
+          Δpop = <span class="p">pop_growth_rate</span> × <span class="s">food</span> × (1 − <span class="s">pop</span> / <span class="p">pop_max</span>) + <span class="p">pop_wealth_coeff</span> × <span class="s">wealth</span> × <span class="s">pop</span><br>
+          population ← max(<span class="s">pop</span> + Δpop, <span class="k">0.01</span>)
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">starvation — population decline when food is critically low</div>
+        <div class="formula">
+          <b>if</b> <span class="s">food</span> &lt; <span class="p">collapse_threshold</span>:<br>
+          &nbsp;&nbsp;population −= <span class="p">starvation_rate</span> × <span class="s">pop</span> &nbsp; <span style="color:#484f58;">(floor 0.01)</span>
+        </div>
+      </div>
+      <div class="block">
+        <div class="note">Growth has two drivers: logistic food-gated growth (self-limiting at pop_max), plus a wealth-proportional term that scales with existing population. When food drops below the collapse threshold, the settlement bleeds population via the starvation rate.</div>
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="block-label">defense — recovery proportional to population</div>
+        <div class="formula">
+          Δdef = <span class="p">defense_recovery_rate</span> × <span class="s">population</span><br>
+          defense ← clamp(<span class="s">defense</span> + Δdef, <span class="k">0</span>, <span class="k">1.0</span>)
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="block-label">settlement → port upgrade</div>
+        <div class="formula">
+          <span class="t">n_ocean</span> = count of 4-adjacent (cardinal) ocean tiles<br>
+          <b>if</b> !<span class="s">has_port</span> <b>and</b> <span class="t">n_ocean</span> &gt; 0:<br>
+          &nbsp;&nbsp;prob = <span class="p">port_upgrade_prob</span> × <span class="s">pop</span> × <span class="s">food</span> × (1 + <span class="p">port_ocean_bonus</span> × <span class="t">n_ocean</span>)<br>
+          &nbsp;&nbsp;<b>if</b> roll &lt; prob → <span class="s">has_port</span> = true, grid cell → Port
+        </div>
+      </div>
+      <div class="block">
+        <div class="note">Coastal settlements organically become ports when population and food are high. The probability scales with the number of adjacent ocean tiles via <span class="p">port_ocean_bonus</span>, so triple-coast settlements are much more likely to upgrade. Wealth is not a factor.</div>
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="block-label">port → longship building</div>
+        <div class="formula">
+          <b>if</b> <span class="s">has_port</span> <b>and</b> <span class="s">wealth</span> ≥ <span class="p">longship_cost</span>:<br>
+          &nbsp;&nbsp;prob = <span class="p">longship_build_prob</span> × <span class="s">wealth</span><br>
+          &nbsp;&nbsp;<b>if</b> roll &lt; prob → <span class="s">longships</span> += 1, <span class="s">wealth</span> -= <span class="p">longship_cost</span>
+        </div>
+      </div>
+      <div class="block">
+        <div class="note">Ports invest wealth into longships. Wealthier ports build faster (prob ∝ wealth). Each longship costs a fixed amount of wealth. Longships extend raid range in the conflict phase.</div>
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="block-label">priors</div>
+        <div class="formula">
+          <span class="p">pop_growth_rate</span> = <span class="d">0.06</span> &nbsp; <span class="p">pop_max</span> = <span class="d">5.0</span> &nbsp; <span class="p">pop_wealth_coeff</span> = <span class="d">0.01</span><br>
+          <span class="p">starvation_rate</span> = <span class="d">0.05</span> &nbsp;<span style="color:#484f58;">(pop loss/step when food &lt; collapse_threshold)</span><br>
+          <span class="p">defense_recovery_rate</span> = <span class="d">0.02</span><br>
+          <span class="p">port_upgrade_prob</span> = <span class="d">0.05</span> &nbsp; <span class="p">port_ocean_bonus</span> = <span class="d">0.3</span><br>
+          <span class="p">longship_build_prob</span> = <span class="d">0.10</span> &nbsp; <span class="p">longship_cost</span> = <span class="d">0.10</span>
+        </div>
+      </div>
+      <div class="block">
+        <div class="discovery">Defense recovery is proportional to population, not (1−def). Larger settlements rebuild defenses faster. The rate varies ~5× across rounds (0.012–0.060). R² > 0.99 in all 9 rounds; coefficient stable to 6th decimal across seeds within a round. Starvation creates a death spiral when food drops too low: pop loss → less defense recovery → more vulnerable to raids.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ PHASE 3: GROWTH -->
+<div class="phase-card ph-growth">
+  <div class="phase-header">
+    <div class="phase-num">3</div>
+    <div class="phase-title" style="color:#56d364;">Settlement Expansion</div>
+    <div class="phase-file">phases/growth.rs</div>
+  </div>
+  <div class="phase-body">
+    <div>
+      <div class="block">
+        <div class="block-label">spawn check — per alive settlement (shuffled order)</div>
+        <div class="formula">
+          p_spawn = <span class="p">growth_prob</span> × <span class="s">population</span> × <span class="s">food</span> × (1 + <span class="p">tech_growth_coeff</span> × <span class="s">tech_level</span>)<br>
+          roll ~ Uniform(0,1) → spawn if roll &lt; p_spawn
+        </div>
+      </div>
+      <div class="block">
+        <div class="note">Both pop and food must be high to expand. Tech level provides an additional multiplier. A settlement with food=0.5, pop=1.0, tech=0 has p_spawn = 0.18 × 0.5 × 1.0 = 0.09.</div>
+      </div>
+      <div class="block">
+        <div class="block-label">target selection — weighted reservoir sampling</div>
+        <div class="formula">
+          candidates = cells within taxicab(<span class="p">spawn_distance_max</span>)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  where terrain ∈ {Plains, Forest}<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  and no alive settlement occupies it<br>
+          <br>
+          weight(cell) = exp(−<span class="p">spawn_distance_decay</span> × taxi_dist)<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× <span class="p">spawn_weight_<i>terrain</i></span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;× (1 + <span class="p">spawn_terrain_bonus</span> × <span class="t">adj_food_tiles</span>)<br>
+          <br>
+          <span style="color:#484f58;">terrain weights: Plains=<span class="k">1.0</span>, Forest=<span class="p">spawn_weight_forest</span></span><br>
+          <span style="color:#484f58;">adj_food_tiles = count of adjacent Plains + Forest tiles</span><br>
+          target ← one-pass weighted reservoir sample (zero-alloc)
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="block-label">child settlement stats</div>
+        <div class="conditions">
+          <div>pop=<span class="p">child_pop</span>, def=<span class="k">0.2</span></div>
+          <div>food = parent.food × <span class="d">0.2</span>, wealth = parent.wealth × <span class="d">0.2</span></div>
+          <div>tech_level = 0, longships = 0</div>
+          <div>inherits parent's owner_id</div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">parent cost</div>
+        <div class="formula">
+          parent.population −= <span class="p">parent_cost</span><br>
+          <span style="color:#484f58;">(parent must have pop &gt; <span class="p">parent_cost</span> to spawn)</span>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">post-growth port upgrade (all settlements)</div>
+        <div class="formula">
+          <b>for each</b> alive non-port settlement with <span class="t">n_ocean</span> &gt; 0:<br>
+          &nbsp;&nbsp;prob = <span class="p">port_upgrade_prob</span> × <span class="s">pop</span> × <span class="s">food</span> × (1 + <span class="p">port_ocean_bonus</span> × <span class="t">n_ocean</span>)<br>
+          &nbsp;&nbsp;<b>if</b> roll &lt; prob → upgrade to Port
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">priors</div>
+        <div class="formula">
+          <span class="p">growth_prob</span>         = <span class="d">0.18</span> &nbsp; <span class="p">tech_growth_coeff</span> = <span class="d">0.05</span><br>
+          <span class="p">spawn_distance_max</span>   = <span class="d">3.0</span> cells (taxicab)<br>
+          <span class="p">spawn_distance_decay</span> = <span class="d">0.3</span> &nbsp;<span style="color:#484f58;">(exp decay rate)</span><br>
+          <span class="p">spawn_weight_forest</span>  = <span class="d">0.8</span><br>
+          <span class="p">spawn_terrain_bonus</span>  = <span class="d">0.1</span> &nbsp;<span style="color:#484f58;">(per adj food tile)</span><br>
+          <span class="p">child_pop</span>            = <span class="d">0.5</span><br>
+          <span class="p">parent_cost</span>          = <span class="d">0.3</span>
+        </div>
+      </div>
+      <div class="block">
+        <div class="discovery">Spawn weighting uses exponential distance decay × terrain preference × adjacent food bonus, biasing toward nearby food-rich cells. Wealth at spawn = parent_wealth × 0.2 was proved by regression on 12k growth spawns (median ratio = 0.200, 25% exact ±0.001). Port upgrade runs again after growth, giving newly-spawned coastal settlements a chance to become ports immediately.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ PHASE 4: CONFLICT -->
+<div class="phase-card ph-conflict">
+  <div class="phase-header">
+    <div class="phase-num">4</div>
+    <div class="phase-title" style="color:#f85149;">Raiding &amp; Takeover</div>
+    <div class="phase-file">phases/conflict.rs</div>
+  </div>
+  <div class="phase-body">
+    <div>
+      <div class="block">
+        <div class="block-label">raid range — longship-dependent (taxicab distance)</div>
+        <div class="formula">
+          range = <span class="p">raid_range</span> + (<span class="s">longships</span> &gt; 0 ? <span class="p">longship_range_bonus</span> : <span class="k">0</span>)<br>
+          targets = alive settlements within taxicab range, different owner
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">raid probability — hunger-scaled, distance-decayed</div>
+        <div class="formula">
+          hunger = max(1 − <span class="s">food</span>, 0)<br>
+          distance_factor = exp(−<span class="p">raid_distance_decay</span> × taxi_dist)<br>
+          p_raid = <span class="p">raid_prob</span> × (1 + <span class="p">aggression</span> × hunger) × distance_factor<br>
+          roll ~ Uniform(0,1) → raid if roll &lt; p_raid
+        </div>
+      </div>
+      <div class="block">
+        <div class="note">Raid probability decays exponentially with taxicab distance to the target — nearby enemies are far more likely to be raided. Hunger amplifies aggression: starving settlements (food=0) have p_raid multiplied by (1 + aggression).</div>
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="block-label">damage — computed from attacker &amp; defender stats</div>
+        <div class="formula">
+          damage = <span class="p">raid_damage</span> × (1 + <span class="s">att.tech_level</span>) × (1 + <span class="s">att.longships</span>) × <span class="s">att.pop</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/ ((1 + <span class="s">def.defense</span>) × (1 + <span class="s">def.pop</span>))
+        </div>
+      </div>
+      <div class="block">
+        <div class="note">Damage scales with attacker tech, longships, and pop. High defender defense and pop reduce damage. The <span class="p">raid_damage</span> param is the base coefficient.</div>
+      </div>
+      <div class="block">
+        <div class="block-label">raid effects — each with a learnable coefficient</div>
+        <div class="conditions">
+          <div>defender.defense  −= <span class="p">raid_defense_coeff</span> × damage &nbsp; <span style="color:#484f58;">(floor 0)</span></div>
+          <div>defender.pop      ×= <span class="p">raid_pop_survival</span> &nbsp; <span style="color:#484f58;">(always, floor 0.01)</span></div>
+          <div>defender.total_damage += damage &nbsp; <span style="color:#484f58;">(cap 1.0)</span></div>
+          <div>stolen = <span class="p">raid_steal_coeff</span> × damage × <span class="s">def.wealth</span></div>
+          <div>attacker.wealth   += stolen, defender.wealth −= stolen</div>
+          <div>defender.food     ×= 1 − <span class="p">raid_food_loss</span> × damage &nbsp; <span style="color:#484f58;">(floor 0)</span></div>
+          <div>attacker.pop      ×= 1 − <span class="p">raid_attacker_pop_loss</span> × damage &nbsp; <span style="color:#484f58;">(floor 0.01)</span></div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">if damage &gt; <span class="p">takeover_threshold</span></div>
+        <div class="conditions">
+          <div>roll ~ Uniform(0,1)</div>
+          <div>roll &lt; <span class="p">takeover_prob</span> → <b style="color:#bc8cff;">Takeover</b> (owner changes)</div>
+          <div>roll ≥ <span class="p">takeover_prob</span> → <b style="color:#f85149;">Death</b> → grid becomes Ruin</div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">priors</div>
+        <div class="formula">
+          <span class="p">raid_prob</span>               = <span class="d">0.25</span><br>
+          <span class="p">raid_range</span>              = <span class="d">3.0</span> &nbsp;<span style="color:#484f58;">(taxicab)</span><br>
+          <span class="p">longship_range_bonus</span>    = <span class="d">2.0</span> &nbsp;<span style="color:#484f58;">(longships extend range to 5.0)</span><br>
+          <span class="p">aggression</span>              = <span class="d">1.5</span><br>
+          <span class="p">raid_distance_decay</span>     = <span class="d">0.2</span> &nbsp;<span style="color:#484f58;">(exp decay per taxi cell)</span><br>
+          <span class="p">takeover_threshold</span>      = <span class="d">0.25</span><br>
+          <span class="p">takeover_prob</span>           = <span class="d">0.40</span> &nbsp;<span style="color:#484f58;">(learnable, was hardcoded)</span><br>
+          <span class="p">raid_damage</span>             = <span class="d">0.25</span> &nbsp;<span style="color:#484f58;">(base coefficient)</span><br>
+          <span class="p">raid_defense_coeff</span>     = <span class="d">1.0</span><br>
+          <span class="p">raid_pop_survival</span>      = <span class="d">0.85</span><br>
+          <span class="p">raid_steal_coeff</span>       = <span class="d">1.0</span><br>
+          <span class="p">raid_food_loss</span>         = <span class="d">0.1</span> &nbsp;<span style="color:#484f58;">(food destroyed per damage)</span><br>
+          <span class="p">raid_attacker_pop_loss</span> = <span class="d">0.05</span> &nbsp;<span style="color:#484f58;">(attacker casualties)</span>
+        </div>
+      </div>
+      <div class="block">
+        <div class="discovery">The takeover/death split is now learnable (prior 40/60). Raid probability decays with distance, so nearby enemies are raided far more often than distant ones. Raids now inflict food loss on defenders and population loss on attackers — raiding has a cost. Longships are the range extender (not ports), connecting build-in-phase-2 → use-in-phase-4.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ PHASE 5: TRADE -->
+<div class="phase-card ph-trade">
+  <div class="phase-header">
+    <div class="phase-num">5</div>
+    <div class="phase-title" style="color:#bc8cff;">Port Trade</div>
+    <div class="phase-file">phases/trade.rs</div>
+  </div>
+  <div class="phase-body">
+    <div>
+      <div class="block">
+        <div class="block-label">conditions for a trade pair</div>
+        <div class="conditions">
+          <div>both settlements must have has_port = true</div>
+          <div>both must be alive</div>
+          <div>same owner_id</div>
+          <div>taxicab dist ≤ <span class="p">trade_range</span></div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">bonus per qualifying pair</div>
+        <div class="formula">
+          food   += <span class="p">trade_food_bonus</span> &nbsp;&nbsp;(capped at 0.998)<br>
+          wealth += <span class="p">trade_wealth_bonus</span>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">tech diffusion per qualifying pair (one-way up)</div>
+        <div class="formula">
+          <b>if</b> port_b.tech &gt; port_a.tech:<br>
+          &nbsp;&nbsp;port_a.tech += <span class="p">tech_diffusion_rate</span> × (port_b.tech − port_a.tech)<br>
+          <b>elif</b> port_a.tech &gt; port_b.tech:<br>
+          &nbsp;&nbsp;port_b.tech += <span class="p">tech_diffusion_rate</span> × (port_a.tech − port_b.tech)<br>
+          <span style="color:#484f58;">clamped to [0, 1] after all pairs applied; no port loses tech</span>
+        </div>
+      </div>
+      <div class="block">
+        <div class="note">Tech only flows upward — the lower-tech port gains toward the higher. No port is penalized for trading with a less advanced partner. Multiple trade partners accelerate convergence.</div>
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="block-label">priors</div>
+        <div class="formula">
+          <span class="p">trade_range</span>          = <span class="d">5.0</span><br>
+          <span class="p">trade_food_bonus</span>     = <span class="d">0.02</span> per pair per step<br>
+          <span class="p">trade_wealth_bonus</span>   = <span class="d">0.01</span> per pair per step<br>
+          <span class="p">tech_diffusion_rate</span>  = <span class="d">0.1</span>
+        </div>
+      </div>
+      <div class="block">
+        <div class="discovery">Trade only happens between same-faction ports — enemy ports cannot trade. Bonuses accumulate per pair, so a port with 3 friendly trading partners gains +0.06 food/step — comparable to the food_base. Tech diffuses only through port trade networks, creating a tech→raid damage feedback loop (phase 2 builds longships, phase 4 uses tech for damage, phase 5 spreads tech).</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ PHASE 6: WINTER -->
+<div class="phase-card ph-winter">
+  <div class="phase-header">
+    <div class="phase-num">6</div>
+    <div class="phase-title" style="color:#79c0ff;">Winter</div>
+    <div class="phase-file">phases/winter.rs</div>
+  </div>
+  <div class="phase-body">
+    <div>
+      <div class="block">
+        <div class="block-label">food loss — applied to every alive settlement</div>
+        <div class="formula">
+          <span style="color:#484f58;">// stochastic severity: i.i.d. per step, shared by all settlements</span><br>
+          severity ~ Uniform(−<span class="p">winter_severity</span>×√3, +<span class="p">winter_severity</span>×√3)<br>
+          <br>
+          food ← max(<span class="s">food</span> − severity, <span class="k">0</span>)
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">collapse check</div>
+        <div class="formula">
+          if food &lt; <span class="p">collapse_threshold</span>:<br>
+          &nbsp;&nbsp;grid[y][x] ← Ruin<br>
+          &nbsp;&nbsp;settlement.alive ← false<br>
+          &nbsp;&nbsp;disperse pop to neighbours
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">population dispersal</div>
+        <div class="formula">
+          neighbours = alive same-faction settlements<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;within taxicab dist ≤ <span class="p">winter_dispersal_range</span><br>
+          each neighbour.pop += dead_pop / <span class="k">n_neighbours</span>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="block-label">priors</div>
+        <div class="formula">
+          <span class="p">winter_severity</span>        = <span class="d">0.035</span> &nbsp;<span style="color:#484f58;">(std of per-step uniform draw; i.i.d., independent across seeds)</span><br>
+          <span class="p">collapse_threshold</span>     = <span class="d">0.08</span><br>
+          <span class="p">winter_dispersal_range</span> = <span class="d">3.0</span> &nbsp;<span style="color:#484f58;">(taxicab; learnable)</span>
+        </div>
+      </div>
+      <div class="block">
+        <div class="discovery">The dispersal radius is now a learnable parameter (prior 3.0, taxicab distance). Winter severity is stochastic: each step a new value is drawn from a uniform distribution (std ≈ 0.035), shared by all settlements but independent across seeds and i.i.d. over time. The distribution is approximately uniform (kurtosis ≈ 1.9, lighter tails than Gaussian). Positive draws reduce food; negative draws increase it — so winter is not always harsh.</div>
+      </div>
+      <div class="block">
+        <div class="note">Winter is the primary cause of settlement death. New ruins created here (and in conflict) are NOT eligible for environment transitions until the next step — the phase snapshot is taken at the start of each tick.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════ PHASE 7: ENVIRONMENT -->
+<div class="phase-card ph-env">
+  <div class="phase-header">
+    <div class="phase-num">7</div>
+    <div class="phase-title" style="color:#e3b341;">Ruin Transitions</div>
+    <div class="phase-file">phases/environment.rs</div>
+  </div>
+  <div class="phase-body thirds">
+    <div>
+      <div class="block">
+        <div class="block-label">eligibility</div>
+        <div class="conditions">
+          <div>only ruins that existed <b>before</b> this step</div>
+          <div>(ruins from conflict/winter this tick → next step)</div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">transition probabilities per ruin</div>
+        <table class="outcome-table">
+          <tr><th>outcome</th><th>probability</th><th>condition</th></tr>
+          <tr>
+            <td style="color:#f9a825;">→ Settlement</td>
+            <td><span class="p">ruin_to_settlement</span> × <span class="s">n_nearby</span></td>
+            <td><span class="s">n_nearby</span> = count of alive settlements within <span class="p">reclaim_range</span></td>
+          </tr>
+          <tr>
+            <td style="color:#1565c0;">→ Port</td>
+            <td><span class="p">ruin_to_settlement</span> × <span class="s">n_nearby</span> × <span class="k">0.1</span></td>
+            <td>adjacent ocean required</td>
+          </tr>
+          <tr>
+            <td style="color:#2e7d32;">→ Forest</td>
+            <td><span class="p">ruin_to_forest</span></td>
+            <td>always</td>
+          </tr>
+          <tr>
+            <td style="color:#8bc34a;">→ Plains</td>
+            <td>residual</td>
+            <td>1 − others (most common)</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="block-label">new settlement stats (hardcoded)</div>
+        <div class="conditions">
+          <div>population = <span class="k">0.4</span></div>
+          <div>defense    = <span class="k">0.15</span></div>
+          <div>food       = nearest_alive_settlement.food × <span class="d">0.2</span></div>
+          <div>wealth     = <span class="k">0</span></div>
+          <div>owner_id   = nearest alive settlement's owner</div>
+        </div>
+      </div>
+      <div class="block">
+        <div class="block-label">priors</div>
+        <div class="formula">
+          <span class="p">ruin_to_settlement</span> = <span class="d">0.47</span><br>
+          <span class="p">ruin_to_forest</span>     = <span class="d">0.17</span><br>
+          <span class="p">reclaim_range</span>      = <span class="d">3.0</span> cells<br>
+          <br>
+          p_settlement scales with nearby count (e.g. 3 nearby → 3 × 0.47)
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="block">
+        <div class="discovery">Without nearby settlements, p_settlement = 0 — isolated ruins can only become Forest or Plains. With 1 nearby the base rate is 0.47; with 3 nearby it jumps to 1.41 (nearly certain reclamation). The port probability is 10% of settlement probability (hardcoded multiplier). New settlements from ruins use hardcoded stats (pop=0.4, def=0.15), distinct from growth-spawned children (pop=child_pop, def=0.2). Food is seeded from the nearest neighbour rather than a parent. Ruin reclaim food = nearest_food × 0.2 was proved on 10k ruin reclaims (median ratio = 0.200000, 47% exact ±0.001; phase 7 is last so no post-spawn modification). See data-analysis/prove_ruin_food.py.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- INIT MODES -->
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;">
+  <div>
+    <div class="block-label" style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.08em;color:#484f58;margin-bottom:8px;">initial state — two modes</div>
+    <div class="formula" style="font-size:0.76rem;line-height:1.8;">
+      <b style="color:#79c0ff;">from_replay_frame</b> — all stats exact from API<br>
+      &nbsp;&nbsp;pop, food, wealth, defense all known<br>
+      &nbsp;&nbsp;used in: oracle, validate-all<br>
+      <br>
+      <b style="color:#79c0ff;">from_initial_state</b> — stats sampled from priors<br>
+      &nbsp;&nbsp;pop  = <span class="p">init_pop_mean</span>   × (<span class="k">1</span> + <span class="k">U(−0.05, 0.05)</span>)<br>
+      &nbsp;&nbsp;food = <span class="p">init_food_mean</span>  × (<span class="k">1</span> + <span class="k">U(−0.05, 0.05)</span>)<br>
+      &nbsp;&nbsp;wealth = <span class="p">init_wealth_mean</span> × (<span class="k">1</span> + <span class="k">U(−0.05, 0.05)</span>)<br>
+      &nbsp;&nbsp;defense = <span class="p">init_defense_mean</span> × (<span class="k">1</span> + <span class="k">U(−0.05, 0.05)</span>)<br>
+      &nbsp;&nbsp;used in: montecarlo, infer
+    </div>
+    <div style="margin-top:8px;">
+      <div class="discovery" style="font-size:0.73rem;">Init priors from replay step-0 averages: pop=1.0, food=0.55, wealth=0.30, defense=0.40. The ±5% uniform noise is hardcoded; this is the only stochasticity in initial conditions.</div>
+    </div>
+  </div>
+  <div>
+    <div class="block-label" style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.08em;color:#484f58;margin-bottom:8px;">hardcoded constants summary (not inferred)</div>
+    <table class="var-table">
+      <tr><td class="k">0.998</td><td>food ceiling (all phases)</td></tr>
+      <tr><td class="k">0.01</td><td>population floor</td></tr>
+      <tr><td class="k">0.2</td><td>child defense (growth spawn, phase 3)</td></tr>
+      <tr><td class="k">0.15</td><td>child defense (ruin reclaim, phase 7)</td></tr>
+      <tr><td class="k">0.1</td><td>port spawn multiplier on ruin_to_settlement (environment phase)</td></tr>
+      <tr><td class="k">1.0</td><td>plains spawn weight (forest weight is learnable)</td></tr>
+      <tr><td class="d">0.2</td><td>child food = parent.food × 0.2 (growth &amp; ruin reclaim; proved in data-analysis/prove_ruin_food.py)</td></tr>
+      <tr><td class="d">0.2</td><td>child wealth = parent.wealth × 0.2 (growth; proved in data-analysis/prove_growth_wealth.py)</td></tr>
+    </table>
+    <div class="block-label" style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.08em;color:#484f58;margin-top:12px;margin-bottom:5px;">formerly hardcoded, now learnable</div>
+    <table class="var-table">
+      <tr><td class="p">0.85</td><td>raid_pop_survival (defender pop multiplier per raid)</td></tr>
+      <tr><td class="p">1.0</td><td>raid_steal_coeff (wealth theft coefficient)</td></tr>
+      <tr><td class="p">0.40</td><td>takeover_prob (takeover vs death split)</td></tr>
+      <tr><td class="p">3.0</td><td>winter_dispersal_range (taxicab, was hardcoded 3.0)</td></tr>
+      <tr><td class="p">0.5</td><td>child_pop (child population at spawn)</td></tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+[
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "duration_ms": 0.637,
+      "event": "request.end",
+      "response_headers": [
+        [
+          "content-length",
+          "22"
+        ],
+        [
+          "content-type",
+          "application/json"
+        ],
+        [
+          "x-request-id",
+          "a5943c01-d202-4859-a843-05257ba878d7"
+        ]
+      ],
+      "status_code": 404
+    },
+    "filename": "my_log.py",
+    "function": "__call__",
+    "level": "INFO",
+    "line": 402,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[a5943] request.end",
+    "module": "my_log",
+    "pathname": "/app/src/tripletex/my_log.py",
+    "process": 170,
+    "process_name": "MainProcess",
+    "request_id": "a5943c01-d202-4859-a843-05257ba878d7",
+    "request_method": "GET",
+    "request_path": "/apple-touch-icon-precomposed.png",
+    "task_name": "Task-28",
+    "thread": 139975927042880,
+    "thread_name": "MainThread",
+    "timestamp": "2026-03-22T10:30:13",
+    "unique_request_id": "50590e1a-cf4c-4a3d-8dc6-743df71134a9"
+  },
+  {
+    "client_ip": "169.254.169.126",
+    "extra": {
+      "body": {
+        "preview": "",
+        "size_bytes": 0
+      },
+      "client": {
+        "host": "169.254.169.126",
+        "port": 48734
+      },
+      "event": "request.start",
+      "headers": [
+        [
+          "host",
+          "tripletex-agent-1010470531441.europe-north1.run.app"
+        ],
+        [
+          "user-agent",
+          "com.apple.WebKit.Networking/20623.1.14.18.4 Network/4277.101.3 macOS/15.4.1"
+        ],
+        [
+          "accept",
+          "*/*"
+        ],
+        [
+          "accept-language",
+          "en-US,en;q=0.9"
+        ],
+        [
+          "priority",
+          "u=3, i"
+        ],
+        [
+          "x-cloud-trace-context",
+          "ff27985a7892990ad4dc834752e61900/7006814441505276835;o=1"
+        ],
+        [
+          "x-forwarded-proto",
+          "https"
+        ],
+        [
+          "traceparent",
+          "00-ff27985a7892990ad4dc834752e61900-613d349c60ffc3a3-01"
+        ],
+        [
+          "x-forwarded-for",
+          "171.64.77.61"
+        ],
+        [
+          "forwarded",
+          "for=\"171.64.77.61\";proto=https"
+        ],
+        [
+          "accept-encoding",
+          "gzip, deflate, br"
+        ]
+      ],
+      "http_version": "1.1",
+      "query_string": "",
+      "request_line": "GET /apple-touch-icon-precomposed.png HTTP/1.1",
+      "scheme": "http",
+      "server": [
+        "169.254.169.1",
+        8080
+      ],
+      "url": "http://tripletex-agent-1010470531441.europe-north1.run.app/apple-touch-icon-precomposed.png"
+    },
+    "filename": "my_log.py",
+    "function": "__call__",
+    "level": "INFO",
+    "line": 360,
+    "log_version": "4",
+    "logger": "app",
+    "message": "[a5943] request.start",
+    "module": "my_log",
+    "pathname": "/app/src/tripletex/my_log.py",
+    "process": 170,
+    "process_name": "MainProcess",
+    "request_id": "a5943c01-d202-4859-a843-05257ba878d7",
+    "request_method": "GET",
+    "request_path": "/apple-touch-icon-precomposed.png",
+    "task_name": "Task-28",
+    "thread": 139975927042880,
+    "thread_name": "MainThread",
+    "timestamp": "2026-03-22T10:30:13",
+    "unique_request_id": "50590e1a-cf4c-4a3d-8dc6-743df71134a9"
+  }
+]
